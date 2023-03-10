@@ -1,0 +1,57 @@
+{% load static %}
+<!-- menu.html -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container-fluid dropdown row">
+        <a class="navbar-brand row col-1" href="{% url 'web:home' %}">
+            <img src="{% static 'img/moi.jpg' %}" alt="image de ma magnifique personne" height="60">
+            <p class='col-11 row'> 
+                <span class='col-12'> Xavier Trauchessec </span>
+                <a class=""><span class='col-12'>Expert en ingénierie logiciel</span></a>
+            </p>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse col-11"  aria-labelledby="navbarDropdown" id="navbarNavDropdown">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="{% url 'web:home' %}">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'web:contact' %}">Contact</a>
+                </li>
+                <li class="nav-item dropdown dropdown">
+                    <a class="nav-link dropdown-toggle dropdown-menu-end" href="#" id="competencesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Compétences
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="competencesDropdown">
+                        <li><a class="dropdown-item" href="#">Compétence 1</a></li>
+                        <li><a class="dropdown-item" href="#">Compétence 2</a></li>
+                        <li><a class="dropdown-item" href="#">Compétence 3</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="realisationsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Réalisations
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="realisationsDropdown">
+                        <li><a class="dropdown-item" href="#">Réalisations 1</a></li>
+                        <li><a class="dropdown-item" href="#">Réalisations 2</a></li>
+                        <li><a class="dropdown-item" href="#">Réalisations 3</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="parcoursDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Parcours
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="parcoursDropdown">
+                        <li><a class="dropdown-item" href="#">Parcours 1</a></li>
+                        <li><a class="dropdown-item" href="#">Parcours 2</a></li>
+                        <li><a class="dropdown-item" href="#">Parcours 3</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
