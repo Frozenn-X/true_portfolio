@@ -23,11 +23,18 @@ def login(request):
     login(user=user)
     return redirect(reverse('home'))
 
+
 def home(request):
     return render(request, 'web/home.html')
 
+
+def about(request):
+    return render(request, 'web/about.html')
+
+
 def contact(request):
-    return render(request, 'web/home.html')
+    return render(request, 'web/contact.html')
+
 
 def apis(request):
     return render(request=request, template_name='web/competence/api.html', context={})

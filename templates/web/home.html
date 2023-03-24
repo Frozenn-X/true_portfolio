@@ -1,23 +1,30 @@
 {% extends "base.html" %}
+{% load static %}
 {% block content %}
     <div class="top-banner">
-        <div class="container" style="padding-top: 100px;">
-            <h2 class="text-center m-5">Un petit peu plus sur moi</h2>
-            <div>
-                <p>
-                    Lozérien, passionné par l’algorithmie et les mathématiques, ayant commencé par la Fac des Sciences de Montpellier, puis ayant basculé dans la vie active avant la fin de mes études,
-                    j’ai décidé de prendre un nouveau départ dans une formation d’ingénieur logiciel chez IN’TECH il y a 5 ans de cela.
-                    Curieux, adorant relever des défis, je me plais beaucoup dans le milieu de l’informatique, remplit de challenges et de missions complexes à accomplir,
-                    dans la vie de tous les jours.
+        <div class="container row h-100" style="padding-top: 100px;">
+            <div class="col m-auto text-center">
+                <img src="{% static 'img/moi.jpg' %}" alt="image de ma magnifique personne" class="w-50">
+            </div>
+            <div class="col text-center">
+                <h1 class="my-5">Xavier TRAUCHESSEC</h1>
+                <h3 class="my-5">Expert en ingénierie du logiciel</h3>
+                <h3 class="my-5">
+                    <a><em class="fa-brands fa-linkedin fa-2x link-info"></em></a>
+                </h3>
+                <button class="btn btn-info mt-5">
+                    <a href="" download="CV_Xavier_Trauchessec.pdf" class="text-black">
+                        <span class="text-base">
+
+                        </span>
+                        <span class="ml-2">
+                            Télécharger mon CV
+                        </span>
+                    </a>
+                </button>
+                <p class="mt-2">
+                    .pdf - 905,54 Ko
                 </p>
-                <p>
-                    J’ai beaucoup appris lors de ma formation en travaillant sur de nombreux projets au sein de mon école, autant sur le plan technique, via des projets sous forme d’application ou de logiciel pour des commanditaires,
-                    sur le plan humain avec des projets de formations humaines tels que la création d’une formation préventives sur les cyber attaques et la connaissance/ reconnaissance de sites/mails de phishing, un site de formation en ligne aux outils informatiques les plus basiques lors du confinement pour les gens en difficulté, mais aussi sur le plan du monde du travail, avec les différentes exigences des commanditaires et problématiques à gérer lors de projets.
-                    Sportif depuis tout petit, étant très ouvert d’esprit, adorant partager mon savoir, j’ai un profil extraverti qui aime parler et rencontrer de nouvelles personnes.
-                </p>
-            <br/>
-                <a href='#'> Mon parcours </a><br/>
-                <a href='#'> Contactez-moi </a>
             </div>
         </div>
     </div>
