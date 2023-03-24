@@ -10,8 +10,11 @@
                 <p class="text-center">
                     {{ message }}
                 </p>
-                {% if link %}
-                    <span><a href="{{ link }}" target="_blank">{{ msg_link }}</a></span>
+                {% if fs_link %}
+                    <span><a href="{{ link }}" target="_blank">{{ fs_msg_link }}</a></span>
+                {% endif %}
+                {% if sd_link %}
+                    <span><a href="{{ link }}" target="_blank">{{ sd_msg_link }}</a></span>
                 {% endif %}
             </div>
             <div class="modal-footer">
