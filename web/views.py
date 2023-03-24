@@ -25,15 +25,18 @@ def login(request):
 
 
 def home(request):
-    return render(request, 'web/home.html')
+    context = {'menu_actif': 'home'}
+    return render(request, 'web/home.html', context=context)
 
 
 def about(request):
-    return render(request, 'web/about.html')
+    context = {'menu_actif': 'about'}
+    return render(request, 'web/about.html', context=context)
 
 
 def contact(request):
-    return render(request, 'web/contact.html')
+    context = {'menu_actif': 'contact'}
+    return render(request, 'web/contact.html', context=context)
 
 
 def apis(request):

@@ -21,13 +21,13 @@
         <div class="collapse navbar-collapse col-9" aria-labelledby="navbarDropdown" id="navbarNavDropdown">
             <ul class="navbar-nav" style="margin-left: auto;">
                 <li class="nav-item ">
-                    <a class="nav-link text-white" aria-current="page" href="{% url 'web:home' %}">Accueil</a>
+                    <a class="nav-link {% if menu_actif == 'home' %}text-info{% else %}text-white{% endif %}" aria-current="page" href="{% url 'web:home' %}">Accueil</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link text-white" aria-current="page" href="{% url 'web:about' %}">A propos</a>
+                    <a class="nav-link {% if menu_actif == 'about' %}text-info{% else %}text-white{% endif %}" aria-current="page" href="{% url 'web:about' %}">A propos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="{% url 'web:contact' %}">Contact</a>
+                    <a class="nav-link {% if menu_actif == 'contact' %}text-info{% else %}text-white{% endif %}" href="{% url 'web:contact' %}">Contact</a>
                 </li>
                 <li class="nav-item dropdown dropdown">
                     <a class="nav-link dropdown-toggle dropdown-menu-end text-white" href="#" id="competencesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
