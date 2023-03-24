@@ -6,7 +6,7 @@
             <a class="navbar-brand col-2" href="{% url 'web:home' %}">
                 <img src="{% static 'img/moi.jpg' %}" alt="image de ma magnifique personne" height="60">
             </a>
-            <p class='col-10 row'>
+            <p class='col-10 row my-auto'>
                 <span class='col-12'> Xavier Trauchessec </span>
                 <!-- Button trigger modal -->
                 <span class="link-info underline" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -25,9 +25,6 @@
                 </li>
                 <li class="nav-item ">
                     <a class="nav-link text-white" aria-current="page" href="{% url 'web:about' %}">A propos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="{% url 'web:contact' %}">Contact</a>
                 </li>
                 <li class="nav-item dropdown dropdown">
                     <a class="nav-link dropdown-toggle dropdown-menu-end text-white" href="#" id="competencesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -64,6 +61,9 @@
                         <li><a class="dropdown-item" href="#"><i class="bi bi-chevron-right"></i> Stage de 6 mois à E4IA (Euphoria)</a></li>
                         <li><a class="dropdown-item" href="#"><i class="bi bi-chevron-right"></i> Alternance à Avenir Data</a></li>
                     </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="{% url 'web:contact' %}">Contact</a>
                 </li>
             </ul>
         </div>
