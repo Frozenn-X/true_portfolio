@@ -28,3 +28,9 @@ def home(request):
 
 def contact(request):
     return render(request, 'web/home.html')
+
+def apis(request):
+    return render(request=request, template_name='web/competence/api.html', context={})
+
+def python(request):
+    return render(request=request, template_name='web/competence/python.html', context={})

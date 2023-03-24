@@ -13,4 +13,6 @@ urlpatterns = [
     # page contact
     path('contact/', views.contact, name='contact'),
     path('contact', views.contact, name='contact'),
+    path('api-desc', views.apis, name='api-desc'),
+    path('python-desc', views.python, name='python-desc')
 ]

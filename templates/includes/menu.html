@@ -1,57 +1,69 @@
 {% load static %}
 <!-- menu.html -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top bg-dark text-white">
     <div class="container-fluid dropdown row">
-        <a class="navbar-brand row col-1" href="{% url 'web:home' %}">
-            <img src="{% static 'img/moi.jpg' %}" alt="image de ma magnifique personne" height="60">
-            <p class='col-11 row'> 
+        <div class="col-3 row">
+            <a class="navbar-brand col-2" href="{% url 'web:home' %}">
+                <img src="{% static 'img/moi.jpg' %}" alt="image de ma magnifique personne" height="60">
+            </a>
+            <p class='col-10 row'>
                 <span class='col-12'> Xavier Trauchessec </span>
-                <a class=""><span class='col-12'>Expert en ingénierie logiciel</span></a>
+                <!-- Button trigger modal -->
+                <span class="link-info underline" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <u>Expert en ingénierie du logiciel</u>
+                </span>
             </p>
-        </a>
+        </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown"aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse col-11"  aria-labelledby="navbarDropdown" id="navbarNavDropdown">
-            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="{% url 'web:home' %}">Accueil</a>
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0 ">
+                <li class="nav-item ">
+                    <a class="nav-link text-white" aria-current="page" href="{% url 'web:home' %}">Accueil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'web:contact' %}">Contact</a>
+                    <a class="nav-link text-white" href="{% url 'web:contact' %}">Contact</a>
                 </li>
                 <li class="nav-item dropdown dropdown">
-                    <a class="nav-link dropdown-toggle dropdown-menu-end" href="#" id="competencesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle dropdown-menu-end text-white" href="#" id="competencesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Compétences
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="competencesDropdown">
-                        <li><a class="dropdown-item" href="#">Compétence 1</a></li>
-                        <li><a class="dropdown-item" href="#">Compétence 2</a></li>
-                        <li><a class="dropdown-item" href="#">Compétence 3</a></li>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="competencesDropdown">
+                        <li><a class="dropdown-item " href="#"> SQL </a></li>
+                        <li><a class="dropdown-item" href="{% url 'web:python-desc' %}"> Python </a></li>
+                        <li><a class="dropdown-item" href="{% url 'web:api-desc' %}"> API </a></li>
+                        <li><a class="dropdown-item" href="#"> Gestion d'équipes / projets </a></li>
+                        <li><a class="dropdown-item" href="#"> Communication </a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="realisationsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="realisationsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Réalisations
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="realisationsDropdown">
-                        <li><a class="dropdown-item" href="#">Réalisations 1</a></li>
-                        <li><a class="dropdown-item" href="#">Réalisations 2</a></li>
-                        <li><a class="dropdown-item" href="#">Réalisations 3</a></li>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="realisationsDropdown">
+                        <li><a class="dropdown-item" href="#"> -> Scraping web</a></li>
+                        <li><a class="dropdown-item" href="#"> -> Datactive</a></li>
+                        <li><a class="dropdown-item" href="#"> -> Script de générations d'emails</a></li>
+                        <li><a class="dropdown-item" href="#"> -> SAM</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="parcoursDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="parcoursDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Parcours
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="parcoursDropdown">
-                        <li><a class="dropdown-item" href="#">Parcours 1</a></li>
-                        <li><a class="dropdown-item" href="#">Parcours 2</a></li>
-                        <li><a class="dropdown-item" href="#">Parcours 3</a></li>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="parcoursDropdown">
+                        <li><a class="dropdown-item" href="#"><i class="bi bi-chevron-right"></i> Lycée : Théophile Roussel</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="bi bi-chevron-right"></i> UM2 Montpellier</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="bi bi-chevron-right"></i> Travail Saisonnier</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="bi bi-chevron-right"></i> INTECH</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="bi bi-chevron-right"></i> Stage de 6 mois à E4IA (Euphoria)</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="bi bi-chevron-right"></i> Alternance à Avenir Data</a></li>
                     </ul>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
+{% include 'includes/modal.html' with titre='Expert en ingénierie du logiciel, mais c\'est quoi ?' msg_link='En savoir plus...' link='https://www.francecompetences.fr/recherche/rncp/35419/' message='Contenu de la modal' to_validate=False to_cancel=False to_close=True centered=True %}

@@ -1,15 +1,13 @@
 {% extends 'base.html' %}
-
+{% load static %}
+{% block title %}Mon Portfolio{% endblock %}
+{% block favicon %} <link rel="shortcut icon" type="image/png" href="{% static 'img/moi.jpg' %}"/> {% endblock %}
 {% block content %}
 <div class="container">
     <h2>Connexion</h2>
     <form method="post">
         {% if error_msg %}
-            <div>
-                <p>
-                    {{error_msg}}
-                </p>
-            </div>
+            {% include 'includes/messages.html' %}
         {% endif %}
         {% csrf_token %}
         <div class="form-group">
