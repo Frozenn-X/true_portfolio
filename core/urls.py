@@ -22,6 +22,7 @@ from web.views import login
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('web.urls')),
+    path('api/', include('api.urls')),
     # URL de connexion
     path('login/', login, name='login'),
     # URL de déconnexion

@@ -32,8 +32,8 @@
                     </a>
                     <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="competencesDropdown">
                         <li><a class="dropdown-item " href="#"> SQL </a></li>
-                        <li><a class="dropdown-item" href="{% url 'web:python-desc' %}"> Python </a></li>
-                        <li><a class="dropdown-item" href="{% url 'web:api-desc' %}"> API </a></li>
+                        <li><a class="dropdown-item {% if menu_actif == 'python-desc' %}text-info{% else %}text-white{% endif %}" href="{% url 'web:python-desc' %}"> Python </a></li>
+                        <li><a class="dropdown-item {% if menu_actif == 'api-desc' %}text-info{% else %}text-white{% endif %}" href="{% url 'web:api-desc' %}"> API </a></li>
                         <li><a class="dropdown-item" href="#"> Gestion d'équipes / projets </a></li>
                         <li><a class="dropdown-item" href="#"> Communication </a></li>
                     </ul>

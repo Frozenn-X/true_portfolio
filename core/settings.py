@@ -129,3 +129,10 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# BASED CONSTANT OF PROJECT 
+CHAT_GPT_KEY= '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'
+CHATGPT_MODEL_ENGINE = 'gpt-3.5-turbo'
+UTILISATEUR = "user"
+RÔLES = "role"
+CONTENU = "content"
