@@ -1,19 +1,138 @@
 {% extends "base.html" %}
+{% load static %}
+
 {% block content %}
-    <div class="container" style="padding-top: 100px;">
-        <h1 class="text-center my-5">Qui suis-je ?</h1>
-        <div>
-            <p>
-                Lozérien, passionné par l’algorithmie et les mathématiques, ayant commencé par la Fac des Sciences de Montpellier, puis ayant basculé dans la vie active avant la fin de mes études,
-                j’ai décidé de prendre un nouveau départ dans une formation d’ingénieur logiciel chez IN’TECH il y a 5 ans de cela.
-                Curieux, adorant relever des défis, je me plais beaucoup dans le milieu de l’informatique, remplit de challenges et de missions complexes à accomplir,
-                dans la vie de tous les jours.
-            </p>
-            <p>
-                J’ai beaucoup appris lors de ma formation en travaillant sur de nombreux projets au sein de mon école, autant sur le plan technique, via des projets sous forme d’application ou de logiciel pour des commanditaires,
-                sur le plan humain avec des projets de formations humaines tels que la création d’une formation préventives sur les cyber attaques et la connaissance/ reconnaissance de sites/mails de phishing, un site de formation en ligne aux outils informatiques les plus basiques lors du confinement pour les gens en difficulté, mais aussi sur le plan du monde du travail, avec les différentes exigences des commanditaires et problématiques à gérer lors de projets.
-                Sportif depuis tout petit, étant très ouvert d’esprit, adorant partager mon savoir, j’ai un profil extraverti qui aime parler et rencontrer de nouvelles personnes.
-            </p>
+    <div class="container row mx-auto h-100 my-lg-0 mt-5 pb-5" style="padding-top: 100px;">
+        <h1 class="text-center my-5 link-info">Qui suis-je ?</h1>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-12 text-center my-auto">
+                <img src="{% static 'img/working.png' %}" alt="image de ma magnifique personne" class="w-75">
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-12 my-lg-auto mt-3">
+                <p>
+                    Lozérien, <strong class="link-info">passionné par l’algorithmie et les mathématiques</strong>, ayant commencé par la Fac des Sciences
+                    de Montpellier, puis ayant basculé dans la vie active avant la fin de mes études,
+                    j’ai décidé de prendre un nouveau départ dans une formation <strong class="link-info">d’ingénieur logiciel</strong> chez IN’TECH il y a
+                    5 ans de cela.
+                    Curieux, adorant <strong class="link-info">relever des défis</strong>, je me plais beaucoup dans le milieu de l’informatique, remplit
+                    de challenges et de missions complexes à accomplir, dans la vie de tous les jours.
+                </p>
+                <p>
+                    J’ai beaucoup appris lors de ma formation en travaillant sur de nombreux projets au sein de mon école.
+                    Sur le plan <strong class="link-info">technique</strong>, via des projets sous forme d’application ou de logiciel pour des commanditaires,
+                    sur le plan <strong class="link-info">humain</strong> avec des projets de formations humaines tels que la création d’une formation préventives.
+                    Mais également, sur les <strong class="link-info">cyber attaques</strong> et la connaissance / reconnaissance de sites / mails de phishing, un site de formation
+                    en ligne aux outils informatiques les plus basiques lors du confinement pour les gens en difficulté,
+                    et pour finir, sur le plan du <strong class="link-info">monde du travail</strong>, avec les différentes exigences des commanditaires et problématiques
+                    à gérer lors de projets.
+                </p>
+                <p>
+                    Je suis sportif depuis que je suis tout petit, mais j'ai décidé de me mettre à l'informatique pour éviter
+                    de courir après des ballons toute ma vie. Certains disent que je suis un vrai "geek", mais je préfère
+                    me considérer comme un <strong class="link-info">"nerd cool"</strong>. J'aime parler de sujets techniques, même si parfois mes amis ne
+                    me comprennent pas. Mais comme je suis <strong class="link-info">très sociable</strong>, je suis toujours
+                    prêt à rencontrer de nouvelles personnes qui partagent mes centres d'intérêt. Et qui sait, peut-être
+                    que je pourrais leur apprendre quelque chose de nouveau sur les maths ou l'informatique !
+                </p>
+            </div>
+        </div>
+        <div class="pt-5 row">
+            <div class="col-lg-6 col-12">
+                <h3 class="link-info">Informations personnelles</h3>
+            </div>
+            <div class="col-lg-3 col-12 mt-lg-0 mt-3">
+                <div class="row">
+                    <div class="col-1 text-right"><em class="fa-solid fa-location-dot"></em></div>
+                    <div class="col-11 text-left">
+                        <h5><strong class="link-info">Localisation</strong></h5>
+                        <p>Dax - France</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-12 mt-lg-0 mt-3">
+                <div class="row">
+                    <div class="col-1 text-right"><em class="fa-solid fa-car"></em></div>
+                    <div class="col-11 text-left">
+                        <h5><strong class="link-info">Véhiculé</strong></h5>
+                        <p>Permis B</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pt-5 row h-100">
+            <div class="col-lg-4 col-12 mt-lg-0 mt-3">
+                <div class="card p-3 h-100">
+                    <div class="row">
+                        <div class="col-2"><em class="fa-solid fa-gamepad fa-2x text-black"></em></div>
+                        <div class="col-10">
+                            <h4 class="text-black">Jeux vidéos</h4>
+                        </div>
+                    </div>
+                    <p class="my-auto text-black">
+                        Si vous passez autant de temps à jouer à des jeux vidéo qu'à coder en data analyse, alors
+                        vous avez sûrement des compétences exceptionnelles pour déchiffrer des données complexes et
+                        des ennemis redoutables ! Et n'oubliez pas, si vous êtes bloqué sur un niveau difficile,
+                        peut-être que vous devriez essayer d'analyser les données du jeu pour trouver une solution !
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-12 mt-lg-0 mt-3">
+                <div class="card p-3 h-100">
+                    <div class="row">
+                        <div class="col-2"><em class="fa-solid fa-computer fa-2x text-black"></em></div>
+                        <div class="col-10">
+                            <h4 class="text-black">Machine learning</h4>
+                        </div>
+                    </div>
+                    <p class="my-auto text-black">
+                        Le Machine Learning, c'est comme essayer de deviner les intentions d'un chat : c'est facile si vous
+                        avez les bonnes données et les bons algorithmes, mais sinon vous risquez de vous retrouver avec une
+                        machine qui ne comprend rien à rien ! Heureusement, avec un peu de patience et beaucoup de données,
+                        vous pourriez peut-être entraîner votre chat à vous obéir grâce au Machine Learning !
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-12 mt-lg-0 mt-3">
+                <div class="card p-3 h-100">
+                    <div class="row">
+                        <div class="col-2"><em class="fa-solid fa-person-running fa-2x text-black"></em></div>
+                        <div class="col-10">
+                            <h4 class="text-black">Sport</h4>
+                        </div>
+                    </div>
+                    <p class="my-auto text-black">
+                        Si vous êtes bon en programmation data, vous pourriez être un excellent coureur de fond ! Vous
+                        savez déjà comment analyser les données de vos courses, déterminer les meilleurs itinéraires et
+                        optimiser vos temps de passage. Et en plus, si vous pouvez courir un marathon sans épuiser votre
+                        stock de caféine, vous êtes prêt à affronter n'importe quelle situation de bug à venir !
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row py-5">
+            <div class="col-lg-6 col-12">
+                <h3 class="link-info">Langues étrangères</h3>
+                <div class="mt-3">
+                    <p><strong>Anglais</strong></p>
+                    <div class="progress w-75">
+                      <div class="progress-bar bg-info text-black" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-12 mt-lg-0 mt-5">
+                <h3 class="link-info">Connaissances</h3>
+                <div class="row justify-content-center mt-3">
+                    <div class="col-12 col-md-6 d-flex flex-wrap justify-content-around">
+                        <div class="card p-2 m-1">Machine learning</div>
+                        <div class="card p-2 m-1">Python</div>
+                        <div class="card p-2 m-1">SQL</div>
+                    </div>
+                    <div class="col-12 col-md-6 d-flex flex-wrap justify-content-around">
+                        <div class="card p-2 m-1">Ingénieur logiciel</div>
+                        <div class="card p-2 m-1">Django</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 {% endblock content%}

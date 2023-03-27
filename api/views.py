@@ -4,8 +4,10 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.status import HTTP_200_OK
 from django.http import HttpResponseBadRequest
+from rest_framework import viewsets
 
-class get_recette(APIView):
+
+class GetRecette(viewsets.ViewSet):
     def post(self, request, format=None):
         suite_ingredients = request.data.get('suite_ingredients')
         if not suite_ingredients:

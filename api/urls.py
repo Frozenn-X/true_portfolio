@@ -1,9 +1,12 @@
-from django.urls import path
-from rest_framework.urlpatterns import format_suffix_patterns
+from django.urls import path, include
 from . import views
 from rest_framework import routers
 
-router = routers.DefaultRouter()
-router.register(r'get_recette', views.get_recette, basename='get_recette')
+app_name = 'api'
 
-urlpatterns = router.urls
+router = routers.DefaultRouter(trailing_slash=False)
+router.register('get_recette', views.GetRecette, basename='get_recette')
+
+urlpatterns = [
+    path('/v1', include(router.urls)),
+]

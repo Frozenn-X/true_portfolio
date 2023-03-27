@@ -8,8 +8,8 @@ body {
     flex-direction: column;
 }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, p {
-    color: white;
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, p, strong, em {
+    color: white !important;
 }
 
 /* Custom styles */
@@ -24,5 +24,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, p {
 }
 
 .bg-dark-perso {
-    background-color: rgba(33, 37, 41, 0.7) !important;
+    background-color: rgba(33, 37, 41, 0.9) !important;
+}
+
+img {
+    border-radius: 10px;
 }
