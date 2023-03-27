@@ -8,5 +8,5 @@ router = routers.DefaultRouter(trailing_slash=False)
 router.register('get_recette', views.GetRecette, basename='get_recette')
 
 urlpatterns = [
-    path('/v1', include(router.urls)),
+    path('v1/', include(router.urls)),
 ]

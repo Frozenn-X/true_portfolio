@@ -5,9 +5,11 @@ from core.settings import CONTENU, CHATGPT_MODEL_ENGINE, CHAT_GPT_KEY, RÔLES, U
 openai.api_key = CHAT_GPT_KEY
 
 def send_request_to_chat_gpt(message, temperature=0.5):
-    response = openai.ChatCompletion.create(
+    if not message:
+        return 
+    return openai.ChatCompletion.create(
         model=CHATGPT_MODEL_ENGINE,
         messages=[{RÔLES: UTILISATEUR, CONTENU: message}],
         temperature=temperature,
-        max_tokens=2048,
+        max_tokens=2048, 
     )
