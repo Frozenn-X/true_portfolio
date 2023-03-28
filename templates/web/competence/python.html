@@ -3,10 +3,9 @@
 {% block title %}Mon Portfolio{% endblock %}
 {% block favicon %}<link rel="shortcut icon" type="image/png" href="{% static 'img/photo_lkd.jpg' %}"/> {% endblock favicon %}
 {% block content %}
-<div class="container">
-    <h4 class="text-center">Python, la langue multifonction</h4>
-    <br/>
-    <div class="row text-center">
+<div class="container row mx-auto h-100 my-lg-0 mt-5 pb-5" style="padding-top: 100px;">
+    <h1 class="text-center my-5 link-info">Python, la langue multifonction</h1>
+    <div class="row">
         <p>
             Python est un langage de programmation populaire et polyvalent, largement utilisé pour créer des applications web, effectuer des tests unitaires, du scraping et du traitement de données. Il est connu pour sa simplicité, sa facilité d'utilisation et son extensibilité.
             Pour commencer, Python est largement utilisé pour la création d'applications web. Les développeurs peuvent utiliser des frameworks comme Django, Flask et Pyramid pour créer des applications web robustes et hautement fonctionnelles. Django est un framework populaire qui est connu pour sa facilité d'utilisation et son extensibilité.
@@ -39,10 +38,10 @@
             De plus, Python offre la possibilité d'exécuter des scripts en ligne de commande, ce qui en fait un choix populaire pour l'automatisation de tâches et la manipulation de fichiers.
         </p>
     </div>
-    <a href="#" target="_blank">En savoir plus sur les test end to end...</a>
+    <a href="#" target="_blank" class="link-info">En savoir plus sur les test end to end...</a>
     <br/>
-    <a href="#" target="_blank">En savoir plus sur le scraping...</a>
+    <a href="#" target="_blank" class="link-info">En savoir plus sur le scraping...</a>
     <br/>
-    <a href="#" target="_blank">En savoir plus sur le modèle MVC django...</a>
+    <a href="#" target="_blank" class="link-info pb-5">En savoir plus sur le modèle MVC django...</a>
 </div>
 {% endblock content %}

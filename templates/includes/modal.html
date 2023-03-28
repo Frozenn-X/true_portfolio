@@ -3,18 +3,18 @@
     <div class="modal-dialog {% if centered is True %} modal-dialog-centered {% endif %}">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">{{ titre }}</h5>
+                <h5 class="modal-title text-black" id="exampleModalLabel">{{ titre }}</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <p class="text-center">
+                <p class="text-center text-black">
                     {{ message }}
                 </p>
                 {% if fs_link %}
-                    <span><a href="{{ link }}" target="_blank">{{ fs_msg_link }}</a></span>
+                    <p><a href="{{ link }}" target="_blank" class="link-info">{{ fs_msg_link }}</a></p>
                 {% endif %}
                 {% if sd_link %}
-                    <span><a href="{{ link }}" target="_blank">{{ sd_msg_link }}</a></span>
+                    <p><a href="{{ link }}" target="_blank" class="link-info">{{ sd_msg_link }}</a></p>
                 {% endif %}
             </div>
             <div class="modal-footer">
