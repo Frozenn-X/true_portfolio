@@ -38,6 +38,8 @@ def contact(request):
     context = {'menu_actif': 'contact'}
     return render(request, 'web/contact.html', context=context)
 
+def sql(request):
+    return render(request=request, template_name='web/competence/sql.html', context={})
 
 def apis(request):
     return render(request=request, template_name='web/competence/api.html', context={})

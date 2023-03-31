@@ -14,7 +14,7 @@ class GetRecette(viewsets.ViewSet):
             message = "Le paramètre 'suite_ingredients' est manquant"
             return HttpResponseBadRequest(message)
         
-        ingredients = suite_ingredients.strip().split()
+        ingredients = suite_ingredients.strip().split(', ')
 
         context = """Tu est cuisinier et aujourd'hui tu dois relever un défi, proposer une recette de cuisine en citant ta source grâce à tout ou partie de la liste suivante :\n"""
         answer = (

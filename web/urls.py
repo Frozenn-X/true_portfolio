@@ -18,5 +18,6 @@ urlpatterns = [
     path('contact', views.contact, name='contact'),
 
     path('api-desc', views.apis, name='api-desc'),
-    path('python-desc', views.python, name='python-desc')
+    path('python-desc', views.python, name='python-desc'),
+    path('sql-desc', views.sql, name='sql-desc'),
 ]
