@@ -31,3 +31,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, p, strong, em, a, div {
 img {
     border-radius: 10px;
 }
+
+.logo {
+    height: 60px;
+    width: auto;
+}
