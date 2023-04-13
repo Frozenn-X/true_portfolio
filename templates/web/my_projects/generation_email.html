@@ -5,6 +5,49 @@
 {% block content %}
 <div class="container row mx-auto h-100 my-lg-0 mt-5 pb-5" style="padding-top: 100px;">
     <h1 class="text-center my-5 link-info">Génération d'email</h1>
-    <img src="{% static 'img\work_progess.gif' %}" alt="Explique que le travail est en cours">
+    <div>
+        Chez Avenir Data, une des premières missions que j’ai eu à accomplir était d’essayer de générer des adresses emails aux personnes fournissant leurs informations publiquement sur des sites tels que LinkedIn en utilisant le langage SQL ainsi qu’une base de données d’emails que nous possédions sur des personnes travaillant dans des sociétés.
+
+        Les objectifs :
+        Raccorder une personne à une société via les informations de son profil LinkedIn
+        Créer un algorithme de détection de pattern d’email pour une société
+        Observer les patterns d’emails les plus présents pour une société
+        Générer les adresses des personnes qui valident les conditions initiales
+        Tester les adresses
+        
+        Le contexte : 
+        Un des clients avec lesquels nous travaillons était prêt à acheter des adresses emails pour ensuite faire des démarches marketing sur les sociétés qui seraient potentiellement intéressées.
+        Les méthodes d’obtention d’adresses emails sont à ce jour peu dévoilées et passent souvent par l’inscription d’un utilisateur sur un site quelconque, qui laisse son adresse personnelle. 
+        
+
+        L’enjeu :
+        L’enjeu principal de ce projet est de créer un script d’analyse de données permettant d’étoffer notre bagage technique dans la matière, et surtout de pouvoir générer un revenu;
+        
+        
+        Les risques : 
+        Un des risques principaux est d’être signalé comme spam de la part des utilisateurs ou des services d'emailing à force de tester de mauvais pattern il était essentielle d'appliquer une méthodologie stricte afin de valider les domaines et les patterns à tester, et ensuite retrouver notre serveur d’envoi d’emails blacklisté, empêchant toutes les opérations futures avec le domaine de notre serveur.
+        Il est possible aussi de recevoir des plaintes de la part des personnes qui ne souhaitent pas être contactées.
+        
+        
+        Les étapes : 
+        La première étape consiste à raccorder une société à un utilisateur, en observant les données publiques de son profil LinkedIn, très fréquemment la méthode utilisée était d’attraper la société à la suite de : “travaille chez société » ou bien “travaille à société”, ou encore de voir dans la description des expériences la dernière expérience en cours.
+        Grâce à cela nous pouvions recupèrer les sites-web des entreprise, et récupèrer la page de contact, permettant de récupèrer si nous ne l'avions pas le domaine web qui leur permet de gérer leurs mails.
+        
+        En parallèle, il fallait établir les patterns des emails pour les sociétés que nous possédions déjà, nous avons détecté des cas majoritaires de pattern :
+        fn = prénom , ln = nom de famille , fi = initiale du prénom, li = initiale du nom de famille
+        
+        Les patterns les plus présents sont fi.ln comme par exemple x.trauchessec ou encore fn.ln comme xavier.trauchessec
+        Pour étudier tous ces cas et leurs fréquences, il fallait posséder un dictionnaire, une liste de tous les prénoms et noms de familles existants dans notre pays. Nous avons utilisé les données de l’open data de l’Insee pour cela.
+        
+        Grâce à tous cela nous pouvions lié les personnes aux entreprise et connaitre leurs domaines web, il suffit donc ensuite de mettre en place récupérant ces informations pour générer des email grâce aux patterns et le domaine mail afin de générer et tester tous les cas possibles et donc avoir un pool de mail, valides et utilisables.
+        
+        les compétences utilisés dans ce projet sont : 
+            - SQL ( manipulation & analyse des données)
+            - Python (Script de récupération des données et envois d'email)
+            - Base de données relationnelles (Stockage & mise en relations des données)
+            - Communication (Comprendre le besoin du client et l'enjeu pour l'entreprise)
+
+    </div>
+
 </div>
 {% endblock content %}
