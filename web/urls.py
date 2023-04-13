@@ -21,7 +21,7 @@ urlpatterns = [
     path('api-desc', views.apis, name='api-desc'),
     path('python-desc', views.python, name='python-desc'),
     path('sql-desc', views.sql, name='sql-desc'),
-    path('bdd-relationnal-desc', views.bdd_relationnel, name='bdd-relationnal-desc'),
+    path('bdd_relationnal-desc', views.bdd_relationnel, name='bdd_relationnal-desc'),
     path('r&d-desc', views.research_and_dev, name='r&d-desc'),
         ### HUMAINES
     path('project-desc', views.project_gestion, name='project-desc'),

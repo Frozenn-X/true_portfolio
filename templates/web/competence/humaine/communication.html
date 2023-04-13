@@ -26,9 +26,17 @@
             Je souhaite continuer d'améliorer cette communication grâce aux outils de gestion utilisés, comme Jira ou Github, que j'ai déjà commencé à utilisé mais dont aujourd'hui je ne n'utilise pas encore toutes les possibilités.
             
             Cette compétence m'as été utiles dans les projets:
-            - SAM 
-            - Datactive 
-            - Würth
+            <ul class="px-5">
+                <li>
+                    <a href="{% url 'web:SAM_DLF-project' %}" class="text-info"><u>SAM</u></a>
+                </li>
+                <li>
+                    <a href="{% url 'web:datactive-project' %}" class="text-info"><u>Datactive</u></a>
+                </li>
+                <li>
+                    <a href="{% url 'web:wurth-project' %}" class="text-info"><u>Würth</u></a>
+                </li>
+            </ul>
         </div>
     </div>
 {% endblock content %}
