@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}API - Portfolio Xavier{% endblock title %}
+{% block favicon %}<link rel="shortcut icon" type="image/png" href="{% static 'img/photo_lkd.jpg' %}"/> {% endblock favicon %}
+{% block content %}
+    <div class="container row mx-auto h-100 my-lg-0 mt-5 pb-5" style="padding-top: 100px;">
+        <h1 class="text-center my-5 link-info"> Les API's, plateforme d'accès multiple</h1>
+        <div class="row">
+            <p class="col-12">
+                Les API (Application Programming Interface) sont des outils qui permettent à différents programmes de communiquer entre eux.
+                Elles permettent aux développeurs de créer des applications en utilisant les données et les fonctionnalités d'autres applications.
+                Il est donc possible de créer des applications plus riches et plus utiles en utilisant les API de différents services.
+                Pour créer une API, il est nécessaire de définir les différentes fonctionnalités qui seront mises à disposition pour les autres programmes.
+                Cela peut inclure l'accès à des données, la possibilité de mettre à jour ces données, ou encore l'exécution de tâches spécifiques.
+                Pour utiliser une API, il est nécessaire de disposer d'une clé d'accès qui permet de s'authentifier auprès de l'application qui met à disposition cette API.
+            </p>
+            <p class="col-12">
+                Il est possible d'utiliser une API pour accéder à des données stockées sur un serveur distant, pour envoyer des commandes à un périphérique connecté, pour authentifier un utilisateur avec un compte existant sur un autre service.
+                Les utilisations sont multiples et dépendent de la spécification de l'API.
+            </p>
+            <p class="col-12">
+                Il est important de noter que pour utiliser une API, il est nécessaire de connaître les spécifications de celle-ci, c'est-à-dire comment elle fonctionne et comment y accéder.
+                Il est également important de respecter les termes d'utilisation de l'API, qui peuvent inclure des limites d'utilisation ou des restrictions d'accès.
+
+                En résumé, les API sont des outils qui permettent aux développeurs de créer des applications en utilisant les données et les fonctionnalités d'autres applications.
+                Ils permettent de créer des applications plus riches et plus utiles en utilisant les API de différents services. Il est nécessaire de connaître les spécifications de l'API pour pouvoir l'utiliser et de respecter les termes d'utilisation de l'API pour éviter tout problème.
+            </p>
+        </div>
+    </div>
+{% endblock content %}

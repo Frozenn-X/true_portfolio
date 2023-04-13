@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}BDD relationnelle - Portfolio Xavier{% endblock title %}
+{% block favicon %}<link rel="shortcut icon" type="image/png" href="{% static 'img/photo_lkd.jpg' %}"/> {% endblock favicon %}
+{% block content %}
+    <div class="container row mx-auto h-100 my-lg-0 mt-5 pb-5" style="padding-top: 100px;">
+        <h1 class="text-center my-5 link-info"> Les bases de données relationnelles</h1>
+        <div class="row">
+            <p class="col-12">
+                Les bases de données relationnelles sont des bases de données où l’information est organisée dans des tableaux à deux dimensions qu’on appelle des tables. 
+                Les tables contiennent toutes les relations entre les différentes données telles qu’un type de produit relié à une table de produit.
+                Les bases de données relationnelles permettent simplement et efficacement d’obtenir une multitude de données stockées concernant une donnée, des “clefs étrangères” permettent la relation entre plusieurs tables. 
+                Le langage SQL (Structured Query Language) est un exemple de langage normalisé permettant d’exploiter ces bases de données relationnelles.
+                La capacité d’interrogation est une force de ces bases de données, elle permet d’accomplir des recherches complexes de manière intuitive et simplifiée. 
+
+                Dans le cadre de ma formation, j’ai utilisé à de nombreuses reprises MariaDB. MariaDB est une des solutions de base de données relationnelles open source créée par les développeurs originaux de MySQL (MySQL étant un système de gestion de base de données relationnelles). Nous utilisons le logiciel MySQL Workbench pour pouvoir effectuer nos opérations via une interface graphique.
+                Après avoir mis en place le schéma de données que nous allions utiliser, ainsi que le service MariaDB sur notre serveur Linux, j’avais comme objectif d’exploiter des données d’un échantillon de personnes, donnant suite à une analyse sous forme d’un reporting Power BI.
+                La mise en place de schéma de données peut être très complexe dans certains cas et peut avoir un impact très conséquent sur le bon fonctionnement d’une application par exemple. Ce qui me fait penser à l’anecdote suivante, nous avons un projet client qui travaille pour un concessionnaire automobile dans le marketing, qui voulait implémenter un système d’historisation de données (concernant les concessions, un concessionnaire automobile en France), en utilisant mes compétences en base de données relationnelles j’ai pu adapter le schéma de données pour rajouter cette fonctionnalité via une interface sous la forme d’un formulaire en ligne. 
+
+                J’ai acquis la compréhension du fonctionnement des bases de données grâce à des formations sur Udemy que l’entreprise a mises à ma disposition.
+                Voulant développer mes compétences en data analyst, j’ai toujours été curieux et motivé à l’idée de découvrir tous les aspects des bases de données, j’ai été au cœur d’un grand nombre de projets lors de mon alternance et un acteur principal dans la modélisation des schémas de données, je situe actuellement ma compétence au niveau expert. 
+                Il me reste très certainement des compétences à acquérir pour parfaire mon savoir sur ce domaine et arriver avec plus de vitesse et de précision à imaginer des schémas de données, je pense que la pratique sur des projets concrets permet d’améliorer son ressenti vis-à-vis des futures données qui nous attendent et de la manière dont nous allons les stocker.
+
+                Cette compétence est essentielle dans mes missions chez Avenir Data qui est une entreprise gravitant autour de la Data dans toutes ses activités. J’y ai eu recours dans les différentes réalisations effectuées lors de mon parcours en tant qu’alternant, je continue à m’intéresser quotidiennement par le biais de vidéos YouTube notamment aux approches qu’un data scientist peut avoir pour rester flexible à l’approche d’un nouveau projet.
+                Je pense aujourd'hui pour dire que j'ai un niveau presque avancé dans les bases de données relationnelles mais je cherche toujours à m'améliorer.
+                Concernant un cours pour améliorer mes compétences dans les bases de données relationnelles j’ai trouvé ce cours qui a l’air très intéressant : https://perso.limsi.fr/hamon/Teaching/P13/BDA-INFO2-2018-2019/Cours/CoursBDA1-IntroRapplConcepModel.pdf
+
+                Cette compétence est le pilier fondateur de mon travail de Data scientist, elle permet de mettre en place des structures de données complexes et concorde avec le langage SQL ainsi que Power BI qui peut s’appuyer sur des bases de données comme source de données.
+                
+                J'ai utiliser cette compétence dans les projets : 
+                - SAM
+                - Scraping Web
+                - Wurth
+            </p>
+        </div>
+    </div>
+{% endblock content %}
