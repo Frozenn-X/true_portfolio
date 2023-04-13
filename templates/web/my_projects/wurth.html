@@ -1,10 +1,10 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block title %}Wurth - Portfolio Xavier{% endblock %}
+{% block title %}Würth - Portfolio Xavier{% endblock %}
 {% block favicon %}<link rel="shortcut icon" type="image/png" href="{% static 'img/photo_lkd.jpg' %}"/> {% endblock favicon %}
 {% block content %}
     <div class="container row mx-auto h-100 my-lg-0 mt-5 pb-5" style="padding-top: 100px;">
-        <h1 class="text-center my-5 link-info">Wurth</h1>
+        <h1 class="text-center my-5 link-info">Würth, la demande d'outils 2.0</h1>
         <div>
             Contexte :
             En tant qu'alternant en développement logiciel, j'ai participé à la création d'une application web pour l'entreprise Wurth France. Cette entreprise fournit de l'outillage sur mesure aux artisans selon des besoins techniques spécifiques sur le chantier. Le but du projet était de créer des formulaires personnalisés pour chaque besoin tout en étant malléables et adaptés à toutes les modifications futures. L'objectif était également de simplifier les demandes d'outillages pour chaque artisan et de rendre l'application plus générique et facile à créer pour ceux qui génèrent les formulaires grâce à une interface d'administration.
@@ -33,11 +33,30 @@
             Compétences liées :
             <ul class="px-5">
                 <li>
-                    <a href="{% url 'web:bdd_relationnal-desc' %}"><u> BDD relationnelle (Stockage des données)</u></a>
+                    <a href="{% url 'web:bdd_relationnal-desc' %}" class="text-info"><u>Base de données relationnelles (Stockage & mise en relations des données)</u></a>
+                </li>
+                <li>
+                    <a href="{% url 'web:api-desc' %}" class="text-info"><u>API (Stockage des formulaires et des demandes)</u></a>
+                </li>
+                <li>
+                    <a href="{% url 'web:project-desc' %}" class="text-info"><u>Gestion de projet agile</u></a>
+                </li>
+                <li>
+                    <a href="{% url 'web:team-desc' %}" class="text-info"><u>Gestion d'équipe</u></a>
+                </li>
+                <li>
+                    <a href="{% url 'web:comm-desc' %}" class="text-info"><u>Communication</u></a>
                 </li>
             </ul>
-            BDD relationnelle, API, Gestion d'équipe et Gestion de projet agile, communication
-            Technologie associés : Java, Maven, Typescript, Angular
+            <div class="row">
+                Technologie associés :
+                <ul>
+                    <li>Java</li>
+                    <li>Maven</li>
+                    <li>TypeScript</li>
+                    <li>Angular</li>
+                </ul>
+            </div>
         </div>
     </div>
 {% endblock content %}
