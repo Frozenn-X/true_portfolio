@@ -54,18 +54,23 @@
         <p>
             Les réalisations dans lesquelles cette compétence est intervenue sont :
         </p>
-        # TODO : LINK PROJECT
         <ul class="px-5">
-            <li>Génération d'email</li>
-            <li>SAM</li>
-            <li>Bot de scraping web</li>
+            <li>
+                <a href="{% url 'web:generation_email-project-desc' %}" class="text-info"><u>Génération d'emails</u></a>
+            </li>
+            <li>
+                <a href="{% url 'web:SAM_DLF-project' %}" class="text-info"><u>SAM</u></a>
+            </li>
+            <li>
+                <a href="{% url 'web:scraping_web-project' %}" class="text-info"><u>Scraping Web</u></a>
+            </li>
         </ul>
     </div>
     <p>Autres liens :</p>
-    <a href="#" target="_blank" class="link-info">En savoir plus sur les test end to end...</a>
+    <a href="https://www.cloudnetcare.fr/2022/03/24/tout-savoir-sur-les-tests-end-to-end/" target="_blank" class="link-info">En savoir plus sur les test end to end...</a>
     <br/>
-    <a href="#" target="_blank" class="link-info">En savoir plus sur le scraping...</a>
+    <a href="https://www.etic-insa.com/article/lart-du-scraping?utm_term=web%20scraper&utm_campaign=RR+-+Articles+-+Data+Science&utm_source=adwords&utm_medium=ppc&hsa_acc=6183956080&hsa_cam=17288832608&hsa_grp=138406513882&hsa_ad=598485726143&hsa_src=g&hsa_tgt=kwd-152927916&hsa_kw=web%20scraper&hsa_mt=b&hsa_net=adwords&hsa_ver=3&gclid=CjwKCAjw0N6hBhAUEiwAXab-TWthzuOEQKz2Ax78Du2lHU6KilK4LF4Ea38-9EuJVLqRm59_dH9I9hoCaZsQAvD_BwE" target="_blank" class="link-info">En savoir plus sur le scraping...</a>
     <br/>
-    <a href="#" target="_blank" class="link-info pb-5">En savoir plus sur le modèle MVC django...</a>
+    <a href="https://explorweb.github.io/cours2018A/cours/django/" target="_blank" class="link-info pb-5">En savoir plus sur le modèle MVC/MVT django...</a>
 </div>
 {% endblock content %}
