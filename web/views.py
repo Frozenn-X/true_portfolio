@@ -22,54 +22,72 @@ def login(request):
                       context={'error_msg':'it Seems you connection as no available, if you think is an error, contact me at : x.trauchessec@groupe-aen.info'})
     login(user=user)
     return redirect(reverse('home'))
+
+
 ##############################################################################################################################
 ######################################################## PAGE GENERAL ########################################################
 ##############################################################################################################################
+
 def home(request):
-    context = {'menu_actif': 'home'}
-    return render(request, 'web/home.html', context=context)
+    return render(request, 'web/home.html', context={'menu_actif': 'home'})
+
 
 def about(request):
-    context = {'menu_actif': 'about'}
-    return render(request, 'web/about.html', context=context)
+    return render(request, 'web/about.html', context={'menu_actif': 'about'})
+
 
 def contact(request):
-    context = {'menu_actif': 'contact'}
-    return render(request, 'web/contact.html', context=context)
+    return render(request, 'web/contact.html', context={'menu_actif': 'contact'})
+
+
 ##############################################################################################################################
 #################################################### COMPETENCE TECHNIQUE ####################################################
 ##############################################################################################################################
+
 def sql(request):
-    return render(request=request, template_name='web/competence/technique/sql.html', context={})
+    return render(request=request, template_name='web/competence/technique/sql.html', context={'menu_actif': 'sql'})
+
 
 def apis(request):
-    return render(request=request, template_name='web/competence/technique/api.html', context={})
+    return render(request=request, template_name='web/competence/technique/api.html', context={'menu_actif': 'apis'})
+
 
 def python(request):
-    return render(request=request, template_name='web/competence/technique/python.html', context={})
+    return render(request=request, template_name='web/competence/technique/python.html', context={'menu_actif': 'python'})
+
 
 def bdd_relationnel(request):
-    return render(request=request, template_name='web/competence/technique/bdd_relationnel.html', context={})
+    return render(request=request, template_name='web/competence/technique/bdd_relationnel.html', context={'menu_actif': 'bdd'})
+
 
 def research_and_dev(request):
-    return render(request=request, template_name='web/competence/technique/R&D.html', context={})
+    return render(request=request, template_name='web/competence/technique/R&D.html', context={'menu_actif': 'r&d'})
+
+
 ##############################################################################################################################
 ##################################################### COMPETENCE HUMAINE #####################################################
 ##############################################################################################################################
+
 def english(request):
-    return render(request=request, template_name='web/competence/humaine/english.html', context={})
+    return render(request=request, template_name='web/competence/humaine/english.html', context={'menu_actif': 'english'})
+
 
 def communication(request):
-    return render(request=request, template_name='web/competence/humaine/communication.html', context={})
+    return render(request=request, template_name='web/competence/humaine/communication.html', context={'menu_actif': 'communication'})
+
 
 def team_gestion(request):
-    return render(request=request, template_name='web/competence/humaine/team_gestion.html', context={})
+    return render(request=request, template_name='web/competence/humaine/team_gestion.html', context={'menu_actif': 'team'})
+
 
 def project_gestion(request):
-    return render(request=request, template_name='web/competence/humaine/project_gestion.html', context={})
+    return render(request=request, template_name='web/competence/humaine/project_gestion.html', context={'menu_actif': 'project'})
+
+
 ##############################################################################################################################
 ######################################################## PAGE PROJECT ########################################################
 ##############################################################################################################################
+
 def qualif_hierarchy(request):
     return render(request=request, template_name='web/my_projects/qualif_hierarchy.html', context={})
 
