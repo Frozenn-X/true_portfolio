@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-6r$*%jlc%q)^782eeg+lm5#0(@lwrpd3um3*g47omsne=j1ly4
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['portfolio-xavier.trauchessec.fr']
+ALLOWED_HOSTS = ['portfolio-xavier.trauchessec.fr', '127.0.0.1']
 
 LOGIN_URL = '/login/'
 
