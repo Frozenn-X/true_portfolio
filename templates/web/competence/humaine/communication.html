@@ -3,40 +3,74 @@
 {% block title %}Communication - Portfolio Xavier{% endblock %}
 {% block favicon %}<link rel="shortcut icon" type="image/png" href="{% static 'img/photo_lkd.jpg' %}"/> {% endblock favicon %}
 {% block content %}
-    <div class="container row mx-auto h-100 my-lg-0 mt-5 pb-5" style="padding-top: 100px;">
-        <h1 class="text-center my-5 link-info">La communication, l'outil pour réussir un projet</h1>
-        <div>
-            La communication est une compétence clé dans la vie professionnelle et personnelle. Elle est essentielle pour transmettre des informations, établir des relations, résoudre des problèmes et travailler en équipe. L'actualité nous a montré à plusieurs reprises l'importance de la communication dans des situations de crise, comme la pandémie de COVID-19 ou les catastrophes naturelles.
-            L'importance de la compétence de communication:
-            
-            La compétence de communication est cruciale dans tous les domaines de la vie professionnelle. Elle permet de transmettre efficacement des informations, d'établir des relations de confiance, de résoudre des conflits et de travailler en équipe. Dans un contexte professionnel, une bonne communication peut améliorer la productivité, renforcer la collaboration entre les membres de l'équipe et améliorer les relations avec les clients ou les partenaires.
-            
-            Il existe plusieurs éléments clés sur lesquels les individus peuvent travailler pour améliorer leur compétence de communication:
-
-            Écoute active: L'écoute active est une compétence clé pour améliorer la communication. Elle implique d'écouter attentivement l'autre personne, de poser des questions et de clarifier les points qui ne sont pas compris.
-            
-            Clarté: La clarté est essentielle pour une communication efficace. Les individus doivent s'assurer que leur message est clair, concis et compréhensible pour leur interlocuteur.
-            
-            Adaptabilité: L'adaptabilité est importante pour s'assurer que le message est adapté à l'interlocuteur. Les individus doivent être capables de s'adapter à différents styles de communication et de comprendre les besoins de leur interlocuteur.
-            
-            Gestion des émotions: La gestion des émotions est importante pour éviter les conflits et améliorer la communication. Les individus doivent être capables de gérer leurs émotions et de comprendre celles des autres pour éviter les malentendus et les conflits.
-            En conclusion, la compétence de communication est cruciale dans la vie professionnelle et personnelle. Les individus doivent travailler sur l'écoute active, la clarté, l'adaptabilité et la gestion des émotions pour améliorer leur communication. Cependant, la compétence de communication est un processus continu et les individus doivent rester ouverts aux nouvelles pratiques et aux nouvelles technologies pour continuer à améliorer leur communication.
-                    
-            Je dirais acutellement avoir un bon niveau de communication, sachant utilisé concrétement dans mon travail, les services de mail afin de garder une trace des réunions et des choix faits par les partis prenantes et de messagerie instantanées pour être le plus réactif possible sur mes projets.
-            Je souhaite continuer d'améliorer cette communication grâce aux outils de gestion utilisés, comme Jira ou Github, que j'ai déjà commencé à utilisé mais dont aujourd'hui je ne n'utilise pas encore toutes les possibilités.
-            
-            Cette compétence m'as été utiles dans les projets:
-            <ul class="px-5">
-                <li>
-                    <a href="{% url 'web:SAM_DLF-project' %}" class="text-info"><u>SAM</u></a>
-                </li>
-                <li>
-                    <a href="{% url 'web:datactive-project' %}" class="text-info"><u>Datactive</u></a>
-                </li>
-                <li>
-                    <a href="{% url 'web:wurth-project' %}" class="text-info"><u>Würth</u></a>
-                </li>
-            </ul>
-        </div>
+    <div class="container row mx-auto h-100 my-lg-0 my-5 pb-5" style="padding-top: 100px;">
+        <h1 class="text-center my-5 text-info">La communication, l'outil pour réussir un projet</h1>
+        <p>
+            La communication est une compétence clé dans la vie professionnelle et personnelle. Elle est essentielle pour
+            transmettre des informations, établir des relations, résoudre des problèmes et travailler en équipe.
+            L'actualité nous a montré à plusieurs reprises l'importance de la communication dans des situations de crise,
+            comme la pandémie de COVID-19 ou les catastrophes naturelles.
+        </p>
+        <p>
+            L'importance de la compétence de communication : La compétence de communication est cruciale dans tous les
+            domaines de la vie professionnelle. Elle permet de transmettre efficacement des informations, d'établir des
+            relations de confiance, de résoudre des conflits et de travailler en équipe. Dans un contexte professionnel,
+            une bonne communication peut améliorer la productivité, renforcer la collaboration entre les membres de
+            l'équipe et améliorer les relations avec les clients ou les partenaires.
+        </p>
+        <p>
+            Il existe plusieurs éléments clés sur lesquels les individus peuvent travailler pour améliorer leur compétence
+            de communication:
+        </p>
+        <ul class="px-5">
+            <li>
+                <strong>Écoute active :</strong> L'écoute active est une compétence clé pour améliorer la communication.
+                Elle implique d'écouter attentivement l'autre personne, de poser des questions et de clarifier les points
+                qui ne sont pas compris.
+            </li>
+            <li>
+                <strong>Clarté :</strong> La clarté est essentielle pour une communication efficace. Les individus doivent
+                s'assurer que leur message est clair, concis et compréhensible pour leur interlocuteur.
+            </li>
+            <li>
+                <strong>Adaptabilité :</strong> L'adaptabilité est importante pour s'assurer que le message est adapté à
+                l'interlocuteur. Les individus doivent être capables de s'adapter à différents styles de communication et
+                de comprendre les besoins de leur interlocuteur.
+            </li>
+            <li>
+                <strong>Gestion des émotions :</strong> La gestion des émotions est importante pour éviter les conflits
+                et améliorer la communication. Les individus doivent être capables de gérer leurs émotions et de comprendre
+                celles des autres pour éviter les malentendus et les conflits.
+            </li>
+        </ul>
+        <p>
+            En conclusion, la compétence de communication est cruciale dans la vie professionnelle et personnelle. Les individus
+            doivent travailler sur l'écoute active, la clarté, l'adaptabilité et la gestion des émotions pour améliorer leur
+            communication. Cependant, la compétence de communication est un processus continu et les individus doivent
+            rester ouverts aux nouvelles pratiques et aux nouvelles technologies pour continuer à améliorer leur communication.
+        </p>
+        <p>
+            Je dirais acutellement avoir un bon niveau de communication, sachant utilisé concrétement dans mon travail,
+            les services de mail afin de garder une trace des réunions et des choix faits par les partis prenantes et de
+            messagerie instantanées pour être le plus réactif possible sur mes projets.
+        </p>
+        <p>
+            Je souhaite continuer d'améliorer cette communication grâce aux outils de gestion utilisés, comme Jira ou Github,
+            que j'ai déjà commencé à utilisé mais dont aujourd'hui je ne n'utilise pas encore toutes les possibilités.
+        </p>
+        <p>
+            Cette compétence m'as été utiles dans les projets :
+        </p>
+        <ul class="px-5">
+            <li>
+                <a href="{% url 'web:SAM_DLF-project' %}" class="text-info">SAM</a>
+            </li>
+            <li>
+                <a href="{% url 'web:datactive-project' %}" class="text-info">Datactive</a>
+            </li>
+            <li>
+                <a href="{% url 'web:wurth-project' %}" class="text-info">Würth</a>
+            </li>
+        </ul>
     </div>
 {% endblock content %}
