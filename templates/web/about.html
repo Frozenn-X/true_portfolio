@@ -125,7 +125,7 @@
                 <div class="row justify-content-center mt-3">
                     <div class="col-12 col-md-6 d-flex flex-wrap justify-content-around">
                         <div class="text-center mb-3">
-                            <a href="{% url 'web:python-desc' %}">
+                            <a href="{% url 'web:python-desc' %}" class="text-info">
                                 Python
                                 <div class="card p-2 m-1">
                                     <img src="{% static 'img/python.png' %}" alt="Le logo du langage informatique Python." class="logo">
@@ -133,7 +133,7 @@
                             </a>
                         </div>
                         <div class="text-center mb-3">
-                            <a href="{% url 'web:sql-desc' %}">
+                            <a href="{% url 'web:sql-desc' %}" class="text-info">
                                 SQL
                                 <div class="card p-2 m-1">
                                     <img src="{% static 'img/mySQL.png' %}" alt="Le logo du langage de base de données MySQL." class="logo">
@@ -141,25 +141,21 @@
                             </a>
                         </div>
                         <div class="text-center mb-3">
-                            <a href="">
-                                Web
-                                <div class="card p-2 m-1">
-                                    <img src="{% static 'img/web.png' %}" alt="Le logo du langage informatique Python." class="logo">
-                                </div>
-                            </a>
+                            Web
+                            <div class="card p-2 m-1">
+                                <img src="{% static 'img/web.png' %}" alt="Le logo du langage informatique Python." class="logo">
+                            </div>
                         </div>
                         <div class="text-center mb-3">
-                            <a href="">
-                                Node.JS
-                                <div class="card p-2 m-1">
-                                    <img src="{% static 'img/nodejs.png' %}" alt="Le logo du langage informatique Javascript." class="logo">
-                                </div>
-                            </a>
+                            Node.JS
+                            <div class="card p-2 m-1">
+                                <img src="{% static 'img/nodejs.png' %}" alt="Le logo du langage informatique Javascript." class="logo">
+                            </div>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 d-flex flex-wrap justify-content-around pt-md-0 pt-3">
                         <div class="text-center mb-3">
-                            <a href="{% url 'web:api-desc' %}">
+                            <a href="{% url 'web:api-desc' %}" class="text-info">
                                 Rest API
                                 <div class="card p-2 m-1">
                                     <img src="{% static 'img/rest_api.png' %}" alt="L'image représentant la méthodologie de REST API" class="logo">
@@ -167,15 +163,13 @@
                             </a>
                         </div>
                         <div class="text-center mb-3">
-                            <a href="">
-                                Django
-                                <div class="card p-2 m-1">
-                                    <img src="{% static 'img/django.jpg' %}" alt="Le logo du langage informatique Python." class="logo">
-                                </div>
-                            </a>
+                            Django
+                            <div class="card p-2 m-1">
+                                <img src="{% static 'img/django.jpg' %}" alt="Le logo du langage informatique Python." class="logo">
+                            </div>
                         </div>
                         <div class="text-center mb-3">
-                            <a href="">
+                            <a href="{% url 'web:project-desc' %}" class="text-info">
                                 Gestion de projets
                                 <div class="card p-2 m-1">
                                     <img src="{% static 'img/projet_gestion.png' %}" alt="Le logo du langage informatique Python." class="logo">
