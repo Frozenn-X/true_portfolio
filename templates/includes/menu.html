@@ -50,14 +50,14 @@
                     </ul>
                 </li>
                 <li class="nav-item dropdown dropdown">
-                    <a class="nav-link dropdown-toggle text-white" href="#" id="realisationsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle {% if menu_actif == 'wurth-project' or menu_actif == 'scraping-project' or menu_actif == 'datactive-project' or menu_actif == 'hierarchy-project' or menu_actif == 'SAM_DLF-project' or menu_actif == 'generation_email-project' %}text-info{% else %}text-white{% endif %}" href="#" id="realisationsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Réalisations
                     </a>
                     <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end" aria-labelledby="realisationsDropdown">
                         <li><a class="dropdown-item {% if menu_actif == 'wurth-project' %}text-info{% else %}text-white{% endif %}" href="{% url 'web:wurth-project' %}">-> Wurth</a></li>
                         <li><a class="dropdown-item {% if menu_actif == 'scraping-project' %}text-info{% else %}text-white{% endif %}" href="{% url 'web:scraping-project' %}">-> Scraping web</a></li>
                         <li><a class="dropdown-item {% if menu_actif == 'datactive-project' %}text-info{% else %}text-white{% endif %}" href="{% url 'web:datactive-project' %}">-> Datactive</a></li>
-                        <li><a class="dropdown-item {% if menu_actif == 'hierarchy-project' %}text-info{% else %}text-white{% endif %}" href="{% url 'web:hierarchy-project' %}">-> attribution hierarchie & fonctions</a></li>
+                        <li><a class="dropdown-item {% if menu_actif == 'hierarchy-project' %}text-info{% else %}text-white{% endif %}" href="{% url 'web:hierarchy-project' %}">-> Attribution hierarchie & fonctions</a></li>
                         <li><a class="dropdown-item {% if menu_actif == 'SAM_DLF-project' %}text-info{% else %}text-white{% endif %}" href="{% url 'web:SAM_DLF-project' %}">-> SAM</a></li>
                         <li><a class="dropdown-item {% if menu_actif == 'generation_email-project' %}text-info{% else %}text-white{% endif %}" href="{% url 'web:generation_email-project' %}">-> Script de générations et tests d'emails</a></li>
                         

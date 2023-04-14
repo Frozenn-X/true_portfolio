@@ -5,59 +5,117 @@
 {% block content %}
 <div class="container row mx-auto h-100 my-lg-0 mt-5 pb-5" style="padding-top: 100px;">
     <h1 class="text-center my-5 link-info">Génération d'email</h1>
-    <div>
-        Chez Avenir Data, l'une de mes plus intérressantes missions était d’essayer de générer des adresses emails aux personnes fournissant leurs informations publiquement sur des sites tels que LinkedIn en utilisant <a href="{% url 'web:sql-desc' %}" class="text-info"><u>le langage SQL</u></a> et <a href="{% url 'web:python-desc' %}" class="text-info"><u>Python</u></a> ainsi qu’une base de données d’emails que nous possédions sur des personnes travaillant dans des sociétés.
-
-        Les objectifs :
-        Raccorder une personne à une société via les informations de son profil LinkedIn
-        Créer un algorithme de détection de pattern d’email pour une société
-        Observer les patterns d’emails les plus présents pour une société
-        Générer les adresses des personnes qui valident les conditions initiales
-        Tester les adresses
-        
-        Le contexte : 
-        Un des clients avec lesquels nous travaillons était prêt à acheter des adresses emails pour ensuite faire des démarches marketing sur les sociétés qui seraient potentiellement intéressées.
-        Les méthodes d’obtention d’adresses emails sont à ce jour peu dévoilées et passent souvent par l’inscription d’un utilisateur sur un site quelconque, qui laisse son adresse personnelle. 
-        
-
-        L’enjeu :
-        L’enjeu principal de ce projet est de créer un script d’analyse de données permettant d’étoffer notre bagage technique dans la matière, et surtout de pouvoir générer un revenu;
-        
-        
-        Les risques : 
-        Un des risques principaux est d’être signalé comme spam de la part des utilisateurs ou des services d'emailing à force de tester de mauvais pattern il était essentielle d'appliquer une méthodologie stricte afin de valider les domaines et les patterns à tester, et ensuite retrouver notre serveur d’envoi d’emails blacklisté, empêchant toutes les opérations futures avec le domaine de notre serveur.
-        Il est possible aussi de recevoir des plaintes de la part des personnes qui ne souhaitent pas être contactées.
-        
-        
-        Les étapes : 
-        La première étape consiste à raccorder une société à un utilisateur, en observant les données publiques de son profil LinkedIn, très fréquemment la méthode utilisée était d’attraper la société à la suite de : “travaille chez société » ou bien “travaille à société”, ou encore de voir dans la description des expériences la dernière expérience en cours.
-        Grâce à cela nous pouvions recupèrer les sites-web des entreprise, et récupèrer la page de contact, permettant de récupèrer si nous ne l'avions pas le domaine web qui leur permet de gérer leurs mails.
-        
-        En parallèle, il fallait établir les patterns des emails pour les sociétés que nous possédions déjà, nous avons détecté des cas majoritaires de pattern :
-        fn = prénom , ln = nom de famille , fi = initiale du prénom, li = initiale du nom de famille
-        
-        Les patterns les plus présents sont fi.ln comme par exemple x.trauchessec ou encore fn.ln comme xavier.trauchessec
-        Pour étudier tous ces cas et leurs fréquences, il fallait posséder un dictionnaire, une liste de tous les prénoms et noms de familles existants dans notre pays. Nous avons utilisé les données de l’open data de l’Insee pour cela.
-        
-        Grâce à tous cela nous pouvions lié les personnes aux entreprise et connaitre leurs domaines web, il suffit donc ensuite de mettre en place récupérant ces informations pour générer des email grâce aux patterns et le domaine mail afin de générer et tester tous les cas possibles et donc avoir un pool de mail, valides et utilisables.
-        
-        les compétences utilisés dans ce projet sont :
+    <p>
+        Chez Avenir Data, l'une de mes plus intérressantes missions était d’essayer de générer des adresses emails aux
+        personnes fournissant leurs informations publiquement sur des sites tels que LinkedIn en utilisant
+        <a href="{% url 'web:sql-desc' %}" class="text-info">le langage SQL</a> et <a href="{% url 'web:python-desc' %}" class="text-info">
+        Python</a> ainsi qu’une base de données d’emails que nous possédions sur des personnes travaillant dans des sociétés.
+    </p>
+    <div class="my-2">
+        <h4>Les objectifs :</h4>
         <ul class="px-5">
             <li>
-                <a href="{% url 'web:sql-desc' %}" class="text-info"><u>SQL (Manipulation & analyse des données)</u></a>
+                Raccorder une personne à une société via les informations de son profil LinkedIn
             </li>
             <li>
-                <a href="{% url 'web:bdd_relationnal-desc' %}" class="text-info"><u>Base de données relationnelles (Stockage & mise en relations des données)</u></a>
+                Créer un algorithme de détection de pattern d’email pour une société
             </li>
             <li>
-                <a href="{% url 'web:python-desc' %}" class="text-info"><u>Python (Script de récupération des données et envois d'email)</u></a>
+                Observer les patterns d’emails les plus présents pour une société
             </li>
             <li>
-                <a href="{% url 'web:comm-desc' %}" class="text-info"><u>Communication</u></a>
+                Générer les adresses des personnes qui valident les conditions initiales
+            </li>
+            <li>
+                Tester les adresses
             </li>
         </ul>
-
     </div>
-
+    <div class="my-2">
+        <h4>Le contexte :</h4>
+        <p>
+            Un des clients avec lesquels nous travaillons était prêt à acheter des adresses emails pour ensuite faire
+            des démarches marketing sur les sociétés qui seraient potentiellement intéressées. Les méthodes d’obtention
+            d’adresses emails sont à ce jour peu dévoilées et passent souvent par l’inscription d’un utilisateur sur un
+            site quelconque, qui laisse son adresse personnelle.
+        </p>
+    </div>
+    <div class="my-2">
+        <h4>L’enjeu :</h4>
+        <p>
+            L’enjeu principal de ce projet est de créer un script d’analyse de données permettant d’étoffer notre bagage
+            technique dans la matière, et surtout de pouvoir générer un revenu.
+        </p>
+    </div>
+    <div class="my-2">
+        <h4>Les risques :</h4>
+        <p>
+            Un des risques principaux est d’être signalé comme spam de la part des utilisateurs ou des services d'emailing
+            à force de tester de mauvais pattern il était essentielle d'appliquer une méthodologie stricte afin de valider
+            les domaines et les patterns à tester, et ensuite retrouver notre serveur d’envoi d’emails blacklisté, empêchant
+            toutes les opérations futures avec le domaine de notre serveur.
+        </p>
+        <p>
+            Il est possible aussi de recevoir des plaintes de la part des personnes qui ne souhaitent pas être contactées.
+        </p>
+    </div>
+    <div class="my-2">
+        <h4>Les étapes :</h4>
+        <p>
+            La première étape consiste à raccorder une société à un utilisateur, en observant les données publiques de son
+            profil LinkedIn, très fréquemment la méthode utilisée était d’attraper la société à la suite de : “travaille
+            chez société » ou bien “travaille à société”, ou encore de voir dans la description des expériences la dernière
+            expérience en cours.
+        </p>
+        <p>
+            Grâce à cela nous pouvions recupèrer les sites-web des entreprise, et récupèrer la page de contact, permettant
+            de récupèrer si nous ne l'avions pas le domaine web qui leur permet de gérer leurs mails.
+        </p>
+        <p>
+            En parallèle, il fallait établir les patterns des emails pour les sociétés que nous possédions déjà, nous avons
+            détecté des cas majoritaires de pattern :
+        </p>
+        <ul class="px-5">
+            <li>
+                fn = prénom
+            </li>
+            <li>
+                ln = nom de famille
+            </li>
+            <li>
+                fi = initiale du prénom
+            </li>
+            <li>
+                li = initiale du nom de famille
+            </li>
+        </ul>
+        <p>
+            Les patterns les plus présents sont fi.ln comme par exemple x.trauchessec ou encore fn.ln comme xavier.trauchessec
+        </p>
+        <p>
+            Pour étudier tous ces cas et leurs fréquences, il fallait posséder un dictionnaire, une liste de tous les prénoms
+            et noms de familles existants dans notre pays. Nous avons utilisé les données de l’open data de l’Insee pour cela.
+        </p>
+        <p>
+            Grâce à tous cela nous pouvions lié les personnes aux entreprise et connaitre leurs domaines web, il suffit donc
+            ensuite de mettre en place récupérant ces informations pour générer des email grâce aux patterns et le domaine
+            mail afin de générer et tester tous les cas possibles et donc avoir un pool de mail, valides et utilisables.
+        </p>
+    </div>
+    <h5 class="mt-5">Les compétences utilisés dans ce projet sont :</h5>
+    <ul class="px-5">
+        <li>
+            <a href="{% url 'web:sql-desc' %}" class="text-info"><u>SQL (Manipulation & analyse des données)</u></a>
+        </li>
+        <li>
+            <a href="{% url 'web:bdd_relationnal-desc' %}" class="text-info"><u>Base de données relationnelles (Stockage & mise en relations des données)</u></a>
+        </li>
+        <li>
+            <a href="{% url 'web:python-desc' %}" class="text-info"><u>Python (Script de récupération des données et envois d'email)</u></a>
+        </li>
+        <li>
+            <a href="{% url 'web:comm-desc' %}" class="text-info"><u>Communication</u></a>
+        </li>
+    </ul>
 </div>
 {% endblock content %}

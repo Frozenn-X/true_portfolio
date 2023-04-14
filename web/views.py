@@ -89,19 +89,19 @@ def project_gestion(request):
 ##############################################################################################################################
 
 def qualif_hierarchy(request):
-    return render(request=request, template_name='web/my_projects/qualif_hierarchy.html', context={})
+    return render(request=request, template_name='web/my_projects/qualif_hierarchy.html', context={'menu_actif': 'hierarchy-project'})
 
 def wurth(request):
-    return render(request=request, template_name='web/my_projects/wurth.html', context={})
+    return render(request=request, template_name='web/my_projects/wurth.html', context={'menu_actif': 'wurth-project'})
 
 def scraping_web(request):
-    return render(request=request, template_name='web/my_projects/scraping_web.html', context={})
+    return render(request=request, template_name='web/my_projects/scraping_web.html', context={'menu_actif': 'scraping-project'})
 
 def sam_and_DLF(request):
-    return render(request=request, template_name='web/my_projects/sam_and_DLF.html', context={})
+    return render(request=request, template_name='web/my_projects/sam_and_DLF.html', context={'menu_actif': 'SAM_DLF-project'})
 
 def datactive(request):
-    return render(request=request, template_name='web/my_projects/datactive.html', context={})
+    return render(request=request, template_name='web/my_projects/datactive.html', context={'menu_actif': 'datactive-project'})
 
 def generation_email(request):
-    return render(request=request, template_name='web/my_projects/generation_email.html', context={})
+    return render(request=request, template_name='web/my_projects/generation_email.html', context={'menu_actif': 'generation_email-project'})

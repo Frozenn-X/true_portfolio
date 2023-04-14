@@ -3,62 +3,102 @@
 {% block title %}Scraping Web - Portfolio Xavier{% endblock %}
 {% block favicon %}<link rel="shortcut icon" type="image/png" href="{% static 'img/photo_lkd.jpg' %}"/> {% endblock favicon %}
 {% block content %}
-    <div class="container row mx-auto h-100 my-lg-0 mt-5 pb-5" style="padding-top: 100px;">
-        <h1 class="text-center my-5 link-info">Scraping web - Google Business Profile</h1>
-        L'un de mes premiers projets chez Avenir Data, à été de récupèrer des données sur internet pour faire des statistique et évaluer le marché et les positions sur les fiches Google Business Profile en utilisant Python et la libraire Selenium.
-
-        Les objectifs : 
-        Récupérer les données des <a class="text-info" href="https://www.google.com/intl/fr_fr/business/"><u>fiches Google Business Profile</u></a>, 
-        Regrouper ces données afin d'augmenter leurs valeurs,
-        Faire des statistiques sur le classement des fiches googles.
-
-        le contexte : 
-        Notre outil 'Datactive' englobé un module qui visé à étudier le positionnement des fiches googles et optimiser ce dernier grâce aux analyses faites et leur permettre de se positionner sur un nouveau marché, ou se placer dans le top 3 du leur.
-        Aujourd'hui l'algorithme des fiches google et plus précisément du <a href="https://www.linkedin.com/posts/datactive40_google-local-pack-activity-6990208845226594304-XTRK?utm_source=share&utm_medium=member_desktop" class="text-link"><u>Google Local Pack</u></a> sont peux connus, étudier celui-ci en récupérant des informations pouvais donnez un avantage à notre outil.
-
-        L'enjeu :
-        Dans ce projet, il était important de bien récupérer les données correcte afin de pouvoir créer des statistiques et mieux comprendre comment aidez nos clients à mieux se positionner.
-
-        Les risques : 
-        L'un des plus gros risque dans ce projet, était l'échec de celui en se retrouvant bloquer par le captcha ou Google qui aime piégé ses pages à chaque nouvelle mise à jour afin de justement éviter ce genre de scraping intensif.
-
-        Les étapes :
-        la première étape consistait à trouver le moyen de pouvoir récupérer de manière fiable ces informations, sur les pages du <a href="https://www.linkedin.com/posts/datactive40_google-local-pack-activity-6990208845226594304-XTRK?utm_source=share&utm_medium=member_desktop" class="text-link"><u>Google Local Pack</u></a> .
-        Une fois cela fait nous pouvions voir pour quels mots-clés Google nous renvoyait des <a href="https://www.linkedin.com/posts/datactive40_google-local-pack-activity-6990208845226594304-XTRK?utm_source=share&utm_medium=member_desktop" class="text-link"><u>Google Local Pack</u></a>, et les classement des fiches selon une catégorie ou un secteur;
-
-        En parallèle, nous devions vérifier les données et trouver le moyen d'accèlerer le processus, pour lequel nous avons établis des stratégies, comme changez d'adresse ip ou changer le (lien)user-agent du navigateur utilisé;
-
-        Ensuite une fois cela fait nous pouvions créer des statistique pour vérifier si par exemple, il y avais une corrélation entre une ou plusieurs infos et l'ordre dans laquelle une fiche ressortait selon la recherche.
-
-        Il en est ressortis que plusieurs des premières analyses faites ont pu être utiles à nos clients et leur ont rapporté cela, afin d'optimiser cela j'ai pu me rendre utiles en optimisant les recherches et l'analyse des données récupèrer en implémentant un processus de multi-threading & changez certains mots-clés pour un secteur précis afin de voir si cela impacté le classement des fiches <a href="https://www.google.com/intl/fr_fr/business/" class="text-info"><u>Google Business Profile</u></a>
-
-        les compétences utilisés dans ce projet sont : 
-        <ul class="px-5">
-            <li>
-                <a href="{% url 'web:bdd_relationnal-desc' %}" class="text-info"><u>Base de données relationnelles (Stockage & mise en relations des données)</u></a>
-            </li>
-            <li>
-                <a href="{% url 'web:comm-desc' %}" class="text-info"><u>Communication (Comprendre le besoin du client)</u></a>
-            </li>
-            <li>
-                <a href="{% url 'web:sql-desc' %}" class="text-info"><u>SQL (Manipulation & analyse des données)</u></a>
-            </li>
-            <li>
-                <a href="{% url 'web:python-desc' %}" class="text-info"><u>Python (Script de crawling et scraping web)</u></a>
-            </li>
-        </ul>
-        Technologie associés :
-        <ul>
-            <li>Python</li>
-            <li>Docker</li>
-            <li>Selenium</li>
-            <li>MariaDB</li>
-        </ul>
-        <a href="https://www.linkedin.com/posts/datactive40_google-local-pack-activity-6990208845226594304-XTRK?utm_source=share&utm_medium=member_desktop" class="text-link">
-            <u>En savoir plus sur le Google Local Pack</u>
-        </a>
-        <a href="https://www.data-transitionnumerique.com/selenium-python/" class="text-link">
-            <u>Qu'est ce que Selenium ...</u>
-        </a>
+    <div class="container row mx-auto h-100 my-lg-0 my-5 pb-5" style="padding-top: 100px;">
+        <h1 class="text-center my-5 text-info">Scraping web - Google Business Profile</h1>
+        <p>
+            L'un de mes premiers projets chez Avenir Data, à été de récupèrer des données sur internet pour faire des
+            statistique et évaluer le marché et les positions sur les fiches Google Business Profile en utilisant Python
+            et la libraire Selenium.
+        </p>
+        <div class="my-2">
+            <h4>Les objectifs :</h4>
+            <p>
+                Récupérer les données des <a class="text-info" href="https://www.google.com/intl/fr_fr/business/">fiches Google Business Profile</a>,
+                regrouper ces données afin d'augmenter leurs valeurs, faire des statistiques sur le classement des fiches googles.
+            </p>
+        </div>
+        <div class="my-2">
+            <h4>Le contexte :</h4>
+            <p>
+                Notre outil 'Datactive' englobé un module qui visé à étudier le positionnement des fiches googles et optimiser
+                ce dernier grâce aux analyses faites et leur permettre de se positionner sur un nouveau marché, ou se placer
+                dans le top 3 du leur. Aujourd'hui l'algorithme des fiches google et plus précisément du
+                <a href="https://www.linkedin.com/posts/datactive40_google-local-pack-activity-6990208845226594304-XTRK?utm_source=share&utm_medium=member_desktop" class="text-info">
+                Google Local Pack</a> sont peux connus, étudier celui-ci en récupérant des informations pouvais
+                donnez un avantage à notre outil.
+            </p>
+        </div>
+        <div class="my-2">
+            <h4>L'enjeu :</h4>
+            <p>
+                Dans ce projet, il était important de bien récupérer les données correcte afin de pouvoir créer des
+                statistiques et mieux comprendre comment aidez nos clients à mieux se positionner.
+            </p>
+        </div>
+        <div class="my-2">
+            <h4>Les risques :</h4>
+            <p>
+                L'un des plus gros risque dans ce projet, était l'échec de celui en se retrouvant bloquer par le captcha
+                ou Google qui aime piégé ses pages à chaque nouvelle mise à jour afin de justement éviter ce genre de
+                scraping intensif.
+            </p>
+        </div>
+        <div class="my-2">
+            <h4>Les étapes :</h4>
+            <p>
+                La première étape consistait à trouver le moyen de pouvoir récupérer de manière fiable ces informations,
+                sur les pages du <a href="https://www.linkedin.com/posts/datactive40_google-local-pack-activity-6990208845226594304-XTRK?utm_source=share&utm_medium=member_desktop" class="text-info">
+                Google Local Pack</a>.
+            </p>
+            <p>
+                Une fois cela fait nous pouvions voir pour quels mots-clés Google nous renvoyait des <a href="https://www.linkedin.com/posts/datactive40_google-local-pack-activity-6990208845226594304-XTRK?utm_source=share&utm_medium=member_desktop" class="text-info">
+                Google Local Pack</a>, et les classement des fiches selon une catégorie ou un secteur.
+            </p>
+            <p>
+                En parallèle, nous devions vérifier les données et trouver le moyen d'accèlerer le processus, pour lequel
+                nous avons établis des stratégies, comme changez d'adresse ip ou changer le (lien)user-agent du navigateur
+                utilisé.
+            </p>
+            <p>
+                Ensuite une fois cela fait nous pouvions créer des statistique pour vérifier si par exemple, il y avais
+                une corrélation entre une ou plusieurs infos et l'ordre dans laquelle une fiche ressortait selon la recherche.
+            </p>
+            <p>
+                Il en est ressortis que plusieurs des premières analyses faites ont pu être utiles à nos clients et leur
+                ont rapporté cela, afin d'optimiser cela j'ai pu me rendre utiles en optimisant les recherches et l'analyse
+                des données récupèrer en implémentant un processus de multi-threading & changez certains mots-clés pour un
+                secteur précis afin de voir si cela impacté le classement des fiches <a href="https://www.google.com/intl/fr_fr/business/" class="text-info">
+                Google Business Profile</a>.
+            </p>
+        </div>
+        <div class="col-lg-8 col-12 mt-5">
+            <h5>Les compétences utilisés dans ce projet sont :</h5>
+            <ul class="px-5">
+                <li>
+                    <a href="{% url 'web:bdd_relationnal-desc' %}" class="text-info">Base de données relationnelles (Stockage & mise en relations des données)</a>
+                </li>
+                <li>
+                    <a href="{% url 'web:comm-desc' %}" class="text-info">Communication (Comprendre le besoin du client)</a>
+                </li>
+                <li>
+                    <a href="{% url 'web:sql-desc' %}" class="text-info">SQL (Manipulation & analyse des données)</a>
+                </li>
+                <li>
+                    <a href="{% url 'web:python-desc' %}" class="text-info">Python (Script de crawling et scraping web)</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-lg-4 col-12 mt-5">
+            <h5>Technologie associés :</h5>
+            <ul class="px-5">
+                <li>Python</li>
+                <li>Docker</li>
+                <li>Selenium</li>
+                <li>MariaDB</li>
+            </ul>
+        </div>
+        <h5 class="mt-5">Autres liens :</h5>
+        <p><a href="https://www.linkedin.com/posts/datactive40_google-local-pack-activity-6990208845226594304-XTRK?utm_source=share&utm_medium=member_desktop" class="text-info">En savoir plus sur le Google Local Pack</a></p>
+        <p><a href="https://www.data-transitionnumerique.com/selenium-python/" class="text-info">Qu'est ce que Selenium ...</a></p>
     </div>
 {% endblock content %}
