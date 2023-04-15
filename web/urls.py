@@ -10,6 +10,9 @@ urlpatterns = [
     path('index/', views.home, name='home'),
     path('home/', views.home, name='home'),
     path('home', views.home, name='home'),
+    # page parcours
+    path('parcours/', views.parcours, name='parcours'),
+    path('parcours', views.parcours, name='parcours'),
     # page about
     path('about/', views.about, name='about'),
     path('about', views.about, name='about'),

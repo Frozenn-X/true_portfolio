@@ -35,6 +35,8 @@ def home(request):
 def about(request):
     return render(request, 'web/about.html', context={'menu_actif': 'about'})
 
+def parcours(request):
+    return render(request, 'web/parcours.html', context={'menu_actif': 'parcours'})
 
 def contact(request):
     return render(request, 'web/contact.html', context={'menu_actif': 'contact'})
