@@ -1,77 +1,79 @@
 {% extends "base.html" %}
 {% load static %}
+{% block head %} <link href="../../static/css/timeline.css" rel="stylesheet" crossorigin="anonymous"> {% endblock head %}
 {% block content %}
-    <div class="container row mx-auto h-100 my-lg-0 mt-5 pb-5" style="padding-top: 100px;">
-        <section id=timeline>
-            <h1>Mon parcours étudiant</h1>
-            {# <p class="leader">All cards must be the same height and width for space calculations on large screens.</p> #}
-            <div class="demo-card-wrapper">
-                <div class="demo-card demo-card--step1">
-                    <div class="head">
-                        <div class="number-box">
-                            <span>01</span>
+    {# <div class="container row mx-auto h-100 my-lg-0 mt-5 pb-5" style="padding-top: 100px;"> #}
+        <section>
+            <div class="container pt-5" style="padding-top: 100px;" >
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="main-timeline">
+                            <div class="timeline">
+                                <div class="timeline-content">
+                                    <a href="https://theophile-roussel.mon-ent-occitanie.fr/" target="_blank"><div class="circle"><span class="homebox"> 
+                                        <img src="https://lh3.googleusercontent.com/p/AF1QipNLUW65TH1rAlmJ8U_DQZTy6o-f3rHXmb3caliq=s680-w680-h510" width="164" height="164"  class="img">
+                                    </span></div></a>
+                                    <div class="content">
+                                        <span class="year">2009 - 2012</span>
+                                        <h3 class="title h4">Lycée Théophile Roussel</h3>
+                                        <p class="description">
+                                            À Saint Chély D'Apcher, la ville où j'ai passé mon BAC, ou j'ai fais du foot et de l'athlétisme au niveau national.
+                                            Mon BAC STG, m'as appris à comprendre et analyser les données, marketing et commerciale, aujourd'hui elle me permet aujourd'hui de comprendre toutes l'importance de l'analyse de données 
+                                        </p>
+                                        <p><span><a href="https://theophile-roussel.mon-ent-occitanie.fr/" target="_blank">
+                                            <u>Plus sur le lycée Théophile Roussel</u>
+                                        </a></span></p>
+                                        <div class="icon"><span></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline">
+                                <div class="timeline-content">
+                                    <a href="https://sciences.edu.umontpellier.fr/" target="_blank"><div class="circle"><span class="homebox"> 
+                                        <img src="https://lh3.googleusercontent.com/p/AF1QipMf8jqnoPkqTltVuDUhwkpKdjTzmAu_ru-xYU_L=s680-w680-h510" width="164" height="164"  class="img">
+                                    </span></div></a>
+                                    <div class="content">
+                                        <span class="year">2012 - 2014</span>
+                                        <h3 class="title h4">Université Montpellier 2 (Sciences)</h3>
+                                        <p class="description">
+                                            Haaa les bancs universitaires, le C.R.O.U.S, la cafétéria, les amphitéatres et les cours magistraux et aussi bien évidemment la découverte de l'algorithmie et du Ocaml, la où tout à vraiment commencé pour enfin être la ou je suis aujourd'hui.
+                                            Je n'ai pas pu finir ces études malheuresement, mais je me mets au défi d'un jour pouvoir enfin les reprendre et prendre ma revanche.
+                                        </p>
+                                        <p><span><a href="https://sciences.edu.umontpellier.fr/" target="_blank">
+                                            <u>Découvrir l'UM2 ...</u>
+                                        </a></span></p>
+                                        <div class="icon"><span></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline">
+                                <div class="timeline-content">
+                                    <a href="https://www.groupe-aen.info/intech/?intech-sud" target="_blank"><div class="circle"><span class="homebox"> 
+                                        <img src="https://lh5.googleusercontent.com/p/AF1QipOjSY9iCp2f5kpJs-H1UQ1Wzi1924m56I_0V00=w600-h650-p-k-no" width="164" height="164"  class="img">
+                                    </span></div></a>
+                                    <div class="content">
+                                        <span class="year">2018 - 2023</span>
+                                        <h3 class="title h4">INTECH SUD - GROUPE AEN</h3>
+                                        <p class="description">
+                                            Après un peu de vie active, voila que je me relance dans les études, afin de faire ce qui me plait vraiment développer des jeux vidéos,
+                                            des solutions innovantes et créative, résoudre des problèmes, afin de répondre aux besoins de mes clients ou pour me simplifier la vie; 
+                                            Se lancer dans un mastère après 3 ans et demi de vie active est un vrai défi, mais ce n'est pas quelque chose qui m'as déplu au contraire
+                                            cela ma boosté plus que jamais à découvrir de nouvelles choses. Ce que je fais encore aujourd'hui avec passion, selon mes besoins ou celui de mes clients.
+                                        </p>
+                                        <p><span><a href="https://www.groupe-aen.info/intech/?intech-sud" target="_blank">
+                                            <u>Découvrir INTECH ...</u>
+                                        </a></span></p>
+                                        <p><span><a href="https://www.groupe-aen.info/" target="_blank">
+                                            <u>Découvrir GROUPE AEN</u>
+                                        </a></span></p>
+                                        <div class="icon"><span></span></div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <h2><span class="small">Subtitle</span> Technology</h2>
-                    </div>
-                    <div class="body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
-                        <img src="http://placehold.it/1000x500" alt="Graphic">
                     </div>
                 </div>
-        
-                <div class="demo-card demo-card--step2">
-                    <div class="head">
-                        <div class="number-box">
-                            <span>02</span>
-                        </div>
-                        <h2><span class="small">Subtitle</span> Confidence</h2>
-                    </div>
-                    <div class="body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
-                        <img src="http://placehold.it/1000x500" alt="Graphic">
-                    </div>
-                </div>
-        
-                <div class="demo-card demo-card--step3">
-                    <div class="head">
-                        <div class="number-box">
-                            <span>03</span>
-                        </div>
-                        <h2><span class="small">Subtitle</span> Adaptation</h2>
-                    </div>
-                    <div class="body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
-                        <img src="http://placehold.it/1000x500" alt="Graphic">
-                    </div>
-                </div>
-        
-                <div class="demo-card demo-card--step4">
-                    <div class="head">
-                        <div class="number-box">
-                            <span>04</span>
-                        </div>
-                        <h2><span class="small">Subtitle</span> Consistency</h2>
-                    </div>
-                    <div class="body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
-                        <img src="http://placehold.it/1000x500" alt="Graphic">
-                    </div>
-                </div>
-        
-                <div class="demo-card demo-card--step5">
-                    <div class="head">
-                        <div class="number-box">
-                            <span>05</span>
-                        </div>
-                        <h2><span class="small">Subtitle</span> Conversion</h2>
-                    </div>
-                    <div class="body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
-                        <img src="http://placehold.it/1000x500" alt="Graphic">
-                    </div>
-                </div>
-            
             </div>
         </section>
-    </div>
+    {# </div> #}
 {% endblock content %}
