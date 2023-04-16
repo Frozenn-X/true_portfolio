@@ -1,4 +1,4 @@
-from django.urls import path
+from django.urls import path, include
 from . import views
 
 app_name = 'web'
@@ -6,6 +6,7 @@ app_name = 'web'
 urlpatterns = [
     # page where all start
     path('', views.home, name='home'),
+    path('api/', include('api.urls')),
     path('index', views.home, name='home'),
     path('index/', views.home, name='home'),
     path('home/', views.home, name='home'),

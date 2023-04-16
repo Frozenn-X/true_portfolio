@@ -8,7 +8,7 @@ from rest_framework import viewsets
 
 
 class GetRecette(viewsets.ViewSet):
-    def post(self, request, format=None):
+    def create(self, request, format=None):
         suite_ingredients = request.data.get('suite_ingredients')
         if not suite_ingredients:
             message = "Le paramètre 'suite_ingredients' est manquant"
