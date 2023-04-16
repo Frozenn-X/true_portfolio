@@ -101,6 +101,12 @@
             ensuite de mettre en place récupérant ces informations pour générer des email grâce aux patterns et le domaine
             mail afin de générer et tester tous les cas possibles et donc avoir un pool de mail, valides et utilisables.
         </p>
+        <p>
+            La où j'ai vraiment du améliorer la chose, était dans le process de validation d'un ou plusieurs patterns pour une entreprise, car oui cela est possible.
+            Mais le plus gros problème était la lenteur des tests des emails, le script ne pouvais que tester 10 à 20 000 email par jours, mais sur un serveur cela est relativement peu, donc pour cela j'ai du mettre en place un script python qui lançais plusieurs instance de tests de mail en même temps.
+
+            <img src="{% static 'img/scipt_python_genemail.png' %}" alt="image d'une partie de script python, gestionnaire de multi thread">
+        </p>
     </div>
     <h5 class="mt-5">Les compétences utilisés dans ce projet sont :</h5>
     <ul class="px-5">
