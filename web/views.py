@@ -38,6 +38,9 @@ def about(request):
 def parcours(request):
     return render(request, 'web/parcours.html', context={'menu_actif': 'parcours'})
 
+def parcoursbis(request):
+    return render(request, 'web/parcours-bis.html', context={'menu_actif': 'parcours'})
+
 def contact(request):
     return render(request, 'web/contact.html', context={'menu_actif': 'contact'})
 
