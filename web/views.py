@@ -76,6 +76,8 @@ def research_and_dev(request):
 def english(request):
     return render(request=request, template_name='web/competence/humaine/english.html', context={'menu_actif': 'english'})
 
+def autonomie(request):
+    return render(request=request, template_name='web/competence/humaine/autonomie.html', context={'menu_actif': 'autonomie'})
 
 def communication(request):
     return render(request=request, template_name='web/competence/humaine/communication.html', context={'menu_actif': 'communication'})

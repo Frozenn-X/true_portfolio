@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Communication - Portfolio Xavier{% endblock %}
+{% block favicon %}<link rel="shortcut icon" type="image/png" href="{% static 'img/photo_lkd.jpg' %}"/> {% endblock favicon %}
+{% block content %}
+    <div class="container row mx-auto h-100 my-lg-0 my-5 pb-5" style="padding-top: 100px;">
+        <h1 class="text-center my-5 text-info">Autonomie et adaptabilité, comment évoluer continuellement</h1>
+        L’autonomie est la faculté d’agir indépendamment, selon moi cette compétence va de pair avec l’adaptabilité qui est littéralement le fait de savoir s’adapter aux problématiques et enjeux rencontrés dans notre quotidien d’ingénieur.
+
+        Ces deux compétences nous ont particulièrement été inculquées lors de ma formation à IN’TECH, dans le milieu informatique de manière générale, savoir s’adapter et chercher à comprendre les différents moyens de parvenir à résoudre une problématique de manière autonome est une qualité de plus en plus recherchée dans le monde du travail.
+        
+        La majorité des recruteurs recherchent avant tout ce type de profils, curieux et pouvant relever des défis de façon indépendante, avec pour seuls acquis, leur capacité à chercher l’information. En observant les différents développeurs de mon entourage, tous me diront que 90% de leur temps de travail est basé sur les moteurs de recherche.
+        
+        Lors de mon stage chez Action Pin à Castets (Landes), j’ai été laissé en autonomie pour réussir à apprendre tout seul le fonctionnement de ReactJS ainsi que de SharePoint pour la mise en place de formulaires. Je ne connaissais absolument rien à ces outils, après quelques semaines, j’étais parvenu à créer les formulaires et à répondre à la demande de mon entreprise pour ce projet.
+        
+        Dès mon arrivée chez Avenir Data, j’ai été plongé dans le bain de la data, avec pour objectif de me former au langage SQL pour être capable d’apporter de la plus-value aux différents projets et travaux en cours. 
+        
+        Après quelques semaines, je développais mon algorithme N-gram que je détaille dans mes réalisations, en ayant acquis de manière autonome les différents concepts et les méthodes variées que proposait le langage. 
+        
+        J’ai encore beaucoup à apprendre sur la façon de m’adapter aux enjeux quotidiens, néanmoins je pense que l’autonomie et l’adaptabilité sont deux facultés qui ne vont qu’en s’améliorant sur la durée, avec l’expérience acquise au fur et à mesure.
+        <h5 class="mt-5">Cette compétence m'as été utiles dans les projets :</h5>
+        <ul class="px-5">
+            <li>
+                <a href="{% url 'web:scraping-project' %}" class="text-info">Scraping web</a>
+            </li>
+            <li>
+                <a href="{% url 'web:generation_email-project' %}" class="text-info">Génération d'email</a>
+            </li>
+        </ul>
+        <h5 class="mt-5">Autres liens :</h5>
+        <p><a href="https://librecours.net/module/culture/metier-de-dev/autonomie.xhtml" class="text-info">L'autonomie pour un développeur</a></p>
+    </div>
+{% endblock content %}

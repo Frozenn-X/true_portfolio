@@ -30,6 +30,7 @@ urlpatterns = [
     path('r&d-desc', views.research_and_dev, name='r&d-desc'),
         ### HUMAINES
     path('project-desc', views.project_gestion, name='project-desc'),
+    path('autonomie-desc', views.autonomie, name='autonomie-desc'),
     path('team-desc', views.team_gestion, name='team-desc'),
     path('english-desc', views.english, name='english-desc'),
     path('comm-desc', views.communication, name='comm-desc'),
