@@ -112,3 +112,14 @@ def datactive(request):
 
 def generation_email(request):
     return render(request=request, template_name='web/my_projects/generation_email.html', context={'menu_actif': 'generation_email-project'})
+
+
+##############################################################################################################################
+######################################################## PAGE PROJECT ########################################################
+##############################################################################################################################
+
+def Phaser1(request):
+    return render(request=request, template_name='web/own_corner/phaser.html', context={'menu_actif': 'phaser1-project'})
+
+def kurugame(request):
+    return render(request=request, template_name='web/own_corner/KuruGames.html', context={'menu_actif': 'kurugame-project'})

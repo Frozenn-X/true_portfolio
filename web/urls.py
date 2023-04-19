@@ -41,4 +41,7 @@ urlpatterns = [
     path('scraping-project', views.scraping_web, name='scraping-project'),
     path('generation_email-project', views.generation_email, name='generation_email-project'),
     path('hierarchy-project', views.qualif_hierarchy, name='hierarchy-project'),
+    ##### MY CORNER
+    path('Phaser-project', views.Phaser1, name='phaser1-project'),
+    path('kurugame-project', views.kurugame, name='kurugame-project'),
 ]
