@@ -105,29 +105,29 @@
             La où j'ai vraiment du améliorer la chose, était dans le process de validation d'un ou plusieurs patterns pour une entreprise, car oui cela est possible.
             Mais le plus gros problème était la lenteur des tests des emails, le script ne pouvais que tester 10 à 20 000 email par jours, mais sur un serveur cela est relativement peu, donc pour cela j'ai du mettre en place un script python qui lançais plusieurs instance de tests de mail en même temps.
 
-            <img src="{% static 'img/scipt_python_genemail.png' %}" alt="image d'une partie de script python, gestionnaire de multi thread">
+            <img class="border border-white mt-3" src="{% static 'img/scipt_python_genemail.png' %}" alt="image d'une partie de script python, gestionnaire de multi thread">
         </p>
     </div>
-    <h5 class="mt-5">Les compétences utilisés dans ce projet sont :</h5>
-    <ul class="px-5">
-        <li>
-            <a href="{% url 'web:sql-desc' %}" class="text-info"><u>SQL (Manipulation & analyse des données)</u></a>
-        </li>
-        <li>
-            <a href="{% url 'web:bdd_relationnal-desc' %}" class="text-info"><u>Base de données relationnelles (Stockage & mise en relations des données)</u></a>
-        </li>
-        <li>
-            <a href="{% url 'web:python-desc' %}" class="text-info"><u>Python (Script de récupération des données et envois d'email)</u></a>
-        </li>
-        <li>
-            <a href="{% url 'web:comm-desc' %}" class="text-info"><u>Communication</u></a>
-        </li>
-    </ul>
-    <h5 class="mt-5">Autres liens :</h5>
-    <ul>
-        <li>
-            <a href="https://www.usebouncer.com/fr/le-pour-et-le-contre-de-lachat-dune-liste-dadresses-e-mail/" class="text-info">Avantages / Inconvénients</a>
-        </li>
-    </ul>
+    <div class="col-lg-8 col-12 mt-5">
+        <h5>Les compétences utilisés sur le projet sont :</h5>
+        <ul class="px-5">
+            <li>
+                <a href="{% url 'web:sql-desc' %}" class="text-info"><u>SQL (Manipulation & analyse des données)</u></a>
+            </li>
+            <li>
+                <a href="{% url 'web:bdd_relationnal-desc' %}" class="text-info"><u>Base de données relationnelles (Stockage & mise en relations des données)</u></a>
+            </li>
+            <li>
+                <a href="{% url 'web:python-desc' %}" class="text-info"><u>Python (Script de récupération des données et envois d'email)</u></a>
+            </li>
+            <li>
+                <a href="{% url 'web:comm-desc' %}" class="text-info"><u>Communication</u></a>
+            </li>
+        </ul>
+    </div>
+     <div class="col-lg-4 col-12 mt-5">
+        <h5>Autres liens :</h5>
+        <p><a href="https://www.usebouncer.com/fr/le-pour-et-le-contre-de-lachat-dune-liste-dadresses-e-mail/" class="text-info">Avantages / Inconvénients</a></p>
+     </div>
 </div>
 {% endblock content %}

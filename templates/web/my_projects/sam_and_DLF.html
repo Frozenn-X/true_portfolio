@@ -5,69 +5,98 @@
 {% block content %}
 <div class="container row mx-auto h-100 my-lg-0 mt-5 pb-5" style="padding-top: 100px;">
     <h1 class="text-center my-5 link-info">Sport application Mobile</h1>
-    <div>
+    <p>
         Chez Avenir Data, en plus de créer notre produit, nous essayons aussi de créer des outils avec des méthodologies innovantes comme l'interfaçage en direct et en exclusivité avec l'API de la FFF, ce qui ma directement plu et m'est apparu comme un vrai défi.
-
-        Les objectifs :
-        Imaginer un système de gestion de flux multiple et d'application multiple.
-        S'authentifier sur l'api de la FFF
-        Parser les données voulus et les structurés
-        Créer une interface d'administration pour <a href="https://play.google.com/store/apps/details?id=com.DLF.app.mobile&hl=fr&gl=US" class="text-link"><u>l'application mobile DLF</u></a>
-        Créer une API pour <a href="https://play.google.com/store/apps/details?id=com.DLF.app.mobile&hl=fr&gl=US" class="text-link"><u>l'application mobile DLF</u></a>
-        Déployer en préproduction et en production la solution
-        
-        Le contexte : 
-        Le client pour lequel nous travaillions n'était autre que le district des landes du foot, lequel voulez créer un outil, permettant à ses utilisateurs de suivres les résultats et les actualités de ses clubs landais, mais aussi de participer à un système de pronostic ou le meilleur joueur pourrait gagner des lots venant d'un des sponsor du district.
-        
-        L'enjeu :
-        Le principal sur ce projet, était de créer un outils d'administration et de récupération des données depuis la FFF, qui pourrait être décliner sur plusieurs district ou même différents sports et donc application mobile.
-        
-        Les risques :
-        Le fait d'avoir un organisme tierce, fournissant son travail en mode 'best-effort' n'aide pas à la tâche, que ce soir sur la communication ou la documentation inexistante, "c'est prend ce que tu as est débrouille toi"
-        
-        Les étapes :
-        Il fallait tout d'abord réussir à automatiser l'authentification via API sur l'api de la FFF et qu'ils en fassent autant sur la notre.
-        Puis faire la liste des informations voulus par le client sur son application mobile, pour les demandez à la FFF qui nous les envoyait sous forme de notifications, c'est à dire, que chaque modification de données chez eux, il nous envoyaient un message nous disant que la donnée avais été modifier et ou la récupèrer.
-        Donc on à créer la base de données SQL, nous permettant d'archiver et gérer le statut de toutes les notifications et données récupèrers sur leurs api et ensuite créer les relations nécessaire entre les clubs, les équipes, les matchs, les scores, les participants d'un match.
-        Sans documentation, il à donc fallu analyser toutes les données de notifications et de récupérations et ne récupèrer que celle qui sont voulus, car certains infos pouvait se rajouter sans qu'on les demandés ou par erreur chez eux, notamment un id_worker, disant qu'elle service chez eux nous avez envoyer l'informations, ou la date de match en triple de 3 format différents.
-        Puis une fois tout celà fais nous pouvions créer et tester notre API via Postman, le moment le plus efficace du projet,je savais grâce à mon collègue quelle données il avait besoin et pourquoi, ce qui me laissait libre champ pour créer et tester les endpoints adéquats qu'il utiliserais lui sur l'application mobile.
-        
-        La petite anecdote est que le temps perdu ne l'a pas été la où nous le pensions, mais il est venu lors du déploiement de l'application sur l'App store de Apple, qui nous ont obligé à revoir notre politique d'authentification de l'utilisateur uniquement pour voir & modifier son profil, et faire ses pronostics.
-        
-        <h5>Les compétences utilisés sur le projet sont :</h5>
-        <li>
-            <a href="{% url 'web:bdd_relationnal-desc' %}" class="text-info">Base de données relationnelles (Stockage & mise en relations des données)</a>
-        </li>
-        <li>
-            <a href="{% url 'web:comm-desc' %}" class="text-info">Communication (Comprendre le besoin du client et l'enjeu pour l'entreprise)</a>
-        </li>
-        <li>
-            <a href="" class="text-info">Gestion d'équipe (FFF, client, application mobile devait être correlé ensemble)</a>
-        </li>
-        <li>
-            <a href="{% url 'web:sql-desc' %}" class="text-info">SQL (Manipulation & analyse des données)</a>
-        </li>
-        <li>
-            <a href="{% url 'web:python-desc' %}" class="text-info">Python (parsing, applicatif web & API)</a>
-        </li>
-        <li>
-            <a href="" class="text-info">API (Les comprendres et les rendres accessibles)</a>
-        </li>
-        
-        <div class="col-lg-4 col-12 mt-5">
-            <h5>Technologie associés :</h5>
-            <ul class="px-5">
-                <li>Django</li>
-                <li>Django rest framework</li>
-                <li>MariaDB</li>
-                <li>Postman</li>
-                <li>Git</li>
-            </ul>
-        </div>
-
-        <h5 class="mt-5">Autres liens :</h5>
-        <p><a href="https://landes.fff.fr/" class="text-info">le discrict des Landes de foobtball</a></p>
-        <p><a href="https://sport-appli-mobile.fr/" class="text-info">SAM au final ...</a></p>
+    </p>
+    <div class="my-2">
+        <h4>Les objectifs :</h4>
+        <ul class="px-5">
+            <li>
+                Imaginer un système de gestion de flux multiple et d'application multiple.
+            </li>
+            <li>
+                S'authentifier sur l'api de la FFF
+            </li>
+            <li>
+                Parser les données voulus et les structurés
+            </li>
+            <li>
+                Créer une interface d'administration pour <a href="https://play.google.com/store/apps/details?id=com.DLF.app.mobile&hl=fr&gl=US" class="text-info">l'application mobile DLF</a>
+            </li>
+            <li>
+                Créer une API pour <a href="https://play.google.com/store/apps/details?id=com.DLF.app.mobile&hl=fr&gl=US" class="text-info">'application mobile DLF</a>
+            </li>
+            <li>
+                Déployer en préproduction et en production la solution
+            </li>
+        </ul>
     </div>
+    <div class="my-2">
+        <h4>Le context :</h4>
+        <p>
+            Le client pour lequel nous travaillions n'était autre que le district des landes du foot, lequel voulez créer un outil, permettant à ses utilisateurs de suivres les résultats et les actualités de ses clubs landais, mais aussi de participer à un système de pronostic ou le meilleur joueur pourrait gagner des lots venant d'un des sponsor du district.
+        </p>
+    </div>
+    <div class="my-2">
+        <h4>L'enjeu :</h4>
+        <p>
+            Le principal sur ce projet, était de créer un outils d'administration et de récupération des données depuis la FFF, qui pourrait être décliner sur plusieurs district ou même différents sports et donc application mobile.
+        </p>
+    </div>
+    <div class="my-2">
+        <h4>Les risques :</h4>
+        <p>
+            Le fait d'avoir un organisme tierce, fournissant son travail en mode 'best-effort' n'aide pas à la tâche, que ce soir sur la communication ou la documentation inexistante, "c'est prend ce que tu as est débrouille toi".
+        </p>
+    </div>
+    <div class="my-2">
+        <h4>Les étapes :</h4>
+        <p>
+            Il fallait tout d'abord réussir à automatiser l'authentification via API sur l'api de la FFF et qu'ils en fassent autant sur la notre.
+            Puis faire la liste des informations voulus par le client sur son application mobile, pour les demandez à la FFF qui nous les envoyait sous forme de notifications, c'est à dire, que chaque modification de données chez eux, il nous envoyaient un message nous disant que la donnée avais été modifier et ou la récupèrer.
+            Donc on à créer la base de données SQL, nous permettant d'archiver et gérer le statut de toutes les notifications et données récupèrers sur leurs api et ensuite créer les relations nécessaire entre les clubs, les équipes, les matchs, les scores, les participants d'un match.
+            Sans documentation, il à donc fallu analyser toutes les données de notifications et de récupérations et ne récupèrer que celle qui sont voulus, car certains infos pouvait se rajouter sans qu'on les demandés ou par erreur chez eux, notamment un id_worker, disant qu'elle service chez eux nous avez envoyer l'informations, ou la date de match en triple de 3 format différents.
+            Puis une fois tout celà fais nous pouvions créer et tester notre API via Postman, le moment le plus efficace du projet,je savais grâce à mon collègue quelle données il avait besoin et pourquoi, ce qui me laissait libre champ pour créer et tester les endpoints adéquats qu'il utiliserais lui sur l'application mobile.
+        </p>
+    </div>
+    <p>
+        La petite anecdote est que le temps perdu ne l'a pas été la où nous le pensions, mais il est venu lors du déploiement de l'application sur l'App store de Apple, qui nous ont obligé à revoir notre politique d'authentification de l'utilisateur uniquement pour voir & modifier son profil, et faire ses pronostics.
+    </p>
+    <div class="col-lg-8 col-12 mt-5">
+        <h5>Les compétences utilisés sur le projet sont :</h5>
+        <ul class="px-5">
+            <li>
+                <a href="{% url 'web:bdd_relationnal-desc' %}" class="text-info">Base de données relationnelles (Stockage & mise en relations des données)</a>
+            </li>
+            <li>
+                <a href="{% url 'web:comm-desc' %}" class="text-info">Communication (Comprendre le besoin du client et l'enjeu pour l'entreprise)</a>
+            </li>
+            <li>
+                <a href="" class="text-info">Gestion d'équipe (FFF, client, application mobile devait être correlé ensemble)</a>
+            </li>
+            <li>
+                <a href="{% url 'web:sql-desc' %}" class="text-info">SQL (Manipulation & analyse des données)</a>
+            </li>
+            <li>
+                <a href="{% url 'web:python-desc' %}" class="text-info">Python (parsing, applicatif web & API)</a>
+            </li>
+            <li>
+                <a href="" class="text-info">API (Les comprendres et les rendres accessibles)</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-lg-4 col-12 mt-5">
+        <h5>Technologie associés :</h5>
+        <ul class="px-5">
+            <li>Django</li>
+            <li>Django rest framework</li>
+            <li>MariaDB</li>
+            <li>Postman</li>
+            <li>Git</li>
+        </ul>
+    </div>
+    <h5 class="mt-5">Autres liens :</h5>
+    <p><a href="https://landes.fff.fr/" class="text-info">le discrict des Landes de foobtball</a></p>
+    <p><a href="https://sport-appli-mobile.fr/" class="text-info">SAM au final ...</a></p>
 </div>
 {% endblock content %}

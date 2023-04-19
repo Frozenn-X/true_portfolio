@@ -1,44 +1,68 @@
 :root {
     --intech: #10f04f;
     --avenirdata: #10bcf0;
-    --euphoria: #106af0;
+    --euphoria: #f07510;
     --montpellier: #f0d210;
-    --lycee: #f08f10;
+    --lycee: #10f09a;
 }
 
 .h-92 {
     height: 92% !important;
 }
 
+.col-6 {
+
+}
+
 .ligne-intech {
     border-right: 10px solid var(--intech);
+    padding-right: 0 !important;
 }
 .timeline-intech {
     border: 4px dotted var(--intech);
 }
+.text-intech {
+    color: var(--intech);
+}
 .ligne-avenirdata {
     border-left: 10px solid var(--avenirdata);
+    padding-left: 0 !important;
 }
 .timeline-avenirdata {
     border: 4px dotted var(--avenirdata);
 }
+.text-avenirdata {
+    color: var(--avenirdata);
+}
 .ligne-euphoria {
     border-left: 10px solid var(--euphoria);
+    padding-left: 0 !important;
 }
 .timeline-euphoria{
     border: 4px dotted var(--euphoria);
 }
+.text-euphoria {
+    color: var(--euphoria);
+}
 .ligne-montpellier {
     border-right: 10px solid var(--montpellier);
+    padding-right: 0 !important;
 }
 .timeline-montpellier {
     border: 4px dotted var(--montpellier);
 }
+.text-montpellier {
+    color: var(--montpellier);
+}
 .ligne-lycee {
     border-left: 10px solid var(--lycee);
+    padding-left: 0 !important;
 }
 .timeline-lycee {
     border: 4px dotted var(--lycee);
+}
+.text-lycee {
+    color: var(--lycee);
 }
 
 .timeline {
@@ -57,12 +81,17 @@
 .timeline-right {
     margin: 0 0 0 50px;
 }
-.timeline-icon-left, .timeline-icon-right{
+.timeline-icon-left, .timeline-icon-right {
 position: absolute;
 top: -51px;
 z-index: 1;
     height: 100px;
     width: auto;
+}
+@media (min-width: 1500px) {
+    .timeline-icon-left, .timeline-icon-right {
+        height: 150px;
+    }
 }
 .timeline-icon-left{
 left: 20px;
