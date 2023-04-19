@@ -34,7 +34,7 @@
                             <p><a class="text-info text-collapse" data-bs-toggle="collapse" href="#collapseAvenirdata" role="button" aria-expanded="false" aria-controls="collapseAvenirdata">En savoir plus</a></p>
                             <div class="collapse" id="collapseAvenirdata">
                                 <div class="description">
-                                    Après un peu de vie active, voila que je me relance dans les études, afin de faire ce qui me plait vraiment développer des jeux vidéos, des solutions innovantes et créative, résoudre des problèmes, afin de répondre aux besoins de mes clients ou pour me simplifier la vie. Se lancer dans un mastère après 3 ans et demi de vie active est un vrai défi, mais ce n'est pas quelque chose qui m'as déplu au contraire cela ma boosté plus que jamais à découvrir de nouvelles choses. Ce que je fais encore aujourd'hui avec passion, selon mes besoins ou celui de mes clients.
+                                    Avenir Data est l'entreprise qui m'as permis de vraiment évoluer au sens propre autant dans le domaine que je voulais faire(récupération, traitement & analyse de données) qu'en responsabilités dans le métier en me donnant des missions clients et interne dans laquelle j'avais un vrai impact mais aussi des responsabilités.
                                 </div>
                                 <p><a href="https://www.avenirdata.com/" target="_blank" class="text-info">Découvrir Avenir Data ...</a></p>
                             </div>
@@ -49,7 +49,7 @@
                             <p><a class="text-info text-collapse" data-bs-toggle="collapse" href="#collapseEuphoria" role="button" aria-expanded="false" aria-controls="collapseEuphoria">En savoir plus</a></p>
                             <div class="collapse" id="collapseEuphoria">
                                 <div class="description">
-                                    Après un peu de vie active, voila que je me relance dans les études, afin de faire ce qui me plait vraiment développer des jeux vidéos, des solutions innovantes et créative, résoudre des problèmes, afin de répondre aux besoins de mes clients ou pour me simplifier la vie. Se lancer dans un mastère après 3 ans et demi de vie active est un vrai défi, mais ce n'est pas quelque chose qui m'as déplu au contraire cela ma boosté plus que jamais à découvrir de nouvelles choses. Ce que je fais encore aujourd'hui avec passion, selon mes besoins ou celui de mes clients.
+                                    Après 2 ans et demi de formation à travailler pour des entreprises en tant que prestataires externe en formation, voici le réel plongeon dans le travail en tant qu'ingénieur logiciel, en développant une solution pour cette entreprise d'édition de logiciel à destination des PSDM (Prestataire de services et distributeur de matériel) auprès d'EHPAD.
                                 </div>
                                 <p><a href="https://e4-ia.fr/" target="_blank" class="text-info">Découvrir e for I.A(Euphoria) ...</a></p>
                             </div>
@@ -96,12 +96,5 @@
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $('.collapse').on('shown.bs.collapse', function () {
-            $(this).parent().find('.text-collapse').text('En savoir moins');
-        });
-        $('.collapse').on('hidden.bs.collapse', function () {
-            $(this).parent().find('.text-collapse').text('En savoir plus');
-        });
-    </script>
+    <script src="{% static 'js/parcours.js' %}"></script>
 {% endblock content %}
