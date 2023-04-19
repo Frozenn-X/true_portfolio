@@ -1,154 +1,107 @@
 {% extends "base.html" %}
 {% load static %}
-{% block head %} <link href="../../static/css/timeline.css" rel="stylesheet" crossorigin="anonymous"> {% endblock head %}
+{% block head %} <link href="../../static/css/parcours.css" rel="stylesheet" crossorigin="anonymous"> {% endblock head %}
+
 {% block content %}
     <div class="container py-5 my-5" style="padding-top: 100px;" >
         <h1 class="text-center my-5 text-info">Mon parcours</h1>
+        <div class="row pt-5">
+            <div class="col-6 ligne-intech mb-5">
+                <h3 class="text-end">2018 - 2023 (en cours)</h3>
+                <div class="timeline timeline-intech timeline-left h-92">
+                    <img class="timeline-icon-left" src="{% static '/img/parcours/intech.jpeg' %}" alt="Photo du bâtiment de l'école d'Intech">
+                    <h3>Expert en ingénierie<br>du logiciel</h3><br>
+                    <h4>INTECH SUD (40)</h4>
+                    <h5><i>GROUPE AEN</i></h5><br>
+                    <p><a class="text-info text-collapse" data-bs-toggle="collapse" href="#collapseIntech" role="button" aria-expanded="false" aria-controls="collapseIntech">En savoir plus</a></p>
+                    <div class="collapse" id="collapseIntech">
+                        <div class="description">
+                            Après un peu de vie active, voila que je me relance dans les études, afin de faire ce qui me plait vraiment développer des jeux vidéos, des solutions innovantes et créative, résoudre des problèmes, afin de répondre aux besoins de mes clients ou pour me simplifier la vie. Se lancer dans un mastère après 3 ans et demi de vie active est un vrai défi, mais ce n'est pas quelque chose qui m'as déplu au contraire cela ma boosté plus que jamais à découvrir de nouvelles choses. Ce que je fais encore aujourd'hui avec passion, selon mes besoins ou celui de mes clients.
+                        </div>
+                        <p><a href="https://www.groupe-aen.info/intech/?intech-sud" target="_blank" class="text-info">Découvrir INTECH ...</a></p>
+                        <p><a href="https://www.groupe-aen.info/" target="_blank" class="text-info">Découvrir GROUPE AEN ...</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-12 ligne-avenirdata mb-5">
+                        <h3>Sept 2021 - Avril 2023</h3>
+                        <div class="timeline timeline-avenirdata timeline-right">
+                            <img class="timeline-icon-right" src="{% static '/img/parcours/avenirdata.png' %}" alt="Image du logo de la société Avenir Data">
+                            <h3>Alternance</h3><br>
+                            <h3>Avenir Data (40)</h3><br>
+                            <p><a class="text-info text-collapse" data-bs-toggle="collapse" href="#collapseAvenirdata" role="button" aria-expanded="false" aria-controls="collapseAvenirdata">En savoir plus</a></p>
+                            <div class="collapse" id="collapseAvenirdata">
+                                <div class="description">
+                                    Après un peu de vie active, voila que je me relance dans les études, afin de faire ce qui me plait vraiment développer des jeux vidéos, des solutions innovantes et créative, résoudre des problèmes, afin de répondre aux besoins de mes clients ou pour me simplifier la vie. Se lancer dans un mastère après 3 ans et demi de vie active est un vrai défi, mais ce n'est pas quelque chose qui m'as déplu au contraire cela ma boosté plus que jamais à découvrir de nouvelles choses. Ce que je fais encore aujourd'hui avec passion, selon mes besoins ou celui de mes clients.
+                                </div>
+                                <p><a href="https://www.avenirdata.com/" target="_blank" class="text-info">Découvrir Avenir Data ...</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 ligne-euphoria mb-5">
+                        <h3>Sept 2020 - Août 2021</h3>
+                        <div class="timeline timeline-euphoria timeline-right">
+                            <img class="timeline-icon-right" src="{% static '/img/parcours/euphoria.png' %}" alt="Photo du bâtiment de la société Euphoria">
+                            <h3>Stage</h3><br>
+                            <h4>e for I.A(Euphoria)</h4><br>
+                            <p><a class="text-info text-collapse" data-bs-toggle="collapse" href="#collapseEuphoria" role="button" aria-expanded="false" aria-controls="collapseEuphoria">En savoir plus</a></p>
+                            <div class="collapse" id="collapseEuphoria">
+                                <div class="description">
+                                    Après un peu de vie active, voila que je me relance dans les études, afin de faire ce qui me plait vraiment développer des jeux vidéos, des solutions innovantes et créative, résoudre des problèmes, afin de répondre aux besoins de mes clients ou pour me simplifier la vie. Se lancer dans un mastère après 3 ans et demi de vie active est un vrai défi, mais ce n'est pas quelque chose qui m'as déplu au contraire cela ma boosté plus que jamais à découvrir de nouvelles choses. Ce que je fais encore aujourd'hui avec passion, selon mes besoins ou celui de mes clients.
+                                </div>
+                                <p><a href="https://e4-ia.fr/" target="_blank" class="text-info">Découvrir e for I.A(Euphoria) ...</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="row">
-            <div class="col-md-12">
-                <div class="main-timeline">
-                    <div class="timeline">
-                        <div class="timeline-content">
-                            <a href="https://www.groupe-aen.info/intech/?intech-sud" target="_blank">
-                                <div class="circle">
-                                    <span class="homebox">
-                                        <img src="https://lh5.googleusercontent.com/p/AF1QipOjSY9iCp2f5kpJs-H1UQ1Wzi1924m56I_0V00=w600-h650-p-k-no" width="164" height="164"  class="img">
-                                    </span>
-                                </div>
-                            </a>
-                            <div class="content">
-                                <span class="year">2018 - 2023 (en cours)</span>
-                                <h3 class="title h4 text-info">INTECH SUD - GROUPE AEN</h3>
-                                <p class="description">
-                                    Après un peu de vie active, voila que je me relance dans les études, afin de faire ce qui me plait vraiment développer des jeux vidéos,
-                                    des solutions innovantes et créative, résoudre des problèmes, afin de répondre aux besoins de mes clients ou pour me simplifier la vie.
-                                    Se lancer dans un mastère après 3 ans et demi de vie active est un vrai défi, mais ce n'est pas quelque chose qui m'as déplu au contraire
-                                    cela ma boosté plus que jamais à découvrir de nouvelles choses. Ce que je fais encore aujourd'hui avec passion, selon mes besoins ou celui de mes clients.
-                                </p>
-                                <p>
-                                    <a href="https://www.groupe-aen.info/intech/?intech-sud" target="_blank" class="text-info">
-                                        <u>Découvrir INTECH ...</u>
-                                    </a>
-                                </p>
-                                <p>
-                                    <a href="https://www.groupe-aen.info/" target="_blank" class="text-info">
-                                        <u>Découvrir GROUPE AEN</u>
-                                    </a>
-                                </p>
-                                <div class="icon"><span></span></div>
-                            </div>
+            <div class="col-6 ligne-montpellier mb-5">
+                <h3 class="text-end">2012 - 2014</h3>
+                <div class="timeline timeline-montpellier timeline-left">
+                    <img class="timeline-icon-left" src="{% static '/img/parcours/montpellier.jpeg' %}" alt="Photo du bâtiment de l'école de l'Université de Montpellier 2">
+                    <h3>Double Licence Math-Info</h3><br>
+                    <h4>Université Montpellier 2 (34)</h4>
+                    <h5><i>Sciences</i></h5><br>
+                    <p><a class="text-info text-collapse" data-bs-toggle="collapse" href="#collapsMontpellier" role="button" aria-expanded="false" aria-controls="collapsMontpellier">En savoir plus</a></p>
+                    <div class="collapse" id="collapsMontpellier">
+                        <div class="description">
+                            Haaa les bancs universitaires, le C.R.O.U.S, la cafétéria, les amphitéatres et les cours magistraux et aussi bien évidemment la découverte de l'algorithmie et du Ocaml, la où tout à vraiment commencé pour enfin être la ou je suis aujourd'hui. Je n'ai pas pu finir ces études malheuresement, mais je me mets au défi d'un jour pouvoir enfin les reprendre et prendre ma revanche.
                         </div>
+                        <p><a href="https://sciences.edu.umontpellier.fr/" target="_blank" class="text-info">Découvrir l'UM2 ...</a></p>
                     </div>
-                    <div class="timeline">
-                        <div class="timeline-content">
-                            <a href="https://www.google.com/maps/place/AVENIR+DATA+-+40100/@43.7203975,-1.0519542,15z/data=!4m6!3m5!1s0xd56a7d71d370829:0x3d69f36cc4cc5d87!8m2!3d43.7203975!4d-1.0519542!16s%2Fg%2F11hs_t1c5c" target="_blank">
-                                <div class="circle">
-                                    <span class="homebox">
-                                        <img src="https://www.avenirdata.com/wp-content/uploads/2021/08/logo-avenir-data-01.png" width="164" height="164"  class="img">
-                                    </span>
-                                </div>
-                            </a>
-                            <div class="content">
-                                <span class="year">Sept 2021 - Avril 2023</span>
-                                <h3 class="title h4 text-info">Avenir Data</h3>
-                                <p class="description">
-                                    Après un peu de vie active, voila que je me relance dans les études, afin de faire ce qui me plait vraiment développer des jeux vidéos,
-                                    des solutions innovantes et créative, résoudre des problèmes, afin de répondre aux besoins de mes clients ou pour me simplifier la vie.
-                                    Se lancer dans un mastère après 3 ans et demi de vie active est un vrai défi, mais ce n'est pas quelque chose qui m'as déplu au contraire
-                                    cela ma boosté plus que jamais à découvrir de nouvelles choses. Ce que je fais encore aujourd'hui avec passion, selon mes besoins ou celui de mes clients.
-                                </p>
-                                <p>
-                                    <a href="https://www.avenirdata.com/" target="_blank" class="text-info">
-                                        <u>Découvrir Avenir Data ...</u>
-                                    </a>
-                                </p>
-                                <div class="icon"><span></span></div>
-                            </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-end mb-5">
+            <div class="col-6 ligne-lycee">
+                <h3>2009 - 2012</h3>
+                <div class="timeline timeline-lycee timeline-right">
+                    <span class="timeline-year-right"></span>
+                    <img class="timeline-icon-right" src="{% static '/img/parcours/lycee.jpeg' %}" alt="Photo du bâtiment du lycée Théophile Roussel">
+                    <h3>Bac STG</h3><br>
+                    <h4>Lycée Théophile Roussel (48)</h4><br>
+                    <p><a class="text-info text-collapse" data-bs-toggle="collapse" href="#collapsLycee" role="button" aria-expanded="false" aria-controls="collapsLycee">En savoir plus</a></p>
+                    <div class="collapse" id="collapsLycee">
+                        <div class="description">
+                            À Saint Chély D'Apcher, la ville où j'ai passé mon BAC, ou j'ai fais du foot et de l'athlétisme au niveau national. Mon BAC STG, m'as appris à comprendre et analyser les données, marketing et commerciale, aujourd'hui elle me permet aujourd'hui de comprendre toutes l'importance de l'analyse de données.
                         </div>
+                        <p><a href="https://theophile-roussel.mon-ent-occitanie.fr/" target="_blank" class="text-info">Plus sur le lycée Théophile Roussel ...</a></p>
                     </div>
-                    <div class="timeline" style="margin-top: 50px;">
-                        <div class="timeline-content">
-                            <a href="https://e4-ia.fr/" target="_blank">
-                                <div class="circle">
-                                    <span class="homebox">
-                                        <img src="{% static '/img/Euphoria.png' %}" width="164" height="164"  class="img">
-                                    </span>
-                                </div>
-                            </a>
-                            <div class="content">
-                                <span class="year">Sept 2020 - Août 2021</span>
-                                <h3 class="title h4 text-info">e for I.A(Euphoria)</h3>
-                                <p class="description">
-                                    Après un peu de vie active, voila que je me relance dans les études, afin de faire ce qui me plait vraiment développer des jeux vidéos,
-                                    des solutions innovantes et créative, résoudre des problèmes, afin de répondre aux besoins de mes clients ou pour me simplifier la vie.
-                                    Se lancer dans un mastère après 3 ans et demi de vie active est un vrai défi, mais ce n'est pas quelque chose qui m'as déplu au contraire
-                                    cela ma boosté plus que jamais à découvrir de nouvelles choses. Ce que je fais encore aujourd'hui avec passion, selon mes besoins ou celui de mes clients.
-                                </p>
-                                <p>
-                                    <a href="https://e4-ia.fr/" target="_blank" class="text-info">
-                                        <u>Découvrir e for I.A(Euphoria) ...</u>
-                                    </a>
-                                </p>
-                                <div class="icon"><span></span></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline" style="margin-top: 300px;">
-                        <div class="timeline-content">
-                            <a href="https://sciences.edu.umontpellier.fr/" target="_blank">
-                                <div class="circle">
-                                    <span class="homebox">
-                                        <img src="https://lh3.googleusercontent.com/p/AF1QipMf8jqnoPkqTltVuDUhwkpKdjTzmAu_ru-xYU_L=s680-w680-h510" width="164" height="164" class="img">
-                                    </span>
-                                </div>
-                            </a>
-                            <div class="content">
-                                <span class="year">2012 - 2014</span>
-                                <h3 class="title h4 text-info">Université Montpellier 2 (Sciences)</h3>
-                                <p class="description">
-                                    Haaa les bancs universitaires, le C.R.O.U.S, la cafétéria, les amphitéatres et les cours magistraux et aussi bien évidemment la découverte de l'algorithmie et du Ocaml, la où tout à vraiment commencé pour enfin être la ou je suis aujourd'hui.
-                                    Je n'ai pas pu finir ces études malheuresement, mais je me mets au défi d'un jour pouvoir enfin les reprendre et prendre ma revanche.
-                                </p>
-                                <p>
-                                    <span>
-                                        <a href="https://sciences.edu.umontpellier.fr/" target="_blank" class="text-info">
-                                            <u>Découvrir l'UM2 ...</u>
-                                        </a>
-                                    </span>
-                                </p>
-                                <div class="icon"><span></span></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline" style="margin-top: 100px">
-                        <div class="timeline-content">
-                            <a href="https://theophile-roussel.mon-ent-occitanie.fr/" target="_blank">
-                                <div class="circle">
-                                    <span class="homebox">
-                                        <img src="https://lh3.googleusercontent.com/p/AF1QipNLUW65TH1rAlmJ8U_DQZTy6o-f3rHXmb3caliq=s680-w680-h510" width="164" height="164"  class="img">
-                                    </span>
-                                </div>
-                            </a>
-                            <div class="content">
-                                <span class="year">2009 - 2012</span>
-                                <h3 class="title h4 text-info">Lycée Théophile Roussel</h3>
-                                <p class="description">
-                                    À Saint Chély D'Apcher, la ville où j'ai passé mon BAC, ou j'ai fais du foot et de l'athlétisme au niveau national.
-                                    Mon BAC STG, m'as appris à comprendre et analyser les données, marketing et commerciale, aujourd'hui elle me permet aujourd'hui de comprendre toutes l'importance de l'analyse de données
-                                </p>
-                                <p>
-                                    <span>
-                                        <a href="https://theophile-roussel.mon-ent-occitanie.fr/" target="_blank" class="text-info">
-                                            <u>Plus sur le lycée Théophile Roussel</u>
-                                        </a>
-                                    </span>
-                                </p>
-                                <div class="icon"><span></span></div>
-                            </div>
-                        </div>
-                    </div >
                 </div>
             </div>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $('.collapse').on('shown.bs.collapse', function () {
+            $(this).parent().find('.text-collapse').text('En savoir moins');
+        });
+        $('.collapse').on('hidden.bs.collapse', function () {
+            $(this).parent().find('.text-collapse').text('En savoir plus');
+        });
+    </script>
 {% endblock content %}

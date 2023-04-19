@@ -1,34 +1,61 @@
-.timeline{
-padding: 32px 18px 0 0;
+:root {
+    --intech: #10f04f;
+    --avenirdata: #10bcf0;
+    --euphoria: #106af0;
+    --montpellier: #f0d210;
+    --lycee: #f08f10;
+}
+
+.h-92 {
+    height: 92% !important;
+}
+
+.ligne-intech {
+    border-right: 10px solid var(--intech);
+}
+.timeline-intech {
+    border: 4px dotted var(--intech);
+}
+.ligne-avenirdata {
+    border-left: 10px solid var(--avenirdata);
+}
+.timeline-avenirdata {
+    border: 4px dotted var(--avenirdata);
+}
+.ligne-euphoria {
+    border-left: 10px solid var(--euphoria);
+}
+.timeline-euphoria{
+    border: 4px dotted var(--euphoria);
+}
+.ligne-montpellier {
+    border-right: 10px solid var(--montpellier);
+}
+.timeline-montpellier {
+    border: 4px dotted var(--montpellier);
+}
+.ligne-lycee {
+    border-left: 10px solid var(--lycee);
+}
+.timeline-lycee {
+    border: 4px dotted var(--lycee);
+}
+
+.timeline {
+    padding: 32px 18px 0 0;
     color: #10caf0;
-text-align: center;
-min-height: 140px;
-border: 4px dotted #10caf0;
-border-radius: 20px;
-display: block;
-position: relative;
+    text-align: center;
+    min-height: 140px;
+    border-radius: 20px;
+    display: block;
+    position: relative;
     text-decoration: none;
 }
 .timeline-left {
-    margin: 0 50px 70px 0;
+    margin: 0 50px 0 0;
 }
 .timeline-right {
-    margin: 0 0 70px 50px;
-}
-.timeline-year-left, .timeline-year-right{
-color: white;
-font-size: 30px;
-font-weight: 700;
-line-height: 30px;
-transform: translateY(-50%) rotate(90deg);
-position: absolute;
-top: 50%;
-}
-.timeline-year-left{
-right: -200px;
-}
-.timeline-year-right{
-left: -200px;
+    margin: 0 0 0 50px;
 }
 .timeline-icon-left, .timeline-icon-right{
 position: absolute;
@@ -43,11 +70,8 @@ left: 20px;
 .timeline-icon-right{
 right: 20px;
 }
-.title{
-margin: 0 0 5px;
-}
 .description{
-margin: 0;
+margin: 20px;
 }
 @media screen and (max-width:576px){
 .timeline{

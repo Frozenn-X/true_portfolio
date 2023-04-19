@@ -14,7 +14,6 @@ urlpatterns = [
     # page parcours
     path('parcours/', views.parcours, name='parcours'),
     path('parcours', views.parcours, name='parcours'),
-    path('parcours-bis', views.parcoursbis, name='parcours-bis'),
     # page about
     path('about/', views.about, name='about'),
     path('about', views.about, name='about'),
