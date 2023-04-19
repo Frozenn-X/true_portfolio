@@ -5,8 +5,67 @@
 {% block content %}
 <div class="container row mx-auto h-100 my-lg-0 mt-5 pb-5" style="padding-top: 100px;">
     <h1 class="text-center my-5 link-info">Qualification hiérarchique</h1>
-    <p>
-        <img src="{% static 'img\work_progess.gif' %}" alt="Explique que le travail est en cours">
-    </p>
+    <div>
+        Chez Avenir Data, un des projets complémentaires à la génération d'email professionnel pour le B2B, il était important afin d'améliorer le ciblage des mailings clients de pouvoir catégoriser et hiérarchisais les personnes dans les entreprises.
+
+        Les objectifs :
+        Traiter les descriptions de poste ou de travail linkedin pour déterminer le service et la hiérarchie à laquelle une personne fais partie dans une entreprise(RH, DRH(Direction ressource humaines), DAF(Direction Administratif et financier), DSI(Direction système informatique), Commercial, Marketing/Communication ect)
+
+        Le contexte : 
+        Un des clients avec lesquels nous travaillons était prêt à acheter des adresses emails pour ensuite faire des démarches marketing sur les sociétés qui seraient potentiellement intéressées.
+        Les méthodes d’obtention d’adresses emails et des profils par la plupart des outils ou googles sont à ce jour peu dévoilées et passent souvent par les bots de référencements des sites ou des moteurs de recherches.
+        Ces informations peuvent aussi en général être proposés et vendus par des entreprise à l'étranger aux méthode douteuses(spam d'emails, service de centrale informatique pour des campagnes, spam de sms ou appels) qui ne respecte pas souvent la vie privé et les lois françaises voir européenne.
+        Mais ce genre d'informations en général est peu fiable(40-70% d'exactitude) et vite obsolète.
+        Pour augmenter la pertinence des emails proposés à notre client, ils nous as été demandé de qualifier que les personnes était françaises, dans le services DSI, dans les entreprises s'occupant de faire du marketing web;
+
+        L’enjeu :
+        L’enjeu principal de ce projet est de créer un script d’analyse de données permettant de définir les hiérarchies et les services dans lequelle il travaille afin de proposer des mailings aux personnes les plus pertinentes et les aptes à répondre.
+        Il était aussi de répondre à une demande client, en respectant la RGPD et obtenant entre 80-90% de validité et tenant les informations à jours en détectant les contacts obsolètes afin d'éviter à nos clients et nous-même de perdre du temps.
+
+        Les risques :
+        Un des risques principaux etait de loupé l'analyse de données primaires qui nous permettait de définir dans notre script à quel hiérarchie et quel service et donc fournir des profils n'intérréssant pas nos clients.
+
+        Les étapes : 
+        La première étape était d'analyser les profils déjà récupérer afin de voir et définir les éléments qui nous permettrait de catégoriser les profils.
+        Avec des éléments comme la porté de l'entreprise, (régional, locale, interntionale), la langue dans laquelle était écrite la description de poste ou les postes postés par la personne, la localisation de l'entreprise.
+
+        Parrallélement nous pouvions constituer des dictionnaires de mots-clés permettant de définir dans quelle service la personne travaillait et à quelle niveau de l'entreprise.
+
+        Suite à cela, nous n'avions qu'a continuer de récupèrer plus de profils et mettres les plus anciens à jours afin de continuer à dévelloper ce programme et l'affiner au fil du temps.
+
+        L'une des problèmatiques que j'ai trés vite soulever, était la possibilité qu'une personne soit catégoriser dans plusieurs services, comme des DRH, qui ont des tâches administratives, des créateurs d'entreprises qui jouais le rôle de commercial ou les commerciaux qui pouvait faire du marketing.
+        Pour cela, nous avons mis en place des dictionnaires spécifique à certains postes définis et récurrents, et définis certaines combinaison de mots clés afin qu'un profil puisse être tagué autant de fois que cela se retrouvais nécessaire.
+
+        Cela fesait qu'une personne pouvait être trés bien référencés comme CEO, Commercial et DRH dans certains cas, ou comme le voit de plus en plus souvent des DRH qui combine un autre poste dans l'administratif, le système informatique ou le coté commercial et financier de l'entreprise.
+
+        Nous avons pu constater vu le nombre de commandes que nos clients était satisfait jusqu'a permettre à un de nos clients d'augmenter le taux de réponse à ses mails jusqu'a 25 % et d'augmenter ainsi son chiffre d'affaire sur une campagne de mailing.
+        <div class="col-lg-8 col-12 mt-5">
+            <h5>Les compétences utilisés dans ce projet sont :</h5>
+            <ul class="px-5">
+                <li>
+                    <a href="{% url 'web:bdd_relationnal-desc' %}" class="text-info">Base de données relationnelles (Stockage & mise en relations des données)</a>
+                </li>
+                <li>
+                    <a href="{% url 'web:comm-desc' %}" class="text-info">Communication (Comprendre le besoin du client et l'enjeu pour l'entreprise)</a>
+                </li>
+                <li>
+                    <a href="{% url 'web:sql-desc' %}" class="text-info">SQL (Manipulation & analyse des données)</a>
+                </li>
+                <li>
+                    <a href="{% url 'web:python-desc' %}" class="text-info">Python (Script)</a>
+                </li>
+                <li>
+                    <a href="{% url 'web:r&d-desc' %}" class="text-info">R&D(étude de faisabilité)</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-lg-4 col-12 mt-5">
+            <h5>Technologie associés :</h5>
+            <ul class="px-5">
+                <li>Pandas</li>
+                <li>MariaDB</li>
+            </ul>
+        </div>
+    </div>
 </div>
 {% endblock content %}
