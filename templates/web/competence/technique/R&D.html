@@ -6,8 +6,40 @@
 <div class="container row mx-auto h-100 my-lg-0 my-5 pb-5" style="padding-top: 100px;">
     <h1 class="text-center my-5 text-info"> R&D (Recherche & Développement)</h1>
     <p>
-        <img src="{% static 'img\work_progess.gif' %}" alt="Explique que le travail est en cours">
+        La fonction Recherche & Développement regroupe l’ensemble des processus qui, partant de la recherche fondamentale ou d’une invention, assurent sa faisabilité industrielle. Il s’agit donc de l’ensemble des étapes permettant de passer du laboratoire de recherche à la production industrielle en usine.
+
+        La première étape est d’identifier clairement la problématique que rencontre le client, par la suite il est convenu de chercher des solutions viables compte tenu des ressources techniques et humaines à notre disposition. Une fois cela mis en place, une phase de test est obligatoire pour vérifier si nos attentes sont conformes à notre besoin.
+
+        La recherche et développement est une compétence utilisée en permanence dans mon métier de data engineer/scientist, j’occupe en effet le rôle de chef de projet sur de nombreux travaux, qui m’induit à me documenter pour pouvoir présenter les solutions les moins chronophages et les plus rentables à mon entreprise. Cette compétence s’appuie sur de la communication avec les équipes de notre entourage, mais aussi sur l’évaluation des enjeux d’un projet et des atouts de chacun pour résoudre une problématique.
+
+        Très souvent, nous fabriquons des maquettes que je propose à mon patron, qui, après discussion, valide ensuite le lancement d’un projet. Les maquettes produites pour une application Web peuvent être des dessins numériques ou même manuscrits ou la schématisation d'un processus pour répondre à d'autre demandes.
+
+        Une des plus grandes difficultés est de réussir à trouver des solutions viables, fonctionnelles et pragmatiques en un temps imparti dans notre quotidien d’ingénieur logiciel.
+
+        Cela me fait penser au projets Datactive, et de génération d'email ou cela m'as été grandement utiles, nos clients dans le module "Audit/Benchmark" de <a href="https://datactive.io/" class="text-info">Datactive</a>, pour répondre aux besoins de nos clients,
+        On a dû essayer vérifier la possibilité de faire le benchmark de fiche google par recherche à changeant de géolocalisation à 500m ou 1 km près, pas à la portée de tous VPN lambda, j'ai donc proposé qu'on créer une matrice de coordonnées pour toute les recherches sur lesquels un client voulais se positionner, qu'on enverrais dans la réquête à Google afin de modifier la géolocalisation de notre demande.
+
+        Je situe mon niveau de compétence a initié actuellement. Je m’appuie notamment sur mes compétences de gestion de projet. Je pense avoir une grande marge de progression dans cette compétence que je trouve particulièrement intéressante à force de constater que la progression vient avec l’expérience que l’on acquiert au cours des projets.
+
+        J’ai beaucoup appris grâce à mon tuteur qui est très doué dans le milieu, travaillant dans le marketing B to B (Business to Business) Depuis une trentaine d’années, il sait comprendre rapidement les besoins des clients pour leur proposer des solutions adéquates.
     </p>
+    <div class="col-lg-6 col-12 mt-5">
+        <h5>Cette compétence est trés utiles dans tous mes projets :</h5>
+        <ul class="px-5">
+            <li>
+                <a href="{% url 'web:datactive-project' %}" class="text-info">Datactive</a>
+            </li>
+            <li>
+                <a href="{% url 'web:hierarchy-project' %}" class="text-info">Qualification hiérarchique</a>
+            </li>
+            <li>
+                <a href="{% url 'web:scraping-project' %}" class="text-info">Scraping Web</a>
+            </li>
+            <li>
+                <a href="{% url 'web:generation_email-project' %}" class="text-info">Génération d'email</a>
+            </li>
+        </ul>
+    </div>
     <a href="#" target="_blank" class="text-info">En savoir plus sur l'utilité de la R&D</a>
 </div>
 {% endblock content %}
