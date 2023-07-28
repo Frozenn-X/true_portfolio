@@ -8,17 +8,17 @@
     <p>
         Chez Avenir Data, en plus de créer notre produit, nous essayons aussi de créer des outils avec des méthodologies innovantes comme l'interfaçage en direct et en exclusivité avec l'API de la FFF, ce qui ma directement plu et m'est apparu comme un vrai défi.
     </p>
-    <div class="my-2">
+    <div class="my-2 col-5">
         <h4>Les objectifs :</h4>
         <ul class="px-5">
             <li>
                 Imaginer un système de gestion de flux multiple et d'application multiple.
             </li>
             <li>
-                S'authentifier sur l'api de la FFF
+                S'authentifier sur l'api de la FFF.
             </li>
             <li>
-                Parser les données voulus et les structurés
+                Parser les JSONS de la FFF et récupèrer les données voulus et les structurés.
             </li>
             <li>
                 Créer une interface d'administration pour <a href="https://play.google.com/store/apps/details?id=com.DLF.app.mobile&hl=fr&gl=US" class="text-info">l'application mobile DLF <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
@@ -31,22 +31,32 @@
             </li>
         </ul>
     </div>
-    <div class="my-2">
-        <h4>Le context :</h4>
-        <p>
-            Le client pour lequel nous travaillions n'était autre que le district des landes du foot, lequel voulez créer un outil, permettant à ses utilisateurs de suivres les résultats et les actualités de ses clubs landais, mais aussi de participer à un système de pronostic ou le meilleur joueur pourrait gagner des lots venant d'un des sponsor du district.
+    <div class="col-7">
+        <img src="{% static 'img/connexion_sam.png' %}" heigt="500" width="750"/>
+    </div>
+    <div class="my-2 row">
+        <h4 class="col-12">Le contexte :</h4>
+        <p class="col-8">
+            Le client pour lequel nous travaillions n'était autre que le district des landes du foot, lequel voulez créer un outil, permettant à ses utilisateurs de suivres les résultats et les actualités de ses clubs landais, mais aussi de participer à un système de pronostic.
+            L'utilisateur a plusieurs outils de création de contenu que ce soit les actualités, les annonces, la gestion de notifications, la création d'un jeux concours avec des pronostics où le meilleur joueur pourrait gagner des lots venant d'un des sponsor du district.
+            Il peut aussi avoir un suivi précis de l'activité sur son application, comme le nombre de personne inscrites, le nombre de compte supprimés, le nombre "d'annonces" affichés et cliqués, si un pronostic est encore en cours ou terminé.
+            Et tout celà afin qu'un district de foot ne soit pas totalement dépendants des outils de la FFF, car peux le savent mais la FFF gère tous les sites de chaque district sans qu'eux ne puissent y avoir un réel impact. Ce qui cause certains soucis, comme manque d'activité par moments, manque d'actualités qui concerne le plus de monde ou actualités ciblés sur le district.
         </p>
+        <img class="col-4" src="{% static 'img/accueil_sam.png' %}" heigt="500" width="750"/>
     </div>
     <div class="my-2">
         <h4>L'enjeu :</h4>
         <p>
             Le principal sur ce projet, était de créer un outils d'administration et de récupération des données depuis la FFF, qui pourrait être décliner sur plusieurs district ou même différents sports et donc application mobile.
+            il était nécessaire pour la ligue de créer et rapprocher la communauté autour du foot sur le territoire et aussi d'améliorer sa visibilité et ses relations avec la communauté et ses partenaires.
+            Car sur les sites de la FFF, il n'y a pas le détail de visibilités sur les partenaires des ligues de football.
         </p>
     </div>
     <div class="my-2">
         <h4>Les risques :</h4>
         <p>
-            Le fait d'avoir un organisme tierce, fournissant son travail en mode 'best-effort' n'aide pas à la tâche, que ce soir sur la communication ou la documentation inexistante, "c'est prend ce que tu as est débrouille toi".
+            Le fait d'avoir un organisme tierce, fournissant son travail en mode 'best-effort' n'aide pas à la tâche, que ce soit sur la communication ou la documentation inexistante, "c'est prend ce que tu as est débrouille toi".
+            Mais c'était déjà bien on aurais pu tout aussi bien se retrouver à "scraper" la totalité des sites de la FFF, ce qui aurait pu rendre la tâche encore plus compliqué.
         </p>
     </div>
     <div class="my-2">
@@ -72,7 +82,7 @@
                 <a href="{% url 'web:comm-desc' %}" class="text-info">Communication (Comprendre le besoin du client et l'enjeu pour l'entreprise)</a>
             </li>
             <li>
-                <a href="" class="text-info">Gestion d'équipe (FFF, client, application mobile devait être correlé ensemble)</a>
+                <a href="{% url 'web:team-desc' %}" class="text-info">Gestion d'équipe (FFF, client, application mobile devait être correlé ensemble)</a>
             </li>
             <li>
                 <a href="{% url 'web:sql-desc' %}" class="text-info">SQL (Manipulation & analyse des données)</a>
