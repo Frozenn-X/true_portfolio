@@ -7,38 +7,44 @@
         <h1 class="text-center my-5 text-info">Scraping web - Google Business Profile</h1>
         <p>
             L'un de mes premiers projets chez Avenir Data, à été de récupèrer des données sur internet pour faire des
-            statistique et évaluer le marché et les positions sur les fiches Google Business Profile en utilisant Python
+            statistiques et évaluer le marché et les positions sur les fiches Google Business Profil en utilisant Python
             et la libraire Selenium.
         </p>
-        <div class="my-2">
-            <h4>Les objectifs :</h4>
-            <p>
-                Récupérer les données des <a class="text-info" href="https://www.google.com/intl/fr_fr/business/">fiches Google Business Profile <i class="fa-solid fa-arrow-up-right-from-square"></i></a> ,
-                regrouper ces données afin d'augmenter leurs valeurs, faire des statistiques sur le classement des fiches googles.
-            </p>
-            <div class="row">
-                <img class="col-12" src="{% static 'img/Google_local_pack.png' %}" />
-                <img class="col-12" src="{% static 'img/fiche_google_business.png' %}">
+        <div class="row">
+            <div class="col-8">
+                <div class="my-2">
+                    <h4>Les objectifs :</h4>
+                    <p>
+                        Récupérer les données des <a class="text-info" href="https://www.google.com/intl/fr_fr/business/"><u>fiches Google Business Profile</u><i class="fa-solid fa-arrow-up-right-from-square"></i></a> ,
+                        regrouper ces données afin d'augmenter leurs valeurs, faire des statistiques sur le classement des fiches googles.
+                    </p>
+                </div>
+                <div class="my-2">
+                    <h4>Le contexte :</h4>
+                    <p>
+                        Notre travail dans le scraping et de récupèrer des données sans violé la RGPD, et pour créer des statistiques utilisable afin de comprendre aux mieux l'algorithme Google,
+                        en analysant les données de centaines de google local pack, nous pouvions mieux comprendre les problèmatiques pour s'améliorer et les éléments que Google mets en avant
+                        afin de permettre à nos clients de se positionner sur un nouveau marché, ou se placer
+                        dans le top 3 du leur. Aujourd'hui l'algorithme des fiches google et plus précisément du
+                        <a href="https://www.linkedin.com/posts/datactive40_google-local-pack-activity-6990208845226594304-XTRK?utm_source=share&utm_medium=member_desktop" class="text-info">
+                        Google Local Pack <i class="fa-solid fa-arrow-up-right-from-square"></i></a> sont peux connus, étudier celui-ci en récupérant des informations pouvais
+                        donnez un avantage à notre outil.
+                        Chaque client était aussi une source d'aide et d'amélioration de notre compréhension de l'algorithme Google.
+                    </p>
+                </div>   
+                <div class="my-2">
+                    <h4>L'enjeu :</h4>
+                    <p>
+                        Dans ce projet, il était important de bien récupérer les données correctes afin de pouvoir créer des
+                        statistiques et mieux décrypter l'algorithme de google afin de pouvoir aidez nos clients à mieux se positionner.
+                    </p>
+                </div>      
             </div>
-        </div>
-        <div class="my-2">
-            <h4>Le contexte :</h4>
-            <p>
-                Notre outil 'Datactive' englobé un module qui visé à étudier le positionnement des fiches googles et optimiser
-                ce dernier grâce aux analyses faites et leur permettre de se positionner sur un nouveau marché, ou se placer
-                dans le top 3 du leur. Aujourd'hui l'algorithme des fiches google et plus précisément du
-                <a href="https://www.linkedin.com/posts/datactive40_google-local-pack-activity-6990208845226594304-XTRK?utm_source=share&utm_medium=member_desktop" class="text-info">
-                Google Local Pack <i class="fa-solid fa-arrow-up-right-from-square"></i></a> sont peux connus, étudier celui-ci en récupérant des informations pouvais
-                donnez un avantage à notre outil.
-            </p>
-        </div>
-        <div class="my-2">
-            <h4>L'enjeu :</h4>
-            <p>
-                Dans ce projet, il était important de bien récupérer les données correctes afin de pouvoir créer des
-                statistiques et mieux décrypter l'algorithme de google afin de pouvoir aidez nos clients à mieux se positionner.
-            </p>
-        </div>
+            <div class="col-4 row">
+                <img class="col-12" height="400" src="{% static 'img/Google_local_pack.png' %}" />
+                <em class="col-12">Image d'une page google à scraper grâce à Selenium</em>
+            </div>
+        </div> 
         <div class="my-2">
             <h4>Les risques :</h4>
             <p>
@@ -65,7 +71,7 @@
             </p>
             <p>
                 Ensuite une fois cela fait nous pouvions créer des statistique pour vérifier si par exemple, il y avais
-                une corrélation entre une ou plusieurs infos et l'ordre dans laquelle une fiche ressortait selon la recherche.
+                une corrélation entre une ou plusieurs informations présentes dans les fiches google et l'ordre dans laquelle une fiche ressortait selon la recherche.
             </p>
             <p>
                 Il en est ressortis que plusieurs des premières analyses faites ont pu être utiles à nos clients et leur
@@ -104,9 +110,11 @@
             <h5>Technologie associés :</h5>
             <ul class="px-5">
                 <li>Scrapy</li>
-                <li>Docker</li>
-                <li>Selenium</li>
-                <li>MariaDB</li>
+                <li><a href="https://www.docker.com/" target="_blank" class="text-info" ><u>Docker</u></a></li>
+                <li>
+                    <a href="https://pypi.org/project/selenium/" target="_blank"  class="text-info"><u>Selenium (librairie permettant la manipulation d'un navigateur)</u></a>
+                </li>
+                <li><a href="https://mariadb.org/" target="_blank" class="text-info"><u>MariaDb</u></a></li>
                 <li>Git</li>
             </ul>
         </div>
