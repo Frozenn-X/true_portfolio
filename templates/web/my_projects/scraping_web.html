@@ -16,6 +16,10 @@
                 Récupérer les données des <a class="text-info" href="https://www.google.com/intl/fr_fr/business/">fiches Google Business Profile <i class="fa-solid fa-arrow-up-right-from-square"></i></a> ,
                 regrouper ces données afin d'augmenter leurs valeurs, faire des statistiques sur le classement des fiches googles.
             </p>
+            <div class="row">
+                <img class="col-12" src="{% static 'img/Google_local_pack.png' %}" />
+                <img class="col-12" src="{% static 'img/fiche_google_business.png' %}">
+            </div>
         </div>
         <div class="my-2">
             <h4>Le contexte :</h4>
@@ -31,16 +35,16 @@
         <div class="my-2">
             <h4>L'enjeu :</h4>
             <p>
-                Dans ce projet, il était important de bien récupérer les données correcte afin de pouvoir créer des
-                statistiques et mieux comprendre comment aidez nos clients à mieux se positionner.
+                Dans ce projet, il était important de bien récupérer les données correctes afin de pouvoir créer des
+                statistiques et mieux décrypter l'algorithme de google afin de pouvoir aidez nos clients à mieux se positionner.
             </p>
         </div>
         <div class="my-2">
             <h4>Les risques :</h4>
             <p>
-                L'un des plus gros risque dans ce projet, était l'échec de celui en se retrouvant bloquer par le captcha
-                ou Google qui aime piégé ses pages à chaque nouvelle mise à jour afin de justement éviter ce genre de
-                scraping intensif.
+                L'un des plus gros risque dans ce projet, était l'échec de se retrouver bloquer lors de la récupération des données, par le captcha
+                ou Google, qui aime piégé ses pages à chaque nouvelle mise à jour afin de justement éviter ce genre de
+                scraping intensif ou même dans les cas extrème de se voir son IP bloqué.
             </p>
         </div>
         <div class="my-2">
@@ -56,8 +60,8 @@
             </p>
             <p>
                 En parallèle, nous devions vérifier les données et trouver le moyen d'accèlerer le processus, pour lequel
-                nous avons établis des stratégies, comme changez d'adresse ip ou changer le (lien)user-agent du navigateur
-                utilisé.
+                nous avons établis des stratégies, comme multipliez le programme en le déployant avec un docker, containerisant le programme mais aussi les blocage par le navigateur.
+                Chaque docker avait un système afin de se relancer tout seul, modifiant le user-agent et le VPN utilisé pour éviter les blocage d'IP de google.
             </p>
             <p>
                 Ensuite une fois cela fait nous pouvions créer des statistique pour vérifier si par exemple, il y avais
@@ -65,10 +69,18 @@
             </p>
             <p>
                 Il en est ressortis que plusieurs des premières analyses faites ont pu être utiles à nos clients et leur
-                ont rapporté cela, afin d'optimiser cela j'ai pu me rendre utiles en optimisant les recherches et l'analyse
+                ont rapporté, afin d'optimiser cela j'ai pu me rendre utiles en optimisant les recherches et l'analyse
                 des données récupèrer en implémentant un processus de multi-threading & changez certains mots-clés pour un
                 secteur précis afin de voir si cela impacté le classement des fiches <a href="https://www.google.com/intl/fr_fr/business/" class="text-info">
-                Google Business Profile <i class="fa-solid fa-arrow-up-right-from-square"></i></a> .
+                Google Business Profile <i class="fa-solid fa-arrow-up-right-from-square"></i></a> 
+                Un système de points selon la complétion d'une fiche, et les horaires de scraping nous permettaient aussi d'en savoir plus sur l'algorithme de Google.
+            </p>
+            <p>
+                J'ai adoré la complétion des tâches entre la récupération de données massives, et l'analyse faites derrière, pour essayer de comprendre comment l'améliorer.
+                Cela notamment dans le fait qu'on peux voir les différence entre plusieurs moment de la journée, et la multitude de possibilités qu'il pouvais y avoir.
+                
+                Mon niveaux sur le scraping aujourd'hui est assez correct. Je sais facilement utilisé les différentes librairies, grâce notamment aux Xpath qui est plus ou moins similaire selon le langage de balise qu'on veux récupèrer ou parser.
+                Pour moi, je trouve l'outil Selenium plus au point que ses compères, notamment dû au fait qu'il puisse directement simulés un navigateur, même sans interface et tout de même agir sur le javascript ce qui implique pas mal de chose, comme le fait de pouvoir simulé un vrai comportement humain, tout en évitant une charge trop lourde.
             </p>
         </div>
         <div class="col-lg-8 col-12 mt-5">
