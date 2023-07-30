@@ -6,6 +6,9 @@
 <div class="container row mx-auto h-100 my-lg-0 my-5 pb-5" style="padding-top: 100px;">
     <h1 class="text-center my-5 text-info">SQL, le langage des bases de données relationnel</h1>
     <div class="row">
+        <div class="col-4 text-center">
+            <img src="{% static 'img/mySQL.png' %}" alt="Logo du langage mySQL" class="w-50">
+        </div>
         <div class="col-8 mx-auto">
             <p class="">
                     SQL (Structured Query Language) est un langage informatique qui permet la manipulation et l'interrogation de
@@ -19,24 +22,22 @@
                     Ainsi, dans ce texte, nous allons explorer les bases de SQL et son utilisation dans la gestion des données, ainsi
                 que les différentes applications et exemples pratiques de ce langage..
             </p>
-            <p>
-                    Ce langage sert à ajouter, modifier, supprimer et plus globalement manipuler des données stockées dans des bases
-                de données relationnelles. Dans le contexte de mon entreprise qui manipule de la donnée dans tous ses projets,
-                SQL est une brique incontournable et indispensable de mon travail.
-            </p>
-            <p>
-                    Le maniement du langage SQL est de loin ma capacité la plus avancée, celle avec laquelle j’ai le plus travaillé,
-                sur laquelle j’ai le plus approfondi mes recherches pour m’améliorer dès le premier jour de mon arrivée dans
-                l’entreprise. En arrivant, j’ai eu comme première mission d’analyser des chaînes de caractères comprenant des
-                informations publiques de LinkedIn, pour pouvoir en extraire la fonction des personnes, leur poste, leur société,
-                etc. J’avais une connaissance scolaire très basique des bases de données et je considérais SQL comme un langage
-                permettant seulement de faire des sélections de données grâce à des requêtes.
-            </p>
-        </div>
-        <div class="col-4">
-            <img src="{% static 'img/sql_vs_nosql.png' %}" height="400" widt="500" alt="image d'un benchmark comparatif de sql et no sql"  />
         </div>
     </div>
+
+    <p>
+        Ce langage sert à ajouter, modifier, supprimer et plus globalement manipuler des données stockées dans des bases
+        de données relationnelles. Dans le contexte de mon entreprise qui manipule de la donnée dans tous ses projets,
+        SQL est une brique incontournable et indispensable de mon travail.
+    </p>
+    <p>
+        Le maniement du langage SQL est de loin ma capacité la plus avancée, celle avec laquelle j’ai le plus travaillé,
+        sur laquelle j’ai le plus approfondi mes recherches pour m’améliorer dès le premier jour de mon arrivée dans
+        l’entreprise. En arrivant, j’ai eu comme première mission d’analyser des chaînes de caractères comprenant des
+        informations publiques de LinkedIn, pour pouvoir en extraire la fonction des personnes, leur poste, leur société,
+        etc. J’avais une connaissance scolaire très basique des bases de données et je considérais SQL comme un langage
+        permettant seulement de faire des sélections de données grâce à des requêtes.
+    </p>
 
     <div class="col-lg-8 col-12">
         <p>
@@ -58,15 +59,15 @@
             à optimiser la découpe de prénoms et de noms en paquets de mots, pour pouvoir accélérer les traitements, ceci
             a permis d’obtenir des fiches d’individus ciblés et rapporter de la plus-value pour mon entreprise.
         </p>
+        <p>
+            Force de constater que j’ai un niveau expert en SQL, je sais quasiment tout faire à l’heure actuelle, ce langage
+            n’a plus de secret pour moi, je continue d’apprendre des petites subtilités chaque jour, car comme tout langage
+            de programmation, il a un éventail de fonctions très riche et varié, néanmoins l’essentiel est largement acquis.
+        </p>
     </div>
-    <div class="col-lg-4 col-12 m-auto text-center py-lg-0 py-5">
-        <img src="{% static 'img/mySQL.png' %}" alt="Logo du langage mySQL" class="w-50">
+    <div class="col-lg-4 col-12 m-auto text-center pb-3">
+        <img src="{% static 'img/sql_vs_nosql.png' %}" height="400" widt="500" alt="image d'un benchmark comparatif de sql et no sql"  />
     </div>
-    <p>
-        Force de constater que j’ai un niveau expert en SQL, je sais quasiment tout faire à l’heure actuelle, ce langage
-        n’a plus de secret pour moi, je continue d’apprendre des petites subtilités chaque jour, car comme tout langage
-        de programmation, il a un éventail de fonctions très riche et varié, néanmoins l’essentiel est largement acquis.
-    </p>
     <p>
         Si je devais conseiller une personne débutante, il faut aller chercher plus loin que ce qui nous est présenté
         avec ce langage, la manipulation de données prend de plus en plus de place dans notre société informatisée et
@@ -75,7 +76,7 @@
     <p>
         Concernant le futur, je compte m’améliorer en continuant à suivre des formations SQL avancées comme celle-ci
         proposée par le site Udemy :
-        <a href="https://www.udemy.com/course/advanced-sql-server-masterclass-for-data-analysis/" class="text-info">
+        <a href="https://www.udemy.com/course/advanced-sql-server-masterclass-for-data-analysis/" class="text-info" target="_blank">
             Masterclass SQL avancé pour l'analyse de données <i class="fa-solid fa-arrow-up-right-from-square"></i>
         </a><br>
         Le langage SQL est en adéquation avec mon projet professionnel de devenir un Data scientist, il est en lien
@@ -87,30 +88,30 @@
         </h5>
         <ul class="px-5">
             <li>
-                <a href="{% url 'web:SAM_DLF-project' %}" class="text-info">SAM</a>
+                <a href="{% url 'web:SAM_DLF-project' %}" class="text-info" target="_blank">SAM</a>
             </li>
             <li>
-                <a href="{% url 'web:datactive-project' %}" class="text-info">Datactive</a>
+                <a href="{% url 'web:datactive-project' %}" class="text-info" target="_blank">Datactive</a>
             </li>
             <li>
-                <a href="{% url 'web:hierarchy-project' %}" class="text-info">Qualification hiérarchique</a>
+                <a href="{% url 'web:hierarchy-project' %}" class="text-info" target="_blank">Qualification hiérarchique</a>
             </li>
             <li>
-                <a href="{% url 'web:scraping-project' %}" class="text-info">Scraping Web</a>
+                <a href="{% url 'web:scraping-project' %}" class="text-info" target="_blank">Scraping Web</a>
             </li>
             <li>
-                <a href="{% url 'web:wurth-project' %}" class="text-info">Würth</a>
+                <a href="{% url 'web:wurth-project' %}" class="text-info" target="_blank">Würth</a>
             </li>
             <li>
-                <a href="{% url 'web:generation_email-project' %}" class="text-info">Génération d'email</a>
+                <a href="{% url 'web:generation_email-project' %}" class="text-info" target="_blank">Génération d'email</a>
             </li>
         </ul>
     </div>
     <div class="col-lg-6 col-12 mt-5">
         <h5>Autres liens :</h5>
-        <p><a href="#" target="_blank" class="text-info">En savoir plus sur les bases de données relationnel</a></p>
-        <p><a href="#" target="_blank" class="text-info">En savoir plus sur SQL et ses dérivés</a></p>
-        <p><a href="#" target="_blank" class="text-info">En savoir plus sur les paradigmes des bases de données relationnels</a></p>
+        <p><a href="#" target="_blank" class="text-info">En savoir plus sur les bases de données relationnel <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+        <p><a href="#" target="_blank" class="text-info">En savoir plus sur SQL et ses dérivés <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+        <p><a href="#" target="_blank" class="text-info">En savoir plus sur les paradigmes des bases de données relationnels <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
     </div>
 </div>
 {% endblock content %}

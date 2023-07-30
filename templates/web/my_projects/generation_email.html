@@ -8,11 +8,11 @@
     <p>
         Chez Avenir Data, l'une de mes plus intérressantes missions était d’essayer de générer des adresses emails aux
         personnes fournissant leurs informations publiquement sur des sites tels que LinkedIn en utilisant
-        <a href="{% url 'web:sql-desc' %}" class="text-info">le langage SQL <i class="fa-solid fa-arrow-up-right-from-square"></i></a> et <a href="{% url 'web:python-desc' %}" class="text-info">
-        Python <i class="fa-solid fa-arrow-up-right-from-square"></i></a> ainsi qu’une base de données d’emails que nous possédions sur des personnes travaillant dans des sociétés.
+        <a href="{% url 'web:sql-desc' %}" class="text-info" target="_blank">le langage SQL</a> et <a href="{% url 'web:python-desc' %}" class="text-info" target="_blank">
+        Python</a> ainsi qu’une base de données d’emails que nous possédions sur des personnes travaillant dans des sociétés.
     </p>
     <div class="my-2">
-        <h4>Les objectifs :</h4>
+        <h4 class="text-info">Les objectifs :</h4>
         <ul class="px-5">
             <li>
                 Raccorder une personne à une société via les informations de son profil LinkedIn
@@ -32,7 +32,7 @@
         </ul>
     </div>
     <div class="my-2">
-        <h4>Le contexte :</h4>
+        <h4 class="text-info">Le contexte :</h4>
         <p>
             Un des clients avec lesquels nous travaillons était prêt à acheter des adresses emails pour ensuite faire
             des démarches marketing sur les sociétés qui seraient potentiellement intéressées. Les méthodes d’obtention
@@ -41,14 +41,14 @@
         </p>
     </div>
     <div class="my-2">
-        <h4>L’enjeu :</h4>
+        <h4 class="text-info">L’enjeu :</h4>
         <p>
             L’enjeu principal de ce projet est de créer un script d’analyse de données permettant d’étoffer notre bagage
             technique dans la matière, et surtout de pouvoir générer un revenu.
         </p>
     </div>
     <div class="my-2">
-        <h4>Les risques :</h4>
+        <h4 class="text-info">Les risques :</h4>
         <p>
             Un des risques principaux est d’être signalé comme spam de la part des utilisateurs ou des services d'emailing
             à force de tester de mauvais pattern il était essentielle d'appliquer une méthodologie stricte afin de valider
@@ -60,7 +60,7 @@
         </p>
     </div>
     <div class="my-2">
-        <h4>Les étapes :</h4>
+        <h4 class="text-info">Les étapes :</h4>
         <p>
             La première étape consiste à raccorder une société à un utilisateur, en observant les données publiques de son
             profil LinkedIn, très fréquemment la méthode utilisée était d’attraper la société à la suite de : “travaille
@@ -95,47 +95,53 @@
                 li = initiale du nom de famille
             </li>
         </ul>
-        <p>
-            Les patterns les plus présents sont fi.ln comme par exemple x.trauchessec ou encore fn.ln comme xavier.trauchessec
-        </p>
-        <p>
-            Pour étudier tous ces cas et leurs fréquences, il fallait posséder un dictionnaire, une liste de tous les prénoms
-            et noms de familles existants dans notre pays. Nous avons utilisé les données de l’open data de l’Insee pour cela.
-        </p>
+        <div class="row">
+            <div class="col-4 my-auto">
+                <p>
+                    Les patterns les plus présents sont fi.ln comme par exemple x.trauchessec ou encore fn.ln comme xavier.trauchessec
+                </p>
+                <p>
+                    Pour étudier tous ces cas et leurs fréquences, il fallait posséder un dictionnaire, une liste de tous les prénoms
+                    et noms de familles existants dans notre pays. Nous avons utilisé les données de l’open data de l’Insee pour cela.
+                </p>
+            </div>
+            <div class="col-8 pb-5">
+                <img class="border border-white w-100" src="{% static 'img/scipt_python_genemail.png' %}" alt="image d'une partie de script python, gestionnaire de multi thread">
+            </div>
+        </div>
         <p>
             Grâce à tous cela nous pouvions lié les personnes aux entreprises et connaitre leurs domaines web ces derniers, il suffisait donc
             ensuite de mettre en place un script, récupérant ces informations pour générer des email grâce aux patterns et le domaine
             mail afin de générer et tester tous les cas possibles et donc avoir un pool de mail afin de vérrifier et analyser les patterns d'email.
-            Ensuite nous les testions grâce à un serveur d'emailing, et grâce au code de retour, nous avions des éléments nous permettant de valider ou invalider les patterns d'une entreprise et les domaines associés. 
+            Ensuite nous les testions grâce à un serveur d'emailing, et grâce au code de retour, nous avions des éléments nous permettant de valider ou invalider les patterns d'une entreprise et les domaines associés.
         </p>
         <p>
             La où j'ai vraiment du améliorer la chose, était dans le process de validation d'un ou plusieurs patterns pour une entreprise, car oui cela est possible.
             J'ai réglé ça en ré-écrivant un script python, pour que pour chaque entreprise nous crééons certains emails afin de valider le domaine, puis créer des emails nous permettant d'identifier les patterns utilisés par l'entreprise.
             Mais le plus gros problème était la lenteur des tests des emails, le script ne pouvais que tester 10 à 20 000 email par jours, mais sur un serveur cela est relativement peu, donc pour cela j'ai du mettre en place un script python qui lançais plusieurs instance de tests de mail en même temps.
             On appelle ça le multi-thread, en python nous pouvons lancer un programme sur un coeur très précis de la machine. Ceux qui m'as permis de lancer jusqu'a 4 script par jour, multipliant ainsi drastiquement la capacité d'email par jour.
-            <img class="border border-white mt-3" src="{% static 'img/scipt_python_genemail.png' %}" alt="image d'une partie de script python, gestionnaire de multi thread">
         </p>
     </div>
     <div class="col-lg-8 col-12 mt-5">
         <h5>Les compétences utilisés sur le projet sont :</h5>
         <ul class="px-5">
             <li>
-                <a href="{% url 'web:sql-desc' %}" class="text-info"><u>SQL (Manipulation & analyse des données)</u></a>
+                <a href="{% url 'web:sql-desc' %}" class="text-info" target="_blank">SQL (Manipulation & analyse des données)</a>
             </li>
             <li>
-                <a href="{% url 'web:bdd_relationnal-desc' %}" class="text-info"><u>Base de données relationnelles (Stockage & mise en relations des données)</u></a>
+                <a href="{% url 'web:bdd_relationnal-desc' %}" class="text-info" target="_blank">Base de données relationnelles (Stockage & mise en relations des données)</a>
             </li>
             <li>
-                <a href="{% url 'web:python-desc' %}" class="text-info"><u>Python (Script de récupération des données et envois d'email)</u></a>
+                <a href="{% url 'web:python-desc' %}" class="text-info" target="_blank">Python (Script de récupération des données et envois d'email)</a>
             </li>
             <li>
-                <a href="{% url 'web:comm-desc' %}" class="text-info"><u>Communication</u></a>
+                <a href="{% url 'web:comm-desc' %}" class="text-info" target="_blank">Communication</a>
             </li>
         </ul>
     </div>
      <div class="col-lg-4 col-12 mt-5">
         <h5>Autres liens :</h5>
-        <p><a href="https://www.usebouncer.com/fr/le-pour-et-le-contre-de-lachat-dune-liste-dadresses-e-mail/" class="text-info">Avantages / Inconvénients <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+        <p><a href="https://www.usebouncer.com/fr/le-pour-et-le-contre-de-lachat-dune-liste-dadresses-e-mail/" class="text-info" target="_blank">Avantages / Inconvénients <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
      </div>
 </div>
 {% endblock content %}

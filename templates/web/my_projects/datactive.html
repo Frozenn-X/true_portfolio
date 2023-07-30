@@ -7,24 +7,23 @@
     <h1 class="text-center my-5 link-info">Datactive, le module de performance de fiche google</h1>
     <p></p>
     <div class="my-2 row">
-        <h4>Les objectifs :</h4>
-        <p class="col-6">
-            Dans un monde professionnel où la présence d'une image sur internet est obligatoire, il semblait pertinent de créer des outils permettant de créer et suivre la progression de cette dernière sur internet.
-            Datactive devait être cette application modulaire (c'est à dire qu'on pouvais acheter un ou plusieur modules de la plateforme),
-            aidant les entreprise à créer et suivre leurs images sur internet et à voir position qui avait sur le web.
-            Pour ma part une grande partie de mon travail à était de récolter de différentes manières les positions des fiches googles dans le google local pack selon une recherche.
-        </p>
-        <div class="col-6 row">
-            <img class="col-12" height="250" width="450" src="{% static 'img/Google_local_pack.png' %}" />
-            <em class="col-12 text-center">Image du Google local pack</em>
-        </div>
-    </div>
-    <div class="my-2 row">
-        <h4>Le contexte :</h4>
-        <p class="col-6">
-            Lors de mon arrivée, sur le projet, certains modules  était déjà développer et d'autre rester à faire. Le projet était fait en <a href="{% url 'web:python-desc' %}" target="_blank" class="text-info"><u>Python</u></a> sous le CMS <a href="https://www.djangoproject.com/start/overview/" target="_blank"  class="text-info"><u>Django</u></a> avec une base de données <a href="{% url 'web:sql-desc' %}" target="_blank" class="text-info"><u>SQL </u></a> sous le moteur MariaDb.
+        <div class="col-8">
+            <h4 class="text-info">Les objectifs :</h4>
+            <p>
+                Dans un monde professionnel où la présence d'une image sur internet est obligatoire, il semblait pertinent de créer des outils permettant de créer et suivre la progression de cette dernière sur internet.
+                Datactive devait être cette application modulaire (c'est à dire qu'on pouvais acheter un ou plusieur modules de la plateforme),
+                aidant les entreprise à créer et suivre leurs images sur internet et à voir position qui avait sur le web.
+                Pour ma part une grande partie de mon travail à était de récolter de différentes manières les positions des fiches googles dans le google local pack selon une recherche.
+            </p>
+            <h4 class="text-info">Le contexte :</h4>
+            <p>
+                Lors de mon arrivée, sur le projet, certains modules  était déjà développer et d'autre rester à faire. Le projet était fait en
+                <a href="{% url 'web:python-desc' %}" target="_blank" class="text-info">Python</a> sous le CMS
+                <a href="https://www.djangoproject.com/start/overview/" target="_blank"  class="text-info">Django <i class="fa-solid fa-arrow-up-right-from-square"></i></a> avec une base de données
+                <a href="{% url 'web:sql-desc' %}" target="_blank" class="text-info">SQL <i class="fa-solid fa-arrow-up-right-from-square"></i></a> sous le moteur MariaDb.
+            </p>
             Datactive se divisés en plusieurs modules, certains été en place :
-            <ul>
+            <ul class="px-5">
                 <li>
                     E-réputation (statistiques KPI du rendement de leur fiches)
                 </li>
@@ -36,13 +35,13 @@
                 </li>
             </ul>
             D'autres en cours de développement :
-            <ul>
+            <ul class="px-5">
                 <li>
                     Enrichissement ( Chercher et trouver de nouveaux contacts commerciaux pour enrichir leur CRM)
                 </li>
             </ul>
             et d'autres rester à faire :
-            <ul>
+            <ul class="px-5">
                 <li>
                     CRM (Améliorer le suivi commercial / clientèle)
                 </li>
@@ -50,31 +49,39 @@
                     Performance(Suivi et analyse de fiche Google)
                 </li>
             </ul>
-        </p>
-        <div class="col-6 row">
-            <img class="col-12" height="250" width="450" src="{% static 'img/position_google.png' %}" />
-            <em class="col-12 text-center" >Image où Intech Ivry est dixième dans la recherche 'école ingénerie informatique Paris'</em>
+        </div>
+        <div class="col-4 text-center">
+            <img src="{% static 'img/Google_local_pack.png' %}" class="w-100"/>
+            <em>Image du Google local pack</em>
         </div>
     </div>
-    <div class="my-2">
-        <h4>L’enjeu :</h4>
-        <p>
-            L'enjeu pour l'entreprise était primordiale, Avenir Data était avant une entreprise de service qui essaye de créer son propre produit et son image, en essayant de créer une plateforme multi-service complémentaire afin d'aider toutes sortes d'entreprises à améliorer leur communication, marketing & position sur internet.
-            En réunissant tous les outils pour l'optimisation de sa présence sur les réseaux et sur google et créer les campagnes ciblés aux bon clients.
-            Dans la particularité de mon travail les enjeux principaux étais de pouvoir correctement récolté la données lié à Google, correctement la stocké en base de données et pouvoir mettre en place une interface permettant à l'utilisateur de comprendre son placement sur google et l'améliorer.
-        </p>
+    <div class="row">
+        <div class="col-4 text-center pb-5">
+            <img src="{% static 'img/position_google.png' %}" class="w-100"/>
+            <em>Image où Intech Ivry est dixième dans la recherche :<br>"école ingénerie informatique Paris"</em>
+        </div>
+        <div class="col-8">
+            <div class="my-2">
+                <h4 class="text-info">L’enjeu :</h4>
+                <p>
+                    L'enjeu pour l'entreprise était primordiale, Avenir Data était avant une entreprise de service qui essaye de créer son propre produit et son image, en essayant de créer une plateforme multi-service complémentaire afin d'aider toutes sortes d'entreprises à améliorer leur communication, marketing & position sur internet.
+                    En réunissant tous les outils pour l'optimisation de sa présence sur les réseaux et sur google et créer les campagnes ciblés aux bon clients.
+                    Dans la particularité de mon travail les enjeux principaux étais de pouvoir correctement récolté la données lié à Google, correctement la stocké en base de données et pouvoir mettre en place une interface permettant à l'utilisateur de comprendre son placement sur google et l'améliorer.
+                </p>
+            </div>
+            <div class="my-2">
+                <h4 class="text-info">Les risques :</h4>
+                <p>
+                    Le tout premier risque était dans la récole fiable des données, Google n'aiment pas les bots... autres que les leurs.
+                    De ce fait, Google surveille tous ce qu'il se passe dans votre barre de recherche et le nombre de requête faite au serveur et via quelle IP. Alors pour évite ce problème nous avons du y remédier.
+                    Ensuite il fallait aussi les bons KPI et la bonne interface afin de montrer que notre outils était plus rapide et concis, que si l'utilisateur allait faire sa rechercher lui-même.
+                </p>
+            </div>
+        </div>
     </div>
-    <div class="my-2">
-        <h4>Les risques :</h4>
-        <p>
-            Le tout premier risque était dans la récole fiable des données, Google n'aiment pas les bots... autres que les leurs. 
-            De ce fait, Google surveille tous ce qu'il se passe dans votre barre de recherche et le nombre de requête faite au serveur et via quelle IP. Alors pour évite ce problème nous avons du y remédier.
-            Ensuite il fallait aussi les bons KPI et la bonne interface afin de montrer que notre outils était plus rapide et concis, que si l'utilisateur allait faire sa rechercher lui-même.
-        </p>
-    </div>
-    <div class="my-2">
-        <h4>Les étapes :</h4>
-        <p>
+    <div class="row my-2">
+        <h4 class="text-info">Les étapes :</h4>
+        <div class="col-8">
             <ul>
                 <li>
                     Ma première mission dans ce travail, à été de quantifier et organiser les tâches via l'outil GIT, en réalisant les users-stories et les schémas nécessaire au développement de cet outil.
@@ -86,28 +93,32 @@
                 </li>
                 <li>
                     En parralèle de ces recherches, il fallait construire et architecturer la base de donnée, afin de pouvoir gérer tous cela.
-                    <img src="{% static 'img/schema_structure.png' %}" />
                 </li>
                 <li>
-                    Ensuite même avec ce procédé, il peux arriver qu'en requêtant un certains nombre de fois par minute le serveur google, celui-ci vous metter un ban ip. Pour éviter la compléxité de ce problème et les problèmes futur que cela pourrait engendrer, j'ai du trouver le moyen de résoudre ce problème. Une partie de la solution à été de divisés les requêtes sur 2 serveurs dans un premier temps. 
+                    Ensuite même avec ce procédé, il peux arriver qu'en requêtant un certains nombre de fois par minute le serveur google, celui-ci vous metter un ban ip. Pour éviter la compléxité de ce problème et les problèmes futur que cela pourrait engendrer, j'ai du trouver le moyen de résoudre ce problème. Une partie de la solution à été de divisés les requêtes sur 2 serveurs dans un premier temps.
                     Cela n'ayant pas suffit, il à donc fallus mettre en place un système de détection d'erreur, et dans ce cas, redémarrer le programme afin qu'il puisse repartir de la où il s'arrête de lui-même, en modifiant le user-agent (le user-agent d'un navigateur est comme sa carte d'identité).
                 </li>
                 <li>
                     En parralèle, j'avais une personne sous mes ordres qui s'occuppait de maquetter et créer toutes les interfaces nécessaire pour la plateforme Datactive et commencer à créer la logique programme.
-                    <img src="{% static 'img/interface_performance' %}" />
                 </li>
                 <li>
                     Une fois cela fait, il ne manquait plus qu'à automatiser ce principe, aux heures voulus. Et préparer tout le service métier et programme avec la personne sous mes ordre et à mettre en place dans notre backend de l'application pour l'interface.
                     Il fallait par exemple le lancer automatiquement toutes les semaines, de manière gratuite pour que les nouveaux clients puissent testés l'outil puis enfin ne lancer le test que de façon mensuel ou hebdomadaire selon le plan d'abonnement du client.
                 </li>
                 <li>
-                    Manquait plus que les test en préproduction pour valider le travail et faire les dernieres retouches sur le programme métier ou l'interface, si des erreurs étais detéctés, et tout envoyer sur le serveur de production après cela! 
+                    Manquait plus que les test en préproduction pour valider le travail et faire les dernieres retouches sur le programme métier ou l'interface, si des erreurs étais detéctés, et tout envoyer sur le serveur de production après cela!
                 </li>
             </ul>
-        </p>
+        </div>
+        <div class="col-4 pb-5">
+            <img src="{% static 'img/schema_structure.png' %}" class="w-100"/>
+            <br><br>
+            <img src="{% static 'img/interface_performance' %}" class="w-100"/>
+        </div>
+
     </div>
     <div class="my-2">
-        <h4>Mon ressenti :</h4>
+        <h4 class="text-info">Mon ressenti :</h4>
         <p>
             Ce projet m'as permis de développer et rééllement appréhender toute l'envergure de Python, manipulation de données, nombre de librairie et possibilités importantes, CMS Web, Python est clairement l'un des langages les plus utilisés de par ça facilité d'appréhension et sa capacité à être optimisé jusqu'a être compilé en C.
             Le Scraping est vraiment une méthode intérressante surtout pour moi qui traite de la donnée. J'en connais maintenant sa source et comment la récupèrer ce qui est un plus.
@@ -119,16 +130,16 @@
         <h5>Les compétences utilisés sur le projet sont :</h5>
         <ul class="px-5">
             <li>
-                <a href="{% url 'web:sql-desc' %}" target="_blank" class="text-info"><u>SQL (Manipulation & analyse des données)</u></a>
+                <a href="{% url 'web:sql-desc' %}" target="_blank" class="text-info">SQL (Manipulation & analyse des données)</a>
             </li>
             <li>
-                <a href="{% url 'web:bdd_relationnal-desc' %}" target="_blank" class="text-info"><u>Base de données relationnelles (Stockage & mise en relations des données)</u></a>
+                <a href="{% url 'web:bdd_relationnal-desc' %}" target="_blank" class="text-info">Base de données relationnelles (Stockage & mise en relations des données)</a>
             </li>
             <li>
-                <a href="{% url 'web:python-desc' %}" target="_blank" class="text-info"><u>Python (Programme de récupération des données sur internet)</u></a>
+                <a href="{% url 'web:python-desc' %}" target="_blank" class="text-info">Python (Programme de récupération des données sur internet)</a>
             </li>
             <li>
-                <a href="https://www.djangoproject.com/start/overview/" target="_blank"  class="text-info"><u>Django, framework web de Python</u></a>
+                <a href="https://www.djangoproject.com/start/overview/" target="_blank" class="text-info">Django, framework web de Python <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </li>
         </ul>
     </div>
@@ -136,7 +147,7 @@
         <h5>Autres liens :</h5>
         <ul>
             <li>
-                <a href="https://pypi.org/project/selenium/" target="_blank"  class="text-info"><u>Selenium (librairie permettant la manipulation d'un navigateur)</u></a>
+                <a href="https://pypi.org/project/selenium/" target="_blank" class="text-info">Selenium (librairie permettant la manipulation d'un navigateur) <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </li>
         </ul>
     </div>

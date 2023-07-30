@@ -5,39 +5,47 @@
 {% block content %}
 <div class="container row mx-auto h-100 pb-5" style="padding-top: 100px;">
     <h1 class="text-center my-5 text-info">Python, le langage multifonction</h1>
-    <p class="col-6">
-        Python est un langage de programmation populaire et polyvalent, largement utilisé pour créer des applications web, effectuer des tests unitaires, du scraping et du traitement de données. Il est connu pour sa simplicité, sa facilité d'utilisation et son extensibilité.
-        Pour commencer, Python est largement utilisé pour la création d'applications web. Les développeurs peuvent utiliser des frameworks comme Django, Flask et Pyramid pour créer des applications web robustes et hautement fonctionnelles. Django est un framework populaire qui est connu pour sa facilité d'utilisation et son extensibilité.
-        Il fournit une architecture MVC (Modèle-Vue-Contrôleur) qui permet aux développeurs de séparer la logique métier de l'interface utilisateur. Flask est un autre framework populaire qui est connu pour sa simplicité. Il fournit une base solide pour créer des applications web simples et légères.
-        Pyramid est un framework plus avancé qui fournit des fonctionnalités plus sophistiquées pour les applications web de grande envergure.
-        Python est également capable de créer des API pour les applications web. Une API (Application Programming Interface) est un ensemble de définitions et de protocoles utilisés pour la création de logiciels et d'applications.
-        Les API permettent à différents logiciels et services de communiquer entre eux de manière cohérente et standardisée. Python fournit plusieurs bibliothèques pour la création d'API, notamment Flask et Django.
+    <div class="row">
+        <div class="col-7">
+            <p>
+                Python est un langage de programmation populaire et polyvalent, largement utilisé pour créer des applications web, effectuer des tests unitaires, du scraping et du traitement de données. Il est connu pour sa simplicité, sa facilité d'utilisation et son extensibilité.
+                Pour commencer, Python est largement utilisé pour la création d'applications web. Les développeurs peuvent utiliser des frameworks comme Django, Flask et Pyramid pour créer des applications web robustes et hautement fonctionnelles. Django est un framework populaire qui est connu pour sa facilité d'utilisation et son extensibilité.
+            </p>
+            <p>
+                Il fournit une architecture MVC (Modèle-Vue-Contrôleur) qui permet aux développeurs de séparer la logique métier de l'interface utilisateur. Flask est un autre framework populaire qui est connu pour sa simplicité. Il fournit une base solide pour créer des applications web simples et légères.
+                Pyramid est un framework plus avancé qui fournit des fonctionnalités plus sophistiquées pour les applications web de grande envergure.
+                Python est également capable de créer des API pour les applications web. Une API (Application Programming Interface) est un ensemble de définitions et de protocoles utilisés pour la création de logiciels et d'applications.
+                Les API permettent à différents logiciels et services de communiquer entre eux de manière cohérente et standardisée. Python fournit plusieurs bibliothèques pour la création d'API, notamment Flask et Django.
+
+            </p>
+        </div>
+        <div class="col-5 pb-5 my-auto">
+            <img src="{% static 'img/rank_python.png' %}" class="w-100">
+        </div>
+    </div>
+    <p>
         Flask est une bibliothèque légère pour la création d'API en Python. Il est facile à utiliser et offre une grande flexibilité dans la création d'API RESTful. Flask permet également la création d'applications web complètes avec des modèles de pages et une intégration de base de données.
         Django est une autre bibliothèque populaire pour la création d'applications web en Python. Il est plus complet que Flask et offre des fonctionnalités avancées telles que l'authentification utilisateur et la gestion des sessions.
     </p>
-    <div class="col-5 pr-5">
-        <img height="400" width="850" src="{% static 'img/rank_python.png' %}">
+    <div class="row">
+        <div class="col-2 text-center my-auto">
+            <img src="{% static 'img/python.png' %}" alt="Logo du langage Pyhton" class="w-75">
+        </div>
+        <div class="col-10">
+            <p>
+                Python est également largement utilisé pour les tests unitaires. Les tests unitaires sont des outils essentiels pour garantir la qualité et la fiabilité du code. Python dispose d'un module intégré appelé unittest, qui permet aux développeurs de créer des tests unitaires pour leur code.
+                Il fournit des outils pour vérifier si le code fonctionne comme prévu et pour signaler les erreurs ou les bogues. En outre, il existe de nombreuses bibliothèques tierces pour les tests unitaires en Python, telles que PyTest, Nose et Robot Framework.
+                Ces bibliothèques fournissent des fonctionnalités supplémentaires pour les tests unitaires, telles que la génération de rapports de test, la prise en charge de tests paramétriques et la vérification de la couverture de code.
+            </p>
+            <p>
+                Python est également populaire pour le scraping, qui est la récupération d'informations à partir de sites web. Le scraping est couramment utilisé pour collecter des données à grande échelle, telles que des informations sur les produits, des avis, des prix et des tendances.
+                Python dispose de plusieurs bibliothèques dédiées au scraping, notamment Beautiful Soup et Scrapy. Beautiful Soup est une bibliothèque populaire qui facilite la récupération des données à partir de pages HTML et XML.
+                Scrapy est un framework plus avancé pour le scraping qui fournit des fonctionnalités supplémentaires telles que la mise en file d'attente des requêtes, la gestion des sessions et la persistance des données.
+                En plus de Beautiful Soup et Scrapy, Selenium est une autre bibliothèque populaire pour le scraping en Python. Selenium permet aux développeurs de simuler un navigateur web et d'automatiser des actions telles que le clic sur des boutons, la saisie de texte et la navigation sur les pages web.
+                Cette fonctionnalité en fait un choix populaire pour le scraping de pages web qui nécessitent une interaction humaine mais est aussi dans les test unitaires, notamment les test unitaires end to end.
+            </p>
+        </div>
     </div>
-    <div class="col-1">
-    </div>
-    <div class="col-lg-8 col-12">
-        <p>
-            Python est également largement utilisé pour les tests unitaires. Les tests unitaires sont des outils essentiels pour garantir la qualité et la fiabilité du code. Python dispose d'un module intégré appelé unittest, qui permet aux développeurs de créer des tests unitaires pour leur code.
-            Il fournit des outils pour vérifier si le code fonctionne comme prévu et pour signaler les erreurs ou les bogues. En outre, il existe de nombreuses bibliothèques tierces pour les tests unitaires en Python, telles que PyTest, Nose et Robot Framework.
-            Ces bibliothèques fournissent des fonctionnalités supplémentaires pour les tests unitaires, telles que la génération de rapports de test, la prise en charge de tests paramétriques et la vérification de la couverture de code.
-        </p>
-        <p>
-            Python est également populaire pour le scraping, qui est la récupération d'informations à partir de sites web. Le scraping est couramment utilisé pour collecter des données à grande échelle, telles que des informations sur les produits, des avis, des prix et des tendances.
-            Python dispose de plusieurs bibliothèques dédiées au scraping, notamment Beautiful Soup et Scrapy. Beautiful Soup est une bibliothèque populaire qui facilite la récupération des données à partir de pages HTML et XML.
-            Scrapy est un framework plus avancé pour le scraping qui fournit des fonctionnalités supplémentaires telles que la mise en file d'attente des requêtes, la gestion des sessions et la persistance des données.
-            En plus de Beautiful Soup et Scrapy, Selenium est une autre bibliothèque populaire pour le scraping en Python. Selenium permet aux développeurs de simuler un navigateur web et d'automatiser des actions telles que le clic sur des boutons, la saisie de texte et la navigation sur les pages web.
-            Cette fonctionnalité en fait un choix populaire pour le scraping de pages web qui nécessitent une interaction humaine mais est aussi dans les test unitaires, notamment les test unitaires end to end.
-        </p>
-    </div>
-    <div class="col-lg-4 col-12 m-auto text-center py-lg-0 py-5">
-        <img src="{% static 'img/python.png' %}" alt="Logo du langage Pyhton" class="w-50">
-    </div>
-
     <p>
         En outre, Python peut être utilisé pour exécuter des scripts en ligne de commande. Les scripts Python sont des fichiers de texte qui contiennent des instructions en Python. Ces scripts peuvent être exécutés à partir de la ligne de commande en utilisant l'interpréteur Python.
         Python fournit également la possibilité d'utiliser des arguments en ligne de commande pour les scripts, ce qui permet aux utilisateurs de spécifier des options et des paramètres pour le script à l'exécution.
@@ -56,7 +64,7 @@
         Pour moi aujourd'hui le Python est un élément obligatoire à connaitre dans le domaine de la <strong>BIG DATA</strong> et du <strong>Machine Learning</strong> dans la quelle j'aimerais évoluer.
         Aujourd'hui je pense avoir un niveau avancé de Python, pouvans gérer plusieur thread(processus) en même temps, de l'analyse de données jusqu'a la création de site web,
         Demain j'aimerais pouvoir améliorer mes connaissances dans le domaine de machine learning qui me ferais passé je pense à un niveau expert dans le domaine, par exemple en suivant ce genre de cours :
-        <a href="https://www.udemy.com/course/cours-complet-de-deep-learning-avec-tensorflow-et-keras/learn/" class="text-info">
+        <a href="https://www.udemy.com/course/cours-complet-de-deep-learning-avec-tensorflow-et-keras/learn/" class="text-info" target="_blank">
             Cours udemy deep learning avec TensorFlow & Keras <i class="fa-solid fa-arrow-up-right-from-square"></i>
         </a>
         Je passe notamment la certification Cisco Python pour valider mon niveaux.
@@ -65,13 +73,13 @@
         <h5>Les réalisations dans lesquelles cette compétence est intervenue sont :</h5>
         <ul class="px-5">
             <li>
-                <a href="{% url 'web:generation_email-project' %}" class="text-info">Génération d'emails</a>
+                <a href="{% url 'web:generation_email-project' %}" class="text-info" target="_blank">Génération d'emails</a>
             </li>
             <li>
-                <a href="{% url 'web:SAM_DLF-project' %}" class="text-info">SAM</a>
+                <a href="{% url 'web:SAM_DLF-project' %}" class="text-info" target="_blank">SAM</a>
             </li>
             <li>
-                <a href="{% url 'web:scraping-project' %}" class="text-info">Scraping Web</a>
+                <a href="{% url 'web:scraping-project' %}" class="text-info" target="_blank">Scraping Web</a>
             </li>
         </ul>
     </div>

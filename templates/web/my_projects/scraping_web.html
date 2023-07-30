@@ -11,42 +11,42 @@
             et la libraire Selenium.
         </p>
         <div class="row">
-            <div class="col-8">
-                <div class="my-2">
-                    <h4>Les objectifs :</h4>
+            <div class="col-8 my-auto">
+                <div class="row my-2">
+                    <h4 class="text-info">Les objectifs :</h4>
                     <p>
-                        Récupérer les données des <a class="text-info" href="https://www.google.com/intl/fr_fr/business/"><u>fiches Google Business Profile</u><i class="fa-solid fa-arrow-up-right-from-square"></i></a> ,
+                        Récupérer les données des <a class="text-info" href="https://www.google.com/intl/fr_fr/business/" target="_blank"><u>fiches Google Business Profile</u><i class="fa-solid fa-arrow-up-right-from-square"></i></a> ,
                         regrouper ces données afin d'augmenter leurs valeurs, faire des statistiques sur le classement des fiches googles.
                     </p>
                 </div>
-                <div class="my-2">
-                    <h4>Le contexte :</h4>
+                <div class="row my-2">
+                    <h4 class="text-info">Le contexte :</h4>
                     <p>
                         Notre travail dans le scraping et de récupèrer des données sans violé la RGPD, et pour créer des statistiques utilisable afin de comprendre aux mieux l'algorithme Google,
                         en analysant les données de centaines de google local pack, nous pouvions mieux comprendre les problèmatiques pour s'améliorer et les éléments que Google mets en avant
                         afin de permettre à nos clients de se positionner sur un nouveau marché, ou se placer
                         dans le top 3 du leur. Aujourd'hui l'algorithme des fiches google et plus précisément du
-                        <a href="https://www.linkedin.com/posts/datactive40_google-local-pack-activity-6990208845226594304-XTRK?utm_source=share&utm_medium=member_desktop" class="text-info">
+                        <a href="https://www.linkedin.com/posts/datactive40_google-local-pack-activity-6990208845226594304-XTRK?utm_source=share&utm_medium=member_desktop" class="text-info" target="_blank">
                         Google Local Pack <i class="fa-solid fa-arrow-up-right-from-square"></i></a> sont peux connus, étudier celui-ci en récupérant des informations pouvais
                         donnez un avantage à notre outil.
                         Chaque client était aussi une source d'aide et d'amélioration de notre compréhension de l'algorithme Google.
                     </p>
                 </div>   
-                <div class="my-2">
-                    <h4>L'enjeu :</h4>
+                <div class="row my-2">
+                    <h4 class="text-info">L'enjeu :</h4>
                     <p>
                         Dans ce projet, il était important de bien récupérer les données correctes afin de pouvoir créer des
                         statistiques et mieux décrypter l'algorithme de google afin de pouvoir aidez nos clients à mieux se positionner.
                     </p>
                 </div>      
             </div>
-            <div class="col-4 row">
-                <img class="col-12" height="400" src="{% static 'img/Google_local_pack.png' %}" />
-                <em class="col-12">Image d'une page google à scraper grâce à Selenium</em>
+            <div class="col-4 my-auto text-center">
+                <img src="{% static 'img/Google_local_pack.png' %}" class="w-100"/>
+                <em>Image d'une page google à scraper grâce à Selenium</em>
             </div>
         </div> 
         <div class="my-2">
-            <h4>Les risques :</h4>
+            <h4 class="text-info">Les risques :</h4>
             <p>
                 L'un des plus gros risque dans ce projet, était l'échec de se retrouver bloquer lors de la récupération des données, par le captcha
                 ou Google, qui aime piégé ses pages à chaque nouvelle mise à jour afin de justement éviter ce genre de
@@ -54,14 +54,14 @@
             </p>
         </div>
         <div class="my-2">
-            <h4>Les étapes :</h4>
+            <h4 class="text-info">Les étapes :</h4>
             <p>
                 La première étape consistait à trouver le moyen de pouvoir récupérer de manière fiable ces informations,
-                sur les pages du <a href="https://www.linkedin.com/posts/datactive40_google-local-pack-activity-6990208845226594304-XTRK?utm_source=share&utm_medium=member_desktop" class="text-info">
+                sur les pages du <a href="https://www.linkedin.com/posts/datactive40_google-local-pack-activity-6990208845226594304-XTRK?utm_source=share&utm_medium=member_desktop" class="text-info" target="_blank">
                 Google Local Pack <i class="fa-solid fa-arrow-up-right-from-square"></i></a> .
             </p>
             <p>
-                Une fois cela fait nous pouvions voir pour quels mots-clés Google nous renvoyait des <a href="https://www.linkedin.com/posts/datactive40_google-local-pack-activity-6990208845226594304-XTRK?utm_source=share&utm_medium=member_desktop" class="text-info">
+                Une fois cela fait nous pouvions voir pour quels mots-clés Google nous renvoyait des <a href="https://www.linkedin.com/posts/datactive40_google-local-pack-activity-6990208845226594304-XTRK?utm_source=share&utm_medium=member_desktop" class="text-info" target="_blank">
                 Google Local Pack <i class="fa-solid fa-arrow-up-right-from-square"></i></a> , et les classement des fiches selon une catégorie ou un secteur.
             </p>
             <p>
@@ -77,7 +77,7 @@
                 Il en est ressortis que plusieurs des premières analyses faites ont pu être utiles à nos clients et leur
                 ont rapporté, afin d'optimiser cela j'ai pu me rendre utiles en optimisant les recherches et l'analyse
                 des données récupèrer en implémentant un processus de multi-threading & changez certains mots-clés pour un
-                secteur précis afin de voir si cela impacté le classement des fiches <a href="https://www.google.com/intl/fr_fr/business/" class="text-info">
+                secteur précis afin de voir si cela impacté le classement des fiches <a href="https://www.google.com/intl/fr_fr/business/" class="text-info" target="_blank">
                 Google Business Profile <i class="fa-solid fa-arrow-up-right-from-square"></i></a> 
                 Un système de points selon la complétion d'une fiche, et les horaires de scraping nous permettaient aussi d'en savoir plus sur l'algorithme de Google.
             </p>
@@ -93,16 +93,16 @@
             <h5>Les compétences utilisés dans ce projet sont :</h5>
             <ul class="px-5">
                 <li>
-                    <a href="{% url 'web:bdd_relationnal-desc' %}" class="text-info">Base de données relationnelles (Stockage & mise en relations des données)</a>
+                    <a href="{% url 'web:bdd_relationnal-desc' %}" class="text-info" target="_blank">Base de données relationnelles (Stockage & mise en relations des données)</a>
                 </li>
                 <li>
-                    <a href="{% url 'web:comm-desc' %}" class="text-info">Communication (Comprendre le besoin du client)</a>
+                    <a href="{% url 'web:comm-desc' %}" class="text-info" target="_blank">Communication (Comprendre le besoin du client)</a>
                 </li>
                 <li>
-                    <a href="{% url 'web:sql-desc' %}" class="text-info">SQL (Manipulation & analyse des données)</a>
+                    <a href="{% url 'web:sql-desc' %}" class="text-info" target="_blank">SQL (Manipulation & analyse des données)</a>
                 </li>
                 <li>
-                    <a href="{% url 'web:python-desc' %}" class="text-info">Python (Script de crawling et scraping web)</a>
+                    <a href="{% url 'web:python-desc' %}" class="text-info" target="_blank">Python (Script de crawling et scraping web)</a>
                 </li>
             </ul>
         </div>
@@ -110,16 +110,17 @@
             <h5>Technologie associés :</h5>
             <ul class="px-5">
                 <li>Scrapy</li>
-                <li><a href="https://www.docker.com/" target="_blank" class="text-info" ><u>Docker</u></a></li>
                 <li>
-                    <a href="https://pypi.org/project/selenium/" target="_blank"  class="text-info"><u>Selenium (librairie permettant la manipulation d'un navigateur)</u></a>
+                    <a href="https://www.docker.com/" target="_blank" class="text-info">Docker <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                <li>
+                    <a href="https://pypi.org/project/selenium/" target="_blank"  class="text-info">Selenium (librairie permettant la manipulation d'un navigateur) <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </li>
-                <li><a href="https://mariadb.org/" target="_blank" class="text-info"><u>MariaDb</u></a></li>
+                <li><a href="https://mariadb.org/" target="_blank" class="text-info">MariaDb <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
                 <li>Git</li>
             </ul>
         </div>
         <h5 class="mt-5">Autres liens :</h5>
-        <p><a href="https://www.linkedin.com/posts/datactive40_google-local-pack-activity-6990208845226594304-XTRK?utm_source=share&utm_medium=member_desktop" class="text-info">En savoir plus sur le Google Local Pack <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
-        <p><a href="https://www.data-transitionnumerique.com/selenium-python/" class="text-info">Qu'est ce que Selenium <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+        <p><a href="https://www.linkedin.com/posts/datactive40_google-local-pack-activity-6990208845226594304-XTRK?utm_source=share&utm_medium=member_desktop" class="text-info" target="_blank">En savoir plus sur le Google Local Pack <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+        <p><a href="https://www.data-transitionnumerique.com/selenium-python/" class="text-info" target="_blank">Qu'est ce que Selenium <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
     </div>
 {% endblock content %}
