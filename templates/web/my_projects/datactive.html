@@ -4,7 +4,7 @@
 {% block favicon %}<link rel="shortcut icon" type="image/png" href="{% static 'img/photo_lkd.jpg' %}"/> {% endblock favicon %}
 {% block content %}
 <div class="container row mx-auto h-100 my-lg-0 mt-5 pb-5" style="padding-top: 100px;">
-    <h1 class="text-center my-5 link-info">Datactive, le logiciel d'optimisation de la visibilité sur internet.</h1>
+    <h1 class="text-center my-5 link-info">Datactive, le module de performance de fiche google</h1>
     <p></p>
     <div class="my-2 row">
         <h4>Les objectifs :</h4>
@@ -22,25 +22,34 @@
     <div class="my-2 row">
         <h4>Le contexte :</h4>
         <p class="col-6">
-            Datactive se divisés en plusieurs modules :
+            Lors de mon arrivée, sur le projet, certains modules  était déjà développer et d'autre rester à faire. Le projet était fait en <a href="{% url 'web:python-desc' %}" target="_blank" class="text-info"><u>Python</u></a> sous le CMS <a href="https://www.djangoproject.com/start/overview/" target="_blank"  class="text-info"><u>Django</u></a> avec une base de données <a href="{% url 'web:sql-desc' %}" target="_blank" class="text-info"><u>SQL </u></a> sous le moteur MariaDb.
+            Datactive se divisés en plusieurs modules, certains été en place :
             <ul>
                 <li>
-                    CRM, Enrichissement(Pouvoir chercher et trouver des nouveaux contacts commerciaux)
-                </li>
-                <li>
                     E-réputation (statistiques KPI du rendement de leur fiches)
-                </li>
-                <li>
-                    Performance(Suivi et analyse de la fiche Google)
                 </li>
                 <li>
                     Publication(Wordpress, Insta, Facebook, LinkedIn)
                 </li>
                 <li>
-                    Activation (Saisis de données clients pour faire de l'emailing)
+                    Activation (Saisis de données clients pour faire de l'emailing, sms)
                 </li>
             </ul>
-            Lors de mon arrivée, sur le projet, certains modules comme  était déjà développer et d'autre rester à faire. Le projet était fait en <a href="{% url 'web:python-desc' %}" target="_blank" class="text-info"><u>Python</u></a> sous le CMS <a href="https://www.djangoproject.com/start/overview/" target="_blank"  class="text-info"><u>Django</u></a> avec une base de données <a href="{% url 'web:sql-desc' %}" target="_blank" class="text-info"><u>SQL </u></a> sous le moteur MariaDb.
+            D'autres en cours de développement :
+            <ul>
+                <li>
+                    Enrichissement ( Chercher et trouver de nouveaux contacts commerciaux pour enrichir leur CRM)
+                </li>
+            </ul>
+            et d'autres rester à faire :
+            <ul>
+                <li>
+                    CRM (Améliorer le suivi commercial / clientèle)
+                </li>
+                <li>
+                    Performance(Suivi et analyse de fiche Google)
+                </li>
+            </ul>
         </p>
         <div class="col-6 row">
             <img class="col-12" height="250" width="450" src="{% static 'img/position_google.png' %}" />
@@ -50,8 +59,8 @@
     <div class="my-2">
         <h4>L’enjeu :</h4>
         <p>
-            L'enjeu pour l'entreprise était primordiale, Avenir Data était avant une entreprise de service qui essaye de créer son propre produit et son image, en essayant de créer une plateforme.
-            Réunissant tous les outils pour l'optimisation de sa présence sur les réseaux et sur google et créer les campagnes ciblés aux bon clients.
+            L'enjeu pour l'entreprise était primordiale, Avenir Data était avant une entreprise de service qui essaye de créer son propre produit et son image, en essayant de créer une plateforme multi-service complémentaire afin d'aider toutes sortes d'entreprises à améliorer leur communication, marketing & position sur internet.
+            En réunissant tous les outils pour l'optimisation de sa présence sur les réseaux et sur google et créer les campagnes ciblés aux bon clients.
             Dans la particularité de mon travail les enjeux principaux étais de pouvoir correctement récolté la données lié à Google, correctement la stocké en base de données et pouvoir mettre en place une interface permettant à l'utilisateur de comprendre son placement sur google et l'améliorer.
         </p>
     </div>
@@ -67,6 +76,11 @@
         <h4>Les étapes :</h4>
         <p>
             <ul>
+                <li>
+                    Ma première mission dans ce travail, à été de quantifier et organiser les tâches via l'outil GIT, en réalisant les users-stories et les schémas nécessaire au développement de cet outil.
+                    Suite à mon connaissance en web Scraping et Django je devais tout organiser, demander et vérifier les maquettes validés, vérifier les tâches de chacun et mettre en préproduction pour test et validation.
+                    Tout en  effectuant ma tâche de web scraping du google local pack et de l'automatisation de cette dernière.
+                </li>
                 <li>
                     Tout d'abord en évitant le blocage dans le moteur en lui-même, il valait mieux que je ré-écrive l'url dans la barre de recherche plûtot qu'utiliser la page de recherche Google. Cela éviter aussi à notre bot de faire 2 actions de plus et donc de moins 'spammer'.
                 </li>
@@ -84,9 +98,10 @@
                 </li>
                 <li>
                     Une fois cela fait, il ne manquait plus qu'à automatiser ce principe, aux heures voulus. Et préparer tout le service métier et programme avec la personne sous mes ordre et à mettre en place dans notre backend de l'application pour l'interface.
+                    Il fallait par exemple le lancer automatiquement toutes les semaines, de manière gratuite pour que les nouveaux clients puissent testés l'outil puis enfin ne lancer le test que de façon mensuel ou hebdomadaire selon le plan d'abonnement du client.
                 </li>
                 <li>
-                    Manquait plus que les test en préproduction pour valider et dernier retours, si des erreurs était detécté et tout envoyer sur le serveur de production après cela! 
+                    Manquait plus que les test en préproduction pour valider le travail et faire les dernieres retouches sur le programme métier ou l'interface, si des erreurs étais detéctés, et tout envoyer sur le serveur de production après cela! 
                 </li>
             </ul>
         </p>
@@ -97,6 +112,7 @@
             Ce projet m'as permis de développer et rééllement appréhender toute l'envergure de Python, manipulation de données, nombre de librairie et possibilités importantes, CMS Web, Python est clairement l'un des langages les plus utilisés de par ça facilité d'appréhension et sa capacité à être optimisé jusqu'a être compilé en C.
             Le Scraping est vraiment une méthode intérressante surtout pour moi qui traite de la donnée. J'en connais maintenant sa source et comment la récupèrer ce qui est un plus.
             Ma capacité à manipuler et créer des programmes grâce au multiples facettes de ce projet et Python, m'ont permis de grandement m'améliorer sur la réusabilité de mon code, son optimisation et l'intérêt d'utiliser des librairies ou non selon la situation.
+            Le projet Datactive était une bonne idée, un outil modulaire où les clients ne pouvait payer que ce qu'ils utilisés, mais la quantité de développement appliqué sur le produit, ne pouvait être mis sur des projets de services. Cela est un risque pour l'entreprise.
         </p>
     </div>
     <div class="col-lg-8 col-12 mt-5">
@@ -112,7 +128,7 @@
                 <a href="{% url 'web:python-desc' %}" target="_blank" class="text-info"><u>Python (Programme de récupération des données sur internet)</u></a>
             </li>
             <li>
-                <a href="https://www.djangoproject.com/start/overview/" target="_blank"  class="text-info"><u>Python (Script de récupération des données et envois d'email)</u></a>
+                <a href="https://www.djangoproject.com/start/overview/" target="_blank"  class="text-info"><u>Django, framework web de Python</u></a>
             </li>
         </ul>
     </div>
