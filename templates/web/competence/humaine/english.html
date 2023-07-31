@@ -1,35 +1,42 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block title %}API - Portfolio Xavier{% endblock title %}
+{% block title %} Anglais - Portfolio Xavier{% endblock title %}
 {% block favicon %}<link rel="shortcut icon" type="image/png" href="{% static 'img/photo_lkd.jpg' %}"/> {% endblock favicon %}
 {% block content %}
     <div class="container row mx-auto h-100 my-lg-0 my-5 pb-5" style="padding-top: 100px;">
         <h1 class="text-center my-5 text-info">L'anglais, ou être mieux parés à comprendre la documentation ...</h1>
-        <p>
-            Dans le monde actuel, le plurilinguisme est une compétence qui prend de plus en plus de place, en plus d’offrir
-            des opportunités d’embauches, être capable de parler une langue étrangère aide à établir une connexion réelle
-            avec les personnes et d’en apprendre plus sur les différents lieux, cultures et façons de vivre.
-        </p>
-        <p>
-            Dans le secteur numérique, la grande majorité des documentations concernant des langages de programmation est
-            en anglais, les langages eux-mêmes sont en anglais, il est bien plus efficace de faire ses recherches sur les
-            moteurs en anglais pour obtenir des informations plus pertinentes, cette langue permet au monde entier de
-            communiquer, elle est donc incontournable pour parfaire sa formation dans l’informatique.
-        </p>
-        <p>
-            Dans mon emploi actuel, il arrive que je doive suivre des formations dans cette langue, il en revient de même
-            quant à l’étude du marché et à l’étude de la concurrence, les projets avec les plus grandes envergures sont
-            accessibles au monde entier, et ainsi très souvent, disponibles en anglais nativement, pour ensuite être déclinés
-            et traduits dans les langues “secondaires”.
-            Il m’arrive de rencontrer des vocabulaires très spécifiques à certains domaines, cela requiert donc un
-            apprentissage et une formation pour comprendre tous les nouveaux mots alors inconnus jusqu’à ce jour.
-        </p>
+        <div class="row">
+            <div class="col-8">
+                <p>
+                    Dans le monde actuel, le plurilinguisme est une compétence qui prend de plus en plus de place, en plus d’offrir
+                    des opportunités d’embauches, être capable de parler une langue étrangère aide à établir une connexion réelle
+                    avec les personnes et d’en apprendre plus sur les différents lieux, cultures et façons de vivre.
+                </p>
+                <p>
+                    Dans le secteur numérique, la grande majorité des documentations concernant des langages de programmation est
+                    en anglais, les langages eux-mêmes sont en anglais, il est bien plus efficace de faire ses recherches sur les
+                    moteurs en anglais pour obtenir des informations plus pertinentes, cette langue permet au monde entier de
+                    communiquer, elle est donc incontournable pour parfaire sa formation dans l’informatique.
+                </p>
+                <p>
+                    Dans mon emploi actuel, il arrive que je doive suivre des formations dans cette langue, il en revient de même
+                    quant à l’étude du marché et à l’étude de la concurrence, les projets avec les plus grandes envergures sont
+                    accessibles au monde entier, et ainsi très souvent, disponibles en anglais nativement, pour ensuite être déclinés
+                    et traduits dans les langues “secondaires”.
+                    Il m’arrive de rencontrer des vocabulaires très spécifiques à certains domaines, cela requiert donc un
+                    apprentissage et une formation pour comprendre tous les nouveaux mots alors inconnus jusqu’à ce jour.
+                </p>
+            </div>
+            <div class="col-4">
+                    <img class="w-100" alt="drapeau anglais" src="{% static 'img/english_flag.png' %}" />
+            </div>
+        </div>
         <p>
             Cela me fait penser à une anecdote, dans notre projet d’interfaçage d’un module E-business d’une des offres
             proposées par mon entreprise, un vaste champ sémantique autour du marketing est employé, je comprenais très peu
             de mots et d’expressions dans un premier temps, grâce à l’aide de mon patron expert dans le secteur du marketing,
             j’ai étoffé mon vocabulaire et mon lexique pour aujourd’hui pouvoir comprendre tous les différents termes employés.
-            Ou le projet de hiérarchisation et de fonctions à partir de descriptif de poste et d'emplois occupés, qui pour
+            ou le projet de hiérarchisation et de fonctions à partir de descriptif de poste et d'emplois occupés, qui pour
             la plupart des utilisateurs notamment dans le domaine de l'informatique, commercial ou encore marketing tire
             une grande partis de son lexique depuis l'anglais
             Je considère avoir un niveau d’anglais avancé, comme énoncé précédemment je ne rencontre aucun problème concernant

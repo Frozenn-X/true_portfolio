@@ -45,7 +45,7 @@
                         <li class="border border-white my-3"></li>
                         <li><a class="dropdown-item {% if menu_actif == 'team' or menu_actif == 'project' or menu_actif == 'communication' or menu_actif == 'autonomie' or menu_actif == 'english' %}text-info{% else %}text-white{% endif %}">Compétences humaines</a></li>
                         <div class="px-4">
-                            <li><a class="dropdown-item {% if menu_actif == 'team' %}text-info{% else %}text-white{% endif %}" href="{% url 'web:team-desc' %}">Gestion d'équipes </a></li>
+                            <li><a class="dropdown-item {% if menu_actif == 'team' %}text-info{% else %}text-white{% endif %}" href="{% url 'web:team-desc' %}">Gestion d'équipe </a></li>
                             <li><a class="dropdown-item {% if menu_actif == 'project' %}text-info{% else %}text-white{% endif %}" href="{% url 'web:project-desc' %}"> Gestion de projet </a></li>
                             <li><a class="dropdown-item {% if menu_actif == 'communication' %}text-info{% else %}text-white{% endif %}" href="{% url 'web:comm-desc' %}"> Communication </a></li>
                             <li><a class="dropdown-item {% if menu_actif == 'english' %}text-info{% else %}text-white{% endif %}" href="{% url 'web:english-desc' %}"> Anglais </a></li>

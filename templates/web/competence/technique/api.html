@@ -5,53 +5,81 @@
 {% block content %}
     <div class="container row mx-auto h-100 my-lg-0 my-5 pb-5" style="padding-top: 100px;">
         <h1 class="text-center my-5 text-info"> Les API's, plateforme d'accès multiple</h1>
-        <p class="col-12">
-            Les API (Application Programming Interface) sont des outils qui permettent à différents programmes de communiquer entre eux.
-            Elles permettent aux développeurs de créer des applications en utilisant les données et les fonctionnalités d'autres applications.
-            Il est donc possible de créer des applications plus riches et plus utiles en utilisant les API de différents services.
-            Pour créer une API, il est nécessaire de définir les différentes fonctionnalités qui seront mises à disposition pour les autres programmes.
-            Cela peut inclure l'accès à des données, la possibilité de mettre à jour ces données, ou encore l'exécution de tâches spécifiques.
-            Pour utiliser une API, il est nécessaire de disposer d'une clé d'accès qui permet de s'authentifier auprès de l'application qui met à disposition cette API.
-        </p>
-        <p class="col-12">
-            Il est possible d'utiliser une API pour accéder à des données stockées sur un serveur distant, pour envoyer des commandes à un périphérique connecté, pour authentifier un utilisateur avec un compte existant sur un autre service.
-            Les utilisations sont multiples et dépendent de la spécification de l'API.
-        </p>
-        <p class="col-12">
-            Il est important de noter que pour utiliser une API, il est nécessaire de connaître les spécifications de celle-ci, c'est-à-dire comment elle fonctionne et comment y accéder.
-            Il est également important de respecter les termes d'utilisation de l'API, qui peuvent inclure des limites d'utilisation ou des restrictions d'accès.
-
-            En résumé, les API sont des outils qui permettent aux développeurs de créer des applications en utilisant les données et les fonctionnalités d'autres applications.
-            Ils permettent de créer des applications plus riches et plus utiles en utilisant les API de différents services. Il est nécessaire de connaître les spécifications de l'API pour pouvoir l'utiliser et de respecter les termes d'utilisation de l'API pour éviter tout problème.
-        </p>
+        <div class="row">
+            <div class="col-8">
+                <p class="col-12">
+                    Les API (Application Programming Interface) sont des outils qui permettent à différents programmes de communiquer entre eux.
+                    Elles permettent aux développeurs de créer des applications en utilisant les données et les fonctionnalités d'autres applications.
+                    Il est donc possible de créer des applications plus riches et plus utiles en utilisant les API de différents services.
+                    Pour créer une API, il est nécessaire de définir les différentes fonctionnalités qui seront mises à disposition pour les autres programmes.
+                    Cela peut inclure l'accès à des données, la possibilité de mettre à jour ces données, ou encore l'exécution de tâches spécifiques.
+                    Pour utiliser une API, il est nécessaire de disposer d'une clé d'accès qui permet de s'authentifier auprès de l'application qui met à disposition cette API.
+                </p>
+                <p class="col-12">
+                    Il est possible d'utiliser une API pour accéder à des données stockées sur un serveur distant, pour envoyer des commandes à un périphérique connecté, pour authentifier un utilisateur avec un compte existant sur un autre service.
+                    Les utilisations sont multiples et dépendent de la spécification de l'API.
+                </p>
+                <p class="col-12">
+                    Il est important de noter que pour utiliser une API, il est nécessaire de connaître les spécifications de celle-ci, c'est-à-dire comment elle fonctionne et comment y accéder.
+                    Il est également important de respecter les termes d'utilisation de l'API, qui peuvent inclure des limites d'utilisation ou des restrictions d'accès.
+        
+                    En résumé, les API sont des outils qui permettent aux développeurs de créer des applications en utilisant les données et les fonctionnalités d'autres applications.
+                    Ils permettent de créer des applications plus riches et plus utiles en utilisant les API de différents services. Il est nécessaire de connaître les spécifications de l'API pour pouvoir l'utiliser et de respecter les termes d'utilisation de l'API pour éviter tout problème.
+                </p>
+            </div>
+            <div class="col-4">
+                <img src="{% static 'img/api.jfif' %}" alt="schéma explicatif d'une API"/>
+                <em class="text-center">Schéma simplifiant le rôle d'une API</em> 
+            </div>
+        </div>
+        
+      
         <p class="col-12">
             Dans un contexte d'interconnectivité croissante des applications et des services web, les API (Application Programming Interface) jouent un rôle essentiel. Les API sont des outils qui permettent aux développeurs de créer des applications en utilisant les fonctionnalités et les données d'autres applications. Elles offrent ainsi la possibilité de développer des applications plus riches et plus utiles en tirant parti des services proposés par différents systèmes.
         </p>
         <p class="col-12">
-            C'est exactement ce qui as été fait sur le projet 'SAM'(Sport Application Mobile), L'utilité de ce service était d'offrir une api permettant de gérer un back-office de gestion pour les ligues de football, et de mettre en temps réel leur applications à jours. 
-            la compléxité résidait dans le fait que cette api devait pouvoir gérer pluieurs back-office, et plusieurs applications, il fallait dont être certains qu'une application mobile ne récupérerais pas les mauvaises données, ou notre client se retrouvant sur la ligue de foot de la région d'a coté
+            C'est exactement ce qui as été fait sur le projet <a href="{% url 'web:SAM_DLF-project' %}" class="text-info" target="_blank"><u>SAM (Sport Application Mobile)</u></a>, L'utilité de ce service était d'offrir une api permettant de gérer un back-office de gestion pour les ligues de football, et de mettre en temps réel leur applications à jours. 
+            la compléxité résidait dans le fait que cette api devait pouvoir gérer pluieurs back-office, et plusieurs applications, il fallait dont être certains qu'une application mobile ne récupérerais pas les mauvaises données, ou notre client se retrouvant sur la ligue de foot de la région d'a coté. 
+            J'ai aussi eu beaucoup besoin de cette compétence sur les récupérations de données de l'INSEE ainsi que pour l'outil Datactive, dans un cas pour pouvoir maintenir un socle de données open source le plus à jours possible et dans l'autre afin d'avoir une interconnexion avec Wordpress.
         </p>
         <p class="col-12">
             Je pense qu'aujourd'hui, je suis à un niveau intermédiaire pour ce qui est de créer des API's, il y a tellement de méthodologie utilisé que je n'ai pas encore pratiqué bien que vue théorie, comme les api's SOAP.
             J'aimerais demain pouvoir être en capacité d'offrir ce genre de connectivité en lien avec les intelligence artificielle. Pour l'instant j'ai commencer à regarder cette vidéo pour m'inspirer <a href="https://www.youtube.com/watch?v=ZTz26f6XXrQ" target="_blank" class="text-info">Déployer un modèle de machine Learning en tant qu'API en Python <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
         </p>
         <p class="col-12">
-            Il est important de comprendre que l'utilisation des API nécessite une connaissance approfondie de leurs spécifications, c'est-à-dire de leur fonctionnement et des méthodes d'accès. De plus, il est essentiel de respecter les termes d'utilisation des API,
+            Aujourd'hui les API sont des pierres angulaires du dévellopement informatique, que ce soir pour profiter ou offrir un service, mais surtout de nos jours être capables d'interconnecté plusieur solutions ou logiciels, quelle que soit le besoin.
+            C'est comme ça qu'aujourdhui que des outils comme <a target="_blank" class="text-info" href="https://zapier.com/how-it-works"><u>Zapier<i class="fa-solid fa-arrow-up-right-from-square"></i></u></a> vois le jour, à mon avis il sera bientôt un avantage d'être dévellopé de manière à être facilement connecté à d'autre interfaces via des outils comme celui-ci.
+        </p>
+        <p class="col-12">
+            Il est important de comprendre que l'utilisation des APIs nécessite une connaissance approfondie de leurs spécifications, c'est-à-dire de leur fonctionnement et des méthodes d'accès. De plus, il est essentiel de respecter les termes d'utilisation des API,
             qui peuvent inclure des limitations d'utilisation ou des restrictions d'accès. Cela permet d'éviter d'éventuels problèmes liés à une utilisation incorrecte ou abusive des API.
             En résumé, les API sont des outils puissants pour les développeurs, leur permettant d'accéder aux fonctionnalités et aux données d'autres applications. En comprenant les spécifications des API et en respectant leurs conditions d'utilisation, il est possible de créer des applications plus avancées
             et de bénéficier des services offerts par d'autres systèmes de manière sécurisée et efficace.
         </p>
-        <h5 class="mt-5">Les projets dans lequel cela ma été utiles sont :</h5>
-        <ul class="px-5">
-            <li>
-                <a href="{% url 'web:SAM_DLF-project' %}" class="text-info" target="_blank">SAM</a>
-            </li>
-            <li>
-                <a href="{% url 'web:datactive-project' %}" class="text-info" target="_blank">Datactive</a>
-            </li>
-            <li>
-                <a href="{% url 'web:wurth-project' %}" class="text-info" target="_blank">Würth</a>
-            </li>
-        </ul>
+        <div class="col-lg-8 col-12 mt-5">
+            <h5 class="mt-5">Les projets dans lequel cela ma été utiles sont :</h5>
+            <ul class="px-5">
+                <li>
+                    <a href="{% url 'web:SAM_DLF-project' %}" class="text-info" target="_blank">SAM</a>
+                </li>
+                <li>
+                    <a href="{% url 'web:datactive-project' %}" class="text-info" target="_blank">Datactive</a>
+                </li>
+                <li>
+                    <a href="{% url 'web:wurth-project' %}" class="text-info" target="_blank">Würth</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-lg-4 col-12 mt-5">
+            <h5>Autres liens :</h5>
+            <ul class="px-5">
+                <li>
+                    <a target="_blank" class="text-info" href="https://zapier.com/how-it-works"><u>Zapier<i class="fa-solid fa-arrow-up-right-from-square"></i></u></a>
+                </li>
+                <li>
+                    <a target="_blank" class="text-info" href="https://sport-appli-mobile.fr/"> Sport Application mobile (Site Web)</a>
+                </li>
+            </ul>
+        </div>
     </div>
 {% endblock content %}
