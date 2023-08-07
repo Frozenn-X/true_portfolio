@@ -18,18 +18,18 @@
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse col-9" aria-labelledby="navbarDropdown" id="navbarNavDropdown">
+        <div class="collapse navbar-collapse col-md-9 col-lg-8" id="navbarNavDropdown">
             <ul class="navbar-nav" style="margin-left: auto;">
-                <li class="nav-item ">
+                <li class="nav-item">
                     <a class="nav-link {% if menu_actif == 'home' %}text-info{% else %}text-white{% endif %}" aria-current="page" href="{% url 'web:home' %}">Accueil</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item">
                     <a class="nav-link {% if menu_actif == 'about' %}text-info{% else %}text-white{% endif %}" aria-current="page" href="{% url 'web:about' %}">A propos</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item">
                     <a class="nav-link {% if menu_actif == 'parcours' %}text-info{% else %}text-white{% endif %}" aria-current="page" href="{% url 'web:parcours' %}">Parcours</a>
                 </li>
-                <li class="nav-item dropdown dropdown">
+                <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle dropdown-menu-end {% if menu_actif == 'sql' or menu_actif == 'python' or menu_actif == 'apis' or menu_actif == 'r&d' or menu_actif == 'bdd' or menu_actif == 'team' or menu_actif == 'project' or menu_actif == 'communication' or menu_actif == 'english' or menu_actif == 'autonomie'  %}text-info{% else %}text-white{% endif %}" href="#" id="competencesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Compétences
                     </a>

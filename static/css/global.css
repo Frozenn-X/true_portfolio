@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, p, strong, em, a, div {
 }
 
 .bg-dark-perso {
-    background-color: rgba(33, 37, 41, 0.9) !important;
+    background-color: rgba(10, 31, 54, 0.9) !important; /*rgba(33, 37, 41, 0.9)*/
 }
 
 img {
