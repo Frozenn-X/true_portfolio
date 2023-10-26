@@ -111,16 +111,32 @@
             </div>
         </div>
         <p>
-            Grâce à tous cela nous pouvions lié les personnes aux entreprises et connaitre leurs domaines web ces derniers, il suffisait donc
-            ensuite de mettre en place un script, récupérant ces informations pour générer des email grâce aux patterns et le domaine
-            mail afin de générer et tester tous les cas possibles et donc avoir un pool de mail afin de vérrifier et analyser les patterns d'email.
-            Ensuite nous les testions grâce à un serveur d'emailing, et grâce au code de retour, nous avions des éléments nous permettant de valider ou invalider les patterns d'une entreprise et les domaines associés.
+            Grâce à tous cela, nous pouvions lier les personnes aux entreprises et connaître leurs domaines web ces derniers, il suffisait donc ensuite de mettre en place un script,
+            récupérant ces informations pour générer des email grâce aux patterns et le domaine mail afin de générer et tester tous les cas possibles 
+            et donc avoir un pool de mail afin de vérifier et d'analyser les patterns d'email.
+            Ensuite, nous les testions grâce à un serveur d'emailing, et grâce au code de retour, nous avions des éléments nous permettant de valider ou d'invalider les patterns d'une entreprise et les domaines associés.
         </p>
         <p>
-            La où j'ai vraiment du améliorer la chose, était dans le process de validation d'un ou plusieurs patterns pour une entreprise, car oui cela est possible.
-            J'ai réglé ça en ré-écrivant un script python, pour que pour chaque entreprise nous crééons certains emails afin de valider le domaine, puis créer des emails nous permettant d'identifier les patterns utilisés par l'entreprise.
-            Mais le plus gros problème était la lenteur des tests des emails, le script ne pouvais que tester 10 à 20 000 email par jours, mais sur un serveur cela est relativement peu, donc pour cela j'ai du mettre en place un script python qui lançais plusieurs instance de tests de mail en même temps.
-            On appelle ça le multi-thread, en python nous pouvons lancer un programme sur un coeur très précis de la machine. Ceux qui m'as permis de lancer jusqu'a 4 script par jour, multipliant ainsi drastiquement la capacité d'email par jour.
+            La, où j'ai vraiment dû améliorer la chose, était dans le process de validation d'un ou plusieurs patterns pour une entreprise, car oui cela est possible.
+            J'ai réglé ça en réécrivant un script python, pour que pour chaque entreprise nous créons certains emails afin de valider le domaine,
+            puis de créer des emails nous permettant d'identifier les patterns utilisés par l'entreprise.
+            Mais le plus gros problème était la lenteur des tests des emails, le script ne pouvais que tester 10 à 20 000 emails par jour, mais sur un serveur cela est relativement peu,
+            donc pour cela, j'ai dû mettre en place un script python qui lançait plusieurs instances de tests de mail en même temps.
+            On appelle ça, le multi-threading, en python, nous pouvons lancer un programme sur un cœur très précis de la machine.
+            Ceux qui m'a permis de lancer jusqu'à 4 scripts par jour, multipliant ainsi drastiquement la capacité d'email par jour.
+        </p>
+    </div>
+    <div class="my-2">
+        <h4 class="text-info">Mon ressenti :</h4>
+        <p>
+            Ce projet m'as permis de développer et de réellement appréhender toute l'envergure de Python, manipulation de données, nombre de librairies et possibilités importantes, 
+            notamment l'automatisation rapide et simple de petit programme qui devait tournée de manière rapide et régulière.
+            La meilleure parti de ce projet pour était la recherche de moyens d'optimisation du programme, ainsi que du système de validation des patterns d'emails.
+            Plus que le code et le programme, c'était de comprendre la logique, les limites des outils utilisés pour trouver la bonne méthode.
+        </p>
+        <p>
+            Dans ma future carrière, je pense que cette capacité à comprendre, adapter et améliorer un processus de validation pourra m'être utile pour diverses raisons, gestion de projet, gestion de ticket, processus de validation de code et bien d'autres.
+            Avoir pu travailler dans la data et sa compréhension grâce à ce projet, je me sens aujourd'hui plus l'âme d'un data ingénieur / data scientiest plutôt qu'un développeur logiciel ou full-stack.
         </p>
     </div>
     <div class="col-lg-8 col-12 mt-5">
