@@ -2,23 +2,30 @@
 <!-- menu.html -->
 <nav class="navbar navbar-expand-lg fixed-top bg-dark-perso text-white">
     <div class="container-fluid dropdown row">
-        <div class="col-lg-3 col-sm-12 col-12 row">
-            <a class="navbar-brand col-sm-2 col-md-2 col-lg-2" href="{% url 'web:home' %}">
+        <div class="col-lg-6 col-sm-12 col-12 row">
+            <a class="navbar-brand col-sm-2 col-md-2 col-lg-2 mx-auto" href="{% url 'web:home' %}">
                 <img src="{% static 'img/photo_lkd.jpg' %}" alt="image de ma magnifique personne" width="50">
             </a>
-            <p class='col-sm-10 col-md-10 col-lg-10 row my-auto'>
-                <span class='col-12'> Xavier Trauchessec </span>
+            <div class='col-sm-10 col-md-10 col-lg-10 row'>
+                <div class='col-12'>Xavier Trauchessec</div>
                 <!-- Button trigger modal -->
-                <span class="link-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <u>Expert en ingénierie du logiciel</u>
-                </span>
-            </p>
+                <div class='col-sm-12 col-md-6 col-lg-6'>
+                    <span class="link-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <u>Expert en ingénierie du logiciel</u>
+                    </span>
+                </div>
+                <div class='col-sm-12 col-md-6 col-lg-6'>
+                            <span>Développeur full-stack et data</span>
+
+                </div>
+                
+            </div>
         </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse col-md-9 col-lg-8" id="navbarNavDropdown">
+        <div class="collapse navbar-collapse col-md-6 col-lg-6" id="navbarNavDropdown">
             <ul class="navbar-nav" style="margin-left: auto;">
                 <li class="nav-item">
                     <a class="nav-link {% if menu_actif == 'home' %}text-info{% else %}text-white{% endif %}" aria-current="page" href="{% url 'web:home' %}">Accueil</a>
